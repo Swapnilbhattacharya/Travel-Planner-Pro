@@ -3,22 +3,21 @@ import React, { createContext, useState, useEffect } from 'react';
 export const PlanContext = createContext();
 
 export const PlanProvider = ({ children }) => {
-  // MMT Paradigm: We only track ONE active trip at a time
   const [activeTrip, setActiveTrip] = useState(null);
 
-  // Local Storage Sync
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('activeTrip'));
     if (saved) setActiveTrip(saved);
   }, []);
 
-  const startPlanning = (destination) => {
+  const startPlanning = (destination, selectedDates) => {
     const newTrip = {
       id: destination.id,
-      baseData: destination, 
-      dates: { start: null, end: null },
+      baseData: destination,
+      dates: selectedDates || { start: null, end: null }, 
       selectedHotel: null,
       selectedActivities: [],
+      selectedFlight: null,
       totalBudget: 0
     };
     
@@ -26,14 +25,19 @@ export const PlanProvider = ({ children }) => {
     localStorage.setItem('activeTrip', JSON.stringify(newTrip));
   };
 
+  // NEW: Update dates from the Dashboard
+  const setTripDates = (dates) => {
+    if (!activeTrip) return;
+    const updatedTrip = { ...activeTrip, dates };
+    setActiveTrip(updatedTrip);
+    localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
+  };
+
   const clearTrip = () => {
     setActiveTrip(null);
     localStorage.removeItem('activeTrip');
   };
 
-  // --- NEW FUNNEL LOGIC ---
-
-  // Select a Hotel (Replaces any previously selected hotel)
   const selectHotel = (hotel) => {
     if (!activeTrip) return;
     const updatedTrip = { ...activeTrip, selectedHotel: hotel };
@@ -41,24 +45,20 @@ export const PlanProvider = ({ children }) => {
     localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
   };
 
-  // Add or Remove an Activity
+  const selectFlight = (flight) => {
+    if (!activeTrip) return;
+    const updatedTrip = { ...activeTrip, selectedFlight: flight };
+    setActiveTrip(updatedTrip);
+    localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
+  };
+
   const toggleActivity = (activity) => {
     if (!activeTrip) return;
-    
-    // Safety check in case it's undefined
     const currentActivities = activeTrip.selectedActivities || [];
-    
-    // Check if the activity is already in the array
     const exists = currentActivities.find(a => a.activityId === activity.activityId);
-    
-    let newActivities;
-    if (exists) {
-      // If it exists, filter it out (Remove)
-      newActivities = currentActivities.filter(a => a.activityId !== activity.activityId);
-    } else {
-      // If it doesn't exist, append it (Add)
-      newActivities = [...currentActivities, activity];
-    }
+    let newActivities = exists 
+      ? currentActivities.filter(a => a.activityId !== activity.activityId)
+      : [...currentActivities, activity];
 
     const updatedTrip = { ...activeTrip, selectedActivities: newActivities };
     setActiveTrip(updatedTrip);
@@ -67,7 +67,8 @@ export const PlanProvider = ({ children }) => {
 
   return (
     <PlanContext.Provider value={{ 
-      activeTrip, setActiveTrip, startPlanning, clearTrip, selectHotel, toggleActivity 
+      activeTrip, setActiveTrip, startPlanning, clearTrip, 
+      selectHotel, selectFlight, toggleActivity, setTripDates 
     }}>
       {children}
     </PlanContext.Provider>
