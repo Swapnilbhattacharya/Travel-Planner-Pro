@@ -1,8 +1,8 @@
 import React, { useState, useContext, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Search, Calendar, Map, Loader2, Filter, X, 
-  Info, Headphones, MapPin 
+  Search, Map, Loader2, Filter, X, 
+  MapPin 
 } from 'lucide-react';
 import destinationsData from '../data/destinations.json';
 import DestinationCard from '../components/DestinationCard';
@@ -26,7 +26,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   const observerTarget = useRef(null);
 
-  // --- LOGIC: AUTOCOMPLETE (Search Bar) ---
+  // --- LOGIC: AUTOCOMPLETE ---
   useEffect(() => {
     if (searchQuery.length > 0) {
       const filtered = destinationsData.filter(d => 
@@ -51,7 +51,7 @@ const Home = () => {
     return matchesCategory && matchesBudget;
   });
 
-  // --- LOGIC: INFINITE LOOP HACK ---
+  // --- LOGIC: INFINITE LOOP ---
   const visibleDestinations = filteredData.length > 0 
     ? Array.from({ length: displayCount }).map((_, index) => {
         const actualItem = filteredData[index % filteredData.length]; 
@@ -91,44 +91,47 @@ const Home = () => {
   return (
     <div className="w-full pb-20 bg-white dark:bg-gray-950 transition-colors duration-500 overflow-x-hidden">
       
-      {/* 1. HERO & SEARCH SECTION */}
-      <div className="relative h-[500px] w-full flex items-center justify-center overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200" className="absolute w-full h-full object-cover brightness-[0.4]" alt="Hero" />
+      {/* 1. HERO & SEARCH SECTION (Duplicates Removed) */}
+      <div className="relative h-[500px] md:h-[600px] w-full flex items-center justify-center overflow-hidden">
+        <img 
+          src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200" 
+          className="absolute w-full h-full object-cover brightness-[0.4]" 
+          alt="Hero" 
+        />
         
-        <div className="absolute top-6 right-10 z-20 flex gap-6">
-          <button className="flex items-center gap-2 text-white/80 hover:text-white font-bold text-sm transition-colors"><Info size={18} /> About Us</button>
-          <button className="flex items-center gap-2 text-white/80 hover:text-white font-bold text-sm transition-colors"><Headphones size={18} /> Support</button>
-        </div>
-
         <div className="relative z-30 w-full max-w-4xl px-6">
-          <h1 className="text-5xl md:text-6xl font-black text-white mb-8 text-center leading-tight drop-shadow-2xl tracking-tighter">The world is yours <br/> to explore.</h1>
+          <h1 className="text-5xl md:text-7xl font-black text-white mb-10 text-center leading-tight drop-shadow-2xl tracking-tighter">
+            The world is yours <br/> to explore.
+          </h1>
           
           <div className="relative group">
-            <div className="bg-white dark:bg-gray-900 p-2 rounded-3xl shadow-2xl flex items-center gap-2 border border-white/20 dark:border-gray-800 backdrop-blur-xl">
+            <div className="bg-white/95 dark:bg-gray-900/90 p-2 rounded-full shadow-2xl flex items-center gap-2 border border-white/20 dark:border-gray-800 backdrop-blur-xl transition-all">
               <div className="flex-1 flex items-center px-6 py-4">
                 <Map className="text-blue-600 mr-4" size={24} />
                 <input 
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full font-bold text-slate-800 dark:text-gray-100 text-lg outline-none bg-transparent" 
+                  className="w-full font-bold text-slate-800 dark:text-gray-100 text-lg outline-none bg-transparent placeholder-slate-500 dark:placeholder-gray-400" 
                   placeholder="Search destinations, countries..." 
                 />
               </div>
-              <button className="bg-blue-600 text-white p-4 rounded-2xl hover:bg-blue-700 transition-all shadow-lg">
+              <button className="bg-blue-600 text-white p-5 rounded-full hover:bg-blue-700 transition-all shadow-lg active:scale-95">
                 <Search size={24} />
               </button>
             </div>
 
             {/* AUTOCOMPLETE DROPDOWN */}
             {suggestions.length > 0 && (
-              <div className="absolute top-full left-0 right-0 mt-3 bg-white dark:bg-gray-900 rounded-3xl shadow-2xl border border-slate-100 dark:border-gray-800 overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+              <div className="absolute top-full left-0 right-0 mt-4 bg-white dark:bg-gray-900 rounded-3xl shadow-2xl border border-slate-100 dark:border-gray-800 overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
                 {suggestions.map(dest => (
                   <button 
                     key={dest.id}
                     onClick={() => handleSelectDestination(dest)}
                     className="w-full flex items-center gap-4 p-5 hover:bg-slate-50 dark:hover:bg-gray-800 transition-colors border-b last:border-0 border-slate-50 dark:border-gray-800 text-left"
                   >
-                    <div className="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-xl text-blue-600"><MapPin size={20} /></div>
+                    <div className="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-xl text-blue-600">
+                        <MapPin size={20} />
+                    </div>
                     <div>
                       <p className="font-black text-slate-900 dark:text-white">{dest.name}</p>
                       <p className="text-sm font-bold text-slate-400 dark:text-gray-500">{dest.country}</p>
@@ -143,10 +146,10 @@ const Home = () => {
 
       {/* 2. POPULAR ESCAPES GRID SECTION */}
       <div className="max-w-7xl mx-auto pt-20 px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
           <div>
-            <h2 className="text-3xl font-black text-slate-900 dark:text-white">Popular Escapes</h2>
-            <p className="text-slate-500 dark:text-gray-400 font-medium">Click any card to start planning</p>
+            <h2 className="text-4xl font-black text-slate-900 dark:text-white tracking-tight">Popular Escapes</h2>
+            <p className="text-slate-500 dark:text-gray-400 font-medium mt-2">Handpicked journeys curated for you</p>
           </div>
 
           <button 
@@ -156,7 +159,7 @@ const Home = () => {
             <Filter size={18} className="text-blue-600" />
             Advanced Filters
             {(filter !== 'All' || budgetFilter !== 'All') && (
-              <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
+              <span className="w-2.5 h-2.5 bg-blue-600 rounded-full animate-pulse"></span>
             )}
           </button>
         </div>
@@ -200,7 +203,7 @@ const Home = () => {
               </button>
             </div>
 
-            <div className="space-y-10 flex-1">
+            <div className="space-y-10 flex-1 custom-scrollbar overflow-y-auto pr-2">
               <div>
                 <p className="text-xs font-bold text-slate-400 dark:text-gray-500 uppercase tracking-widest mb-4">Category</p>
                 <div className="flex flex-wrap gap-2">
@@ -208,7 +211,7 @@ const Home = () => {
                     <button 
                       key={type}
                       onClick={() => setFilter(type)}
-                      className={`px-4 py-2 rounded-xl font-bold text-sm transition-all ${filter === type ? 'bg-blue-600 text-white' : 'bg-slate-100 dark:bg-gray-800 text-slate-600 dark:text-gray-400'}`}
+                      className={`px-4 py-2 rounded-xl font-bold text-sm transition-all ${filter === type ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30' : 'bg-slate-100 dark:bg-gray-800 text-slate-600 dark:text-gray-400 hover:bg-slate-200 dark:hover:bg-gray-700'}`}
                     >
                       {type}
                     </button>
@@ -223,7 +226,7 @@ const Home = () => {
                     <button
                       key={b}
                       onClick={() => setBudgetFilter(b)}
-                      className={`px-4 py-3 rounded-xl font-bold text-sm border-2 transition-all ${budgetFilter === b ? 'border-blue-600 text-blue-600 bg-blue-50 dark:bg-blue-900/20' : 'border-slate-100 dark:border-gray-800 text-slate-500'}`}
+                      className={`px-4 py-3 rounded-xl font-bold text-sm border-2 transition-all ${budgetFilter === b ? 'border-blue-600 text-blue-600 bg-blue-50 dark:bg-blue-900/20' : 'border-slate-100 dark:border-gray-800 text-slate-500 dark:text-gray-400 hover:border-slate-200'}`}
                     >
                       {b}
                     </button>
@@ -233,7 +236,7 @@ const Home = () => {
             </div>
 
             <div className="pt-8 space-y-3">
-              <button onClick={applyFilters} className="w-full py-4 bg-blue-600 text-white rounded-2xl font-black shadow-xl">Apply Filters</button>
+              <button onClick={applyFilters} className="w-full py-4 bg-blue-600 text-white rounded-2xl font-black shadow-xl hover:bg-blue-700 active:scale-[0.98] transition-all">Apply Filters</button>
               <button onClick={() => {setFilter('All'); setBudgetFilter('All');}} className="w-full py-2 text-slate-400 text-xs font-bold hover:text-red-500 transition-colors">Clear All</button>
             </div>
           </div>
