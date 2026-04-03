@@ -6,14 +6,28 @@
     "tags": ["Mountains", "Nature", "Cold"],
     "overview": "Glacial lakes and rugged peaks perfect for outdoor exploration.",
     "media": {
-      "heroImage": "https://images.unsplash.com/photo-1550503006-258169123653",
-      "gallery": ["https://images.unsplash.com/photo-1542640244-7e672d6cb466", "https://images.unsplash.com/photo-1518314916590-7212453f2d24"]
+      "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b",
+      "gallery": [
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+        "https://images.unsplash.com/photo-1439853949127-af647822083b"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_ban_01", "name": "Fairmont Chateau Lake Louise", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.9, "amenities": ["Lake View", "Spa"] }
+      { "hotelId": "h_ban_01", "name": "Fairmont Chateau Lake Louise", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.9, "amenities": ["Lake View", "Spa"] },
+      { "hotelId": "h_ban_02", "name": "The Rimrock Resort Hotel", "image": "https://images.unsplash.com/photo-1582719478237-af7359160e6e", "pricePerNight": 320, "rating": 4.7, "amenities": ["Mountain View", "Heated Pool"] },
+      { "hotelId": "h_ban_03", "name": "Mount Royal Hotel", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 210, "rating": 4.5, "amenities": ["Rooftop Hot Tub", "Sauna"] }
     ],
     "sightseeing": [
-      { "activityId": "s_ban_01", "title": "Banff Gondola", "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd", "price": 60, "duration": "2h", "type": "Family" }
+      { "activityId": "s_ban_01", "title": "Banff Gondola", "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd", "price": 60, "duration": "2h", "type": "Family" },
+      { "activityId": "s_ban_02", "title": "Lake Louise Kayaking", "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470", "price": 85, "duration": "1.5h", "type": "Nature" },
+      { "activityId": "s_ban_03", "title": "Johnston Canyon Ice Walk", "image": "https://images.unsplash.com/photo-1551524559-8af4e6624178", "price": 75, "duration": "4h", "type": "Adventure" }
+    ],
+    "flights": [
+      { "flightId": "f_ban_01", "airline": "Air Canada", "day": "Monday", "price": 320, "time": "08:30" },
+      { "flightId": "f_ban_02", "airline": "WestJet", "day": "Wednesday", "price": 280, "time": "14:15" },
+      { "flightId": "f_ban_03", "airline": "Air Canada", "day": "Friday", "price": 410, "time": "19:00" },
+      { "flightId": "f_ban_04", "airline": "Delta", "day": "Saturday", "price": 350, "time": "10:00" },
+      { "flightId": "f_ban_05", "airline": "WestJet", "day": "Sunday", "price": 300, "time": "06:45" }
     ]
   },
   {
@@ -24,13 +38,27 @@
     "overview": "Iconic blue-domed churches and world-famous sunsets over the Aegean.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff",
-      "gallery": ["https://images.unsplash.com/photo-1533105079780-92b9be482077", "https://images.unsplash.com/photo-1469796466635-455ede028ca6"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1516483638261-f4dbaf036963",
+        "https://images.unsplash.com/photo-1502784444187-359ac186c5bb"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_san_01", "name": "Canaves Oia Luxury", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 850, "rating": 5.0, "amenities": ["Private Pool", "Caldera View"] }
+      { "hotelId": "h_san_01", "name": "Canaves Oia Luxury", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 850, "rating": 5.0, "amenities": ["Private Pool", "Caldera View"] },
+      { "hotelId": "h_san_02", "name": "Grace Hotel Santorini", "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e", "pricePerNight": 920, "rating": 4.9, "amenities": ["Infinity Pool", "Yoga Deck"] },
+      { "hotelId": "h_san_03", "name": "Katikies Santorini", "image": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d", "pricePerNight": 750, "rating": 4.8, "amenities": ["Cave Suites", "Wine Cellar"] }
     ],
     "sightseeing": [
-      { "activityId": "s_san_01", "title": "Catamaran Cruise", "image": "https://images.unsplash.com/photo-1516939884455-1445c8652f83", "price": 120, "duration": "5h", "type": "Leisure" }
+      { "activityId": "s_san_01", "title": "Catamaran Sunset Cruise", "image": "https://images.unsplash.com/photo-1516939884455-1445c8652f83", "price": 120, "duration": "5h", "type": "Leisure" },
+      { "activityId": "s_san_02", "title": "Akrotiri Guided Tour", "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077", "price": 50, "duration": "3h", "type": "History" },
+      { "activityId": "s_san_03", "title": "Oia Village Walk", "image": "https://images.unsplash.com/photo-1469796466635-455ede028ca6", "price": 0, "duration": "2h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_san_01", "airline": "Aegean Air", "day": "Tuesday", "price": 150, "time": "07:00" },
+      { "flightId": "f_san_02", "airline": "Olympic Air", "day": "Thursday", "price": 180, "time": "11:30" },
+      { "flightId": "f_san_03", "airline": "Sky Express", "day": "Saturday", "price": 210, "time": "16:45" },
+      { "flightId": "f_san_04", "airline": "Ryanair", "day": "Monday", "price": 90, "time": "21:00" },
+      { "flightId": "f_san_05", "airline": "Aegean Air", "day": "Sunday", "price": 200, "time": "09:15" }
     ]
   },
   {
@@ -41,13 +69,27 @@
     "overview": "Ancient temples and traditional tea houses in Japan's cultural heart.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
-      "gallery": ["https://images.unsplash.com/photo-1528360983277-13d401cd18f9", "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1528360983277-13d401cd18f9",
+        "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_kyo_01", "name": "The Ritz-Carlton Kyoto", "image": "https://images.unsplash.com/photo-1506059612708-99d6c258160e", "pricePerNight": 900, "rating": 4.9, "amenities": ["Zen Garden", "Tea Service"] }
+      { "hotelId": "h_kyo_01", "name": "The Ritz-Carlton Kyoto", "image": "https://images.unsplash.com/photo-1506059612708-99d6c258160e", "pricePerNight": 900, "rating": 4.9, "amenities": ["Zen Garden", "Tea Service"] },
+      { "hotelId": "h_kyo_02", "name": "Hotel Alza Kyoto", "image": "https://images.unsplash.com/photo-1518314916590-7212453f2d24", "pricePerNight": 280, "rating": 4.7, "amenities": ["River View", "Boutique Decor"] },
+      { "hotelId": "h_kyo_03", "name": "Hoshinoya Kyoto", "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Ryokan Style", "Boat Transfer"] }
     ],
     "sightseeing": [
-      { "activityId": "s_kyo_01", "title": "Bamboo Grove Walk", "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f", "price": 15, "duration": "2h", "type": "Nature" }
+      { "activityId": "s_kyo_01", "title": "Bamboo Grove Walk", "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f", "price": 15, "duration": "2h", "type": "Nature" },
+      { "activityId": "s_kyo_02", "title": "Fushimi Inari Trek", "image": "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36", "price": 0, "duration": "3h", "type": "Spiritual" },
+      { "activityId": "s_kyo_03", "title": "Kinkaku-ji Temple Visit", "image": "https://images.unsplash.com/photo-1528360983277-13d401cd18f9", "price": 10, "duration": "1.5h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_kyo_01", "airline": "JAL", "day": "Monday", "price": 450, "time": "09:00" },
+      { "flightId": "f_kyo_02", "airline": "ANA", "day": "Tuesday", "price": 470, "time": "13:20" },
+      { "flightId": "f_kyo_03", "airline": "Peach Aviation", "day": "Thursday", "price": 310, "time": "18:00" },
+      { "flightId": "f_kyo_04", "airline": "JAL", "day": "Saturday", "price": 520, "time": "07:45" },
+      { "flightId": "f_kyo_05", "airline": "ANA", "day": "Sunday", "price": 490, "time": "11:10" }
     ]
   },
   {
@@ -58,13 +100,27 @@
     "overview": "Lush rice terraces and spiritual rainforest retreats.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
-      "gallery": ["https://images.unsplash.com/photo-1559628233-eb1b1a45564b", "https://images.unsplash.com/photo-1537953391648-762d01e830e0"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1559628233-eb1b1a45564b",
+        "https://images.unsplash.com/photo-1537953391648-762d01e830e0"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_ubud_01", "name": "Maya Ubud Resort", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "pricePerNight": 320, "rating": 4.8, "amenities": ["Infinity Pool", "Yoga Deck"] }
+      { "hotelId": "h_ubud_01", "name": "Maya Ubud Resort", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "pricePerNight": 320, "rating": 4.8, "amenities": ["Infinity Pool", "Yoga Deck"] },
+      { "hotelId": "h_ubud_02", "name": "Mandapa, a Ritz-Carlton", "image": "https://images.unsplash.com/photo-1537953391648-762d01e830e0", "pricePerNight": 1200, "rating": 5.0, "amenities": ["Butler Service", "River Spa"] },
+      { "hotelId": "h_ubud_03", "name": "Alila Ubud", "image": "https://images.unsplash.com/photo-1559628233-eb1b1a45564b", "pricePerNight": 250, "rating": 4.7, "amenities": ["Rainforest View", "Nature Walks"] }
     ],
     "sightseeing": [
-      { "activityId": "s_ubud_01", "title": "Rice Terrace Trek", "image": "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8", "price": 25, "duration": "3h", "type": "Adventure" }
+      { "activityId": "s_ubud_01", "title": "Rice Terrace Trek", "image": "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8", "price": 25, "duration": "3h", "type": "Adventure" },
+      { "activityId": "s_ubud_02", "title": "Sacred Monkey Forest", "image": "https://images.unsplash.com/photo-1514890547357-a9ee2887ad8e", "price": 10, "duration": "2h", "type": "Nature" },
+      { "activityId": "s_ubud_03", "title": "Tegalalang Swing", "image": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57", "price": 35, "duration": "1h", "type": "Leisure" }
+    ],
+    "flights": [
+      { "flightId": "f_ubud_01", "airline": "Garuda Indonesia", "day": "Monday", "price": 280, "time": "10:15" },
+      { "flightId": "f_ubud_02", "airline": "AirAsia", "day": "Wednesday", "price": 140, "time": "15:30" },
+      { "flightId": "f_ubud_03", "airline": "Batik Air", "day": "Friday", "price": 190, "time": "08:45" },
+      { "flightId": "f_ubud_04", "airline": "Garuda Indonesia", "day": "Saturday", "price": 310, "time": "20:00" },
+      { "flightId": "f_ubud_05", "airline": "Scoot", "day": "Sunday", "price": 155, "time": "12:10" }
     ]
   },
   {
@@ -75,13 +131,27 @@
     "overview": "The City of Light, home to the Eiffel Tower and the Louvre.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-      "gallery": ["https://images.unsplash.com/photo-1431274172761-fca41d930114", "https://images.unsplash.com/photo-1499856871958-5b9627545d1a"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+        "https://images.unsplash.com/photo-1499856871958-5b9627545d1a"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_par_01", "name": "Hôtel Plaza Athénée", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 1200, "rating": 5.0, "amenities": ["Eiffel View", "Fine Dining"] }
+      { "hotelId": "h_par_01", "name": "Hôtel Plaza Athénée", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 1200, "rating": 5.0, "amenities": ["Eiffel View", "Fine Dining"] },
+      { "hotelId": "h_par_02", "name": "Le Meurice", "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad", "pricePerNight": 1100, "rating": 4.9, "amenities": ["Palace Style", "Spa"] },
+      { "hotelId": "h_par_03", "name": "Hotel Monge", "image": "https://images.unsplash.com/photo-1549918837-33fb3940c83e", "pricePerNight": 320, "rating": 4.7, "amenities": ["Latin Quarter", "Cozy"] }
     ],
     "sightseeing": [
-      { "activityId": "s_par_01", "title": "Louvre Private Tour", "image": "https://images.unsplash.com/photo-1491153059943-412f4b00ca1a", "price": 110, "duration": "4h", "type": "Cultural" }
+      { "activityId": "s_par_01", "title": "Louvre Private Tour", "image": "https://images.unsplash.com/photo-1491153059943-412f4b00ca1a", "price": 110, "duration": "4h", "type": "Cultural" },
+      { "activityId": "s_par_02", "title": "Seine Dinner Cruise", "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368", "price": 140, "duration": "3h", "type": "Romantic" },
+      { "activityId": "s_par_03", "title": "Eiffel Tower Summit", "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34", "price": 25, "duration": "2h", "type": "Family" }
+    ],
+    "flights": [
+      { "flightId": "f_par_01", "airline": "Air France", "day": "Monday", "price": 550, "time": "09:00" },
+      { "flightId": "f_par_02", "airline": "Lufthansa", "day": "Tuesday", "price": 480, "time": "14:15" },
+      { "flightId": "f_par_03", "airline": "British Airways", "day": "Thursday", "price": 520, "time": "08:30" },
+      { "flightId": "f_par_04", "airline": "Air France", "day": "Saturday", "price": 610, "time": "11:45" },
+      { "flightId": "f_par_05", "airline": "EasyJet", "day": "Sunday", "price": 220, "time": "20:00" }
     ]
   },
   {
@@ -92,13 +162,27 @@
     "overview": "Unrivaled luxury in overwater villas surrounded by turquoise waters.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8",
-      "gallery": ["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "https://images.unsplash.com/photo-1506929113675-b55f949b6552"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
+        "https://images.unsplash.com/photo-1506929113675-b55f949b6552"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_mal_01", "name": "Soneva Fushi", "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6", "pricePerNight": 1500, "rating": 5.0, "amenities": ["Butler Service", "Stargazing"] }
+      { "hotelId": "h_mal_01", "name": "Soneva Fushi", "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6", "pricePerNight": 1500, "rating": 5.0, "amenities": ["Butler Service", "Stargazing"] },
+      { "hotelId": "h_mal_02", "name": "Gili Lankanfushi", "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8", "pricePerNight": 1300, "rating": 4.9, "amenities": ["Overwater Villa", "Cinema"] },
+      { "hotelId": "h_mal_03", "name": "Anantara Kihavah", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "pricePerNight": 1600, "rating": 4.9, "amenities": ["Underwater Restaurant", "Spa"] }
     ],
     "sightseeing": [
-      { "activityId": "s_mal_01", "title": "Manta Snorkeling", "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5", "price": 200, "duration": "4h", "type": "Adventure" }
+      { "activityId": "s_mal_01", "title": "Manta Snorkeling", "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5", "price": 200, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_mal_02", "title": "Sandbank Picnic", "image": "https://images.unsplash.com/photo-1506929113675-b55f949b6552", "price": 350, "duration": "6h", "type": "Leisure" },
+      { "activityId": "s_mal_03", "title": "Dolphin Watching", "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8", "price": 120, "duration": "2h", "type": "Family" }
+    ],
+    "flights": [
+      { "flightId": "f_mal_01", "airline": "Emirates", "day": "Tuesday", "price": 850, "time": "08:15" },
+      { "flightId": "f_mal_02", "airline": "Qatar Airways", "day": "Thursday", "price": 920, "time": "14:45" },
+      { "flightId": "f_mal_03", "airline": "Maldivian", "day": "Friday", "price": 400, "time": "07:00" },
+      { "flightId": "f_mal_04", "airline": "Singapore Airlines", "day": "Saturday", "price": 1050, "time": "19:30" },
+      { "flightId": "f_mal_05", "airline": "Emirates", "day": "Sunday", "price": 880, "time": "23:50" }
     ]
   },
   {
@@ -109,13 +193,27 @@
     "overview": "Car-free village at the foot of the iconic Matterhorn peak.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1527668752968-14dc70a27c95",
-      "gallery": ["https://images.unsplash.com/photo-1464822759023-fed622ff2c3b", "https://images.unsplash.com/photo-1506905925346-21bda4d32df4"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b",
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_zer_01", "name": "The Omnia", "image": "https://images.unsplash.com/photo-1517840901100-8179e982ad91", "pricePerNight": 550, "rating": 4.9, "amenities": ["Matterhorn View", "Ski-in"] }
+      { "hotelId": "h_zer_01", "name": "The Omnia", "image": "https://images.unsplash.com/photo-1517840901100-8179e982ad91", "pricePerNight": 550, "rating": 4.9, "amenities": ["Matterhorn View", "Ski-in"] },
+      { "hotelId": "h_zer_02", "name": "Mont Cervin Palace", "image": "https://images.unsplash.com/photo-1527668752968-14dc70a27c95", "pricePerNight": 680, "rating": 4.8, "amenities": ["Luxury Lounge", "Spa"] },
+      { "hotelId": "h_zer_03", "name": "Zermatt Youth Hostel", "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4", "pricePerNight": 120, "rating": 4.2, "amenities": ["Budget Friendly", "Central"] }
     ],
     "sightseeing": [
-      { "activityId": "s_zer_01", "title": "Gornergrat Railway", "image": "https://images.unsplash.com/photo-1531310197839-ccf54634509e", "price": 95, "duration": "Half Day", "type": "Leisure" }
+      { "activityId": "s_zer_01", "title": "Gornergrat Railway", "image": "https://images.unsplash.com/photo-1531310197839-ccf54634509e", "price": 95, "duration": "Half Day", "type": "Leisure" },
+      { "activityId": "s_zer_02", "title": "Matterhorn Glacier Paradise", "image": "https://images.unsplash.com/photo-1527668752968-14dc70a27c95", "price": 110, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_zer_03", "title": "Old Village Walk", "image": "https://images.unsplash.com/photo-1517840901100-8179e982ad91", "price": 0, "duration": "2h", "type": "History" }
+    ],
+    "flights": [
+      { "flightId": "f_zer_01", "airline": "SWISS", "day": "Monday", "price": 310, "time": "09:30" },
+      { "flightId": "f_zer_02", "airline": "Lufthansa", "day": "Wednesday", "price": 290, "time": "12:15" },
+      { "flightId": "f_zer_03", "airline": "SWISS", "day": "Friday", "price": 340, "time": "18:45" },
+      { "flightId": "f_zer_04", "airline": "Air France", "day": "Saturday", "price": 320, "time": "10:00" },
+      { "flightId": "f_zer_05", "airline": "British Airways", "day": "Sunday", "price": 380, "time": "15:20" }
     ]
   },
   {
@@ -126,13 +224,27 @@
     "overview": "Vibrant capital gateway to glaciers, hot springs, and auroras.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1",
-      "gallery": ["https://images.unsplash.com/photo-1490750967868-88aa4486c946", "https://images.unsplash.com/photo-1500382017468-9049fed747ef"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1490750967868-88aa4486c946",
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_ice_01", "name": "Blue Lagoon Retreat", "image": "https://images.unsplash.com/photo-1544161515-4af6b1d462c2", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Private Lagoon", "Spa"] }
+      { "hotelId": "h_ice_01", "name": "Blue Lagoon Retreat", "image": "https://images.unsplash.com/photo-1544161515-4af6b1d462c2", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Private Lagoon", "Spa"] },
+      { "hotelId": "h_ice_02", "name": "Ion Adventure Hotel", "image": "https://images.unsplash.com/photo-1483347756197-71ef80e95f73", "pricePerNight": 450, "rating": 4.8, "amenities": ["Northern Lights Bar", "Design Hotel"] },
+      { "hotelId": "h_ice_03", "name": "Hotel Borg", "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef", "pricePerNight": 320, "rating": 4.7, "amenities": ["Art Deco", "Central"] }
     ],
     "sightseeing": [
-      { "activityId": "s_ice_01", "title": "Northern Lights Hunt", "image": "https://images.unsplash.com/photo-1483347756197-71ef80e95f73", "price": 80, "duration": "4h", "type": "Adventure" }
+      { "activityId": "s_ice_01", "title": "Northern Lights Hunt", "image": "https://images.unsplash.com/photo-1483347756197-71ef80e95f73", "price": 80, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_ice_02", "title": "Golden Circle Tour", "image": "https://images.unsplash.com/photo-1490750967868-88aa4486c946", "price": 95, "duration": "Full Day", "type": "Nature" },
+      { "activityId": "s_ice_03", "title": "Blue Lagoon Soak", "image": "https://images.unsplash.com/photo-1544161515-4af6b1d462c2", "price": 60, "duration": "3h", "type": "Leisure" }
+    ],
+    "flights": [
+      { "flightId": "f_ice_01", "airline": "Icelandair", "day": "Tuesday", "price": 380, "time": "08:00" },
+      { "flightId": "f_ice_02", "airline": "PLAY", "day": "Thursday", "price": 240, "time": "14:50" },
+      { "flightId": "f_ice_03", "airline": "SAS", "day": "Friday", "price": 310, "time": "19:20" },
+      { "flightId": "f_ice_04", "airline": "Icelandair", "day": "Saturday", "price": 420, "time": "10:30" },
+      { "flightId": "f_ice_05", "airline": "British Airways", "day": "Sunday", "price": 390, "time": "21:15" }
     ]
   },
   {
@@ -143,13 +255,27 @@
     "overview": "Futuristic skyline with the Burj Khalifa and vast desert dunes.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-      "gallery": ["https://images.unsplash.com/photo-1518684079-3c830dcef090", "https://images.unsplash.com/photo-1540206351-d6465b3ac5c1"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1518684079-3c830dcef090",
+        "https://images.unsplash.com/photo-1540206351-d6465b3ac5c1"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_dub_01", "name": "Burj Al Arab", "image": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb", "pricePerNight": 1800, "rating": 5.0, "amenities": ["Private Beach", "Helipad"] }
+      { "hotelId": "h_dub_01", "name": "Burj Al Arab", "image": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb", "pricePerNight": 1800, "rating": 5.0, "amenities": ["Private Beach", "Helipad"] },
+      { "hotelId": "h_dub_02", "name": "Atlantis The Royal", "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c", "pricePerNight": 1200, "rating": 5.0, "amenities": ["Sky Pool", "Butler"] },
+      { "hotelId": "h_dub_03", "name": "Jumeirah Al Naseem", "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090", "pricePerNight": 650, "rating": 4.9, "amenities": ["Beachfront", "Family Club"] }
     ],
     "sightseeing": [
-      { "activityId": "s_dub_01", "title": "Burj Observation Deck", "image": "https://images.unsplash.com/photo-1526495124232-a02e1849118a", "price": 50, "duration": "2h", "type": "Cultural" }
+      { "activityId": "s_dub_01", "title": "Burj Observation Deck", "image": "https://images.unsplash.com/photo-1526495124232-a02e1849118a", "price": 50, "duration": "2h", "type": "Cultural" },
+      { "activityId": "s_dub_02", "title": "Desert Safari", "image": "https://images.unsplash.com/photo-1540206351-d6465b3ac5c1", "price": 85, "duration": "6h", "type": "Adventure" },
+      { "activityId": "s_dub_03", "title": "Museum of the Future", "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c", "price": 40, "duration": "3h", "type": "Modern" }
+    ],
+    "flights": [
+      { "flightId": "f_dub_01", "airline": "Emirates", "day": "Monday", "price": 750, "time": "01:30" },
+      { "flightId": "f_dub_02", "airline": "Etihad Airways", "day": "Tuesday", "price": 710, "time": "09:45" },
+      { "flightId": "f_dub_03", "airline": "flydubai", "day": "Thursday", "price": 450, "time": "14:20" },
+      { "flightId": "f_dub_04", "airline": "Emirates", "day": "Saturday", "price": 820, "time": "23:55" },
+      { "flightId": "f_dub_05", "airline": "Qatar Airways", "day": "Sunday", "price": 690, "time": "18:30" }
     ]
   },
   {
@@ -160,15 +286,30 @@
     "overview": "Stunning harbor views, the Opera House, and Bondi Beach surf.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9",
-      "gallery": ["https://images.unsplash.com/photo-1523482580672-f109ba8cb9be", "https://images.unsplash.com/photo-1524230572899-a752b3835840"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be",
+        "https://images.unsplash.com/photo-1524230572899-a752b3835840"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_syd_01", "name": "Park Hyatt Sydney", "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427", "pricePerNight": 750, "rating": 4.9, "amenities": ["Harbor View", "Rooftop Pool"] }
+      { "hotelId": "h_syd_01", "name": "Park Hyatt Sydney", "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427", "pricePerNight": 750, "rating": 4.9, "amenities": ["Harbor View", "Rooftop Pool"] },
+      { "hotelId": "h_syd_02", "name": "The Langham Sydney", "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9", "pricePerNight": 520, "rating": 4.8, "amenities": ["Spa", "Afternoon Tea"] },
+      { "hotelId": "h_syd_03", "name": "Ovolo Woolloomooloo", "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be", "pricePerNight": 380, "rating": 4.7, "amenities": ["Industrial Style", "Wharf View"] }
     ],
     "sightseeing": [
-      { "activityId": "s_syd_01", "title": "Harbor Bridge Climb", "image": "https://images.unsplash.com/photo-1524230572899-a752b3835840", "price": 280, "duration": "3h", "type": "Adventure" }
+      { "activityId": "s_syd_01", "title": "Harbor Bridge Climb", "image": "https://images.unsplash.com/photo-1524230572899-a752b3835840", "price": 280, "duration": "3h", "type": "Adventure" },
+      { "activityId": "s_syd_02", "title": "Opera House Tour", "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9", "price": 45, "duration": "1h", "type": "Cultural" },
+      { "activityId": "s_syd_03", "title": "Bondi to Coogee Walk", "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be", "price": 0, "duration": "2.5h", "type": "Nature" }
+    ],
+    "flights": [
+      { "flightId": "f_syd_01", "airline": "Qantas", "day": "Tuesday", "price": 950, "time": "10:30" },
+      { "flightId": "f_syd_02", "airline": "Jetstar", "day": "Thursday", "price": 420, "time": "16:45" },
+      { "flightId": "f_syd_03", "airline": "Virgin Australia", "day": "Friday", "price": 580, "time": "08:15" },
+      { "flightId": "f_syd_04", "airline": "Qantas", "day": "Saturday", "price": 1020, "time": "20:00" },
+      { "flightId": "f_syd_05", "airline": "Singapore Airlines", "day": "Sunday", "price": 890, "time": "14:20" }
     ]
-  },
+  }
+,
   {
     "id": "tokyo_01",
     "name": "Tokyo",
@@ -177,13 +318,27 @@
     "overview": "Neon-lit streets, world-class sushi, and deep-rooted traditions.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
-      "gallery": ["https://images.unsplash.com/photo-1503899036084-c55cdd92da26", "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1503899036084-c55cdd92da26",
+        "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_tok_01", "name": "Park Hyatt Tokyo", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 600, "rating": 4.8, "amenities": ["Skyline View", "Jazz Bar"] }
+      { "hotelId": "h_tok_01", "name": "Park Hyatt Tokyo", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 600, "rating": 4.8, "amenities": ["Skyline View", "Jazz Bar"] },
+      { "hotelId": "h_tok_02", "name": "Aman Tokyo", "image": "https://images.unsplash.com/photo-1506059612708-99d6c258160e", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Spa", "Zen Design"] },
+      { "hotelId": "h_tok_03", "name": "Shinjuku Granbell", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 180, "rating": 4.4, "amenities": ["Rooftop Bar", "Modern"] }
     ],
     "sightseeing": [
-      { "activityId": "s_tok_01", "title": "Shibuya Crossing", "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989", "price": 0, "duration": "1h", "type": "Cultural" }
+      { "activityId": "s_tok_01", "title": "Shibuya Crossing Walk", "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989", "price": 0, "duration": "1h", "type": "Cultural" },
+      { "activityId": "s_tok_02", "title": "TeamLab Borderless", "image": "https://images.unsplash.com/photo-1550747528-cdb8677c8141", "price": 35, "duration": "3h", "type": "Modern" },
+      { "activityId": "s_tok_03", "title": "Tsukiji Outer Market Food Tour", "image": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3", "price": 80, "duration": "4h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_tok_01", "airline": "ANA", "day": "Monday", "price": 600, "time": "11:20" },
+      { "flightId": "f_tok_02", "airline": "JAL", "day": "Wednesday", "price": 620, "time": "16:45" },
+      { "flightId": "f_tok_03", "airline": "United", "day": "Friday", "price": 750, "time": "08:10" },
+      { "flightId": "f_tok_04", "airline": "Cathay Pacific", "day": "Saturday", "price": 580, "time": "14:00" },
+      { "flightId": "f_tok_05", "airline": "Zipair", "day": "Sunday", "price": 350, "time": "10:30" }
     ]
   },
   {
@@ -194,13 +349,27 @@
     "overview": "The Eternal City, home to the Colosseum, Vatican, and fine pasta.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1552832230-c0197dd311b5",
-      "gallery": ["https://images.unsplash.com/photo-1529260830199-42c24126f198", "https://images.unsplash.com/photo-1515542641795-06ed2039c695"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1529260830199-42c24126f198",
+        "https://images.unsplash.com/photo-1515542641795-06ed2039c695"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_rom_01", "name": "Hotel Hassler Roma", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 780, "rating": 4.9, "amenities": ["Vatican View", "Italian Decor"] }
+      { "hotelId": "h_rom_01", "name": "Hotel Hassler Roma", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 780, "rating": 4.9, "amenities": ["Vatican View", "Classic Decor"] },
+      { "hotelId": "h_rom_02", "name": "Hotel de Russie", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "pricePerNight": 950, "rating": 5.0, "amenities": ["Secret Garden", "Spa"] },
+      { "hotelId": "h_rom_03", "name": "Indigo Rome - St. George", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 340, "rating": 4.6, "amenities": ["Historic Setting", "Rooftop"] }
     ],
     "sightseeing": [
-      { "activityId": "s_rom_01", "title": "Colosseum Tour", "image": "https://images.unsplash.com/photo-1555990538-2352f0594a86", "price": 65, "duration": "3h", "type": "Cultural" }
+      { "activityId": "s_rom_01", "title": "Colosseum & Forum Tour", "image": "https://images.unsplash.com/photo-1555990538-2352f0594a86", "price": 65, "duration": "3h", "type": "Cultural" },
+      { "activityId": "s_rom_02", "title": "Vatican Museums Skip-the-line", "image": "https://images.unsplash.com/photo-1531572753322-ad063cecc140", "price": 75, "duration": "4h", "type": "Art" },
+      { "activityId": "s_rom_03", "title": "Trastevere Food Walk", "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772", "price": 90, "duration": "3h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_rom_01", "airline": "ITA Airways", "day": "Tuesday", "price": 420, "time": "09:30" },
+      { "flightId": "f_rom_02", "airline": "Lufthansa", "day": "Thursday", "price": 380, "time": "12:15" },
+      { "flightId": "f_rom_03", "airline": "Air France", "day": "Friday", "price": 405, "time": "18:00" },
+      { "flightId": "f_rom_04", "airline": "British Airways", "day": "Saturday", "price": 450, "time": "07:45" },
+      { "flightId": "f_rom_05", "airline": "Ryanair", "day": "Sunday", "price": 120, "time": "21:30" }
     ]
   },
   {
@@ -211,13 +380,27 @@
     "overview": "The city that never sleeps, from Times Square to Central Park.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
-      "gallery": ["https://images.unsplash.com/photo-1485871982741-997ef2c4f4a0", "https://images.unsplash.com/photo-1534430480872-3498386e7a56"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1485871982741-997ef2c4f4a0",
+        "https://images.unsplash.com/photo-1534430480872-3498386e7a56"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_nyc_01", "name": "The Plaza", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 950, "rating": 4.8, "amenities": ["Central Park View", "Butler"] }
+      { "hotelId": "h_nyc_01", "name": "The Plaza", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 950, "rating": 4.8, "amenities": ["Central Park View", "Butler"] },
+      { "hotelId": "h_nyc_02", "name": "Equinox Hotel Hudson Yards", "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427", "pricePerNight": 800, "rating": 4.9, "amenities": ["Sky Pool", "Fitness Club"] },
+      { "hotelId": "h_nyc_03", "name": "Arlo Nomad", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 280, "rating": 4.5, "amenities": ["Empire State View", "Compact Design"] }
     ],
     "sightseeing": [
-      { "activityId": "s_nyc_01", "title": "Broadway Show", "image": "https://images.unsplash.com/photo-1514302240736-b1fee5985889", "price": 150, "duration": "3h", "type": "Cultural" }
+      { "activityId": "s_nyc_01", "title": "Broadway Show Tickets", "image": "https://images.unsplash.com/photo-1514302240736-b1fee5985889", "price": 150, "duration": "3h", "type": "Cultural" },
+      { "activityId": "s_nyc_02", "title": "Empire State Observatory", "image": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25", "price": 45, "duration": "2h", "type": "Family" },
+      { "activityId": "s_nyc_03", "title": "The High Line Walk", "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1", "price": 0, "duration": "1.5h", "type": "Nature" }
+    ],
+    "flights": [
+      { "flightId": "f_nyc_01", "airline": "Delta", "day": "Monday", "price": 420, "time": "08:00" },
+      { "flightId": "f_nyc_02", "airline": "United", "day": "Wednesday", "price": 390, "time": "13:30" },
+      { "flightId": "f_nyc_03", "airline": "American Airlines", "day": "Friday", "price": 550, "time": "17:15" },
+      { "flightId": "f_nyc_04", "airline": "JetBlue", "day": "Saturday", "price": 310, "time": "10:45" },
+      { "flightId": "f_nyc_05", "airline": "Delta", "day": "Sunday", "price": 460, "time": "21:00" }
     ]
   },
   {
@@ -228,13 +411,27 @@
     "overview": "Ancient wonders meet a bustling modern metropolis on the Nile.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368",
-      "gallery": ["https://images.unsplash.com/photo-1539136788836-5699e78bac75", "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1539136788836-5699e78bac75",
+        "https://images.unsplash.com/photo-1572252009286-268acec5ca0a"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_cai_01", "name": "Mena House", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.7, "amenities": ["Pyramid View", "Garden Pool"] }
+      { "hotelId": "h_cai_01", "name": "Marriott Mena House", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.7, "amenities": ["Pyramid View", "Garden Pool"] },
+      { "hotelId": "h_cai_02", "name": "Four Seasons Nile Plaza", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 550, "rating": 4.9, "amenities": ["River View", "Royal Spa"] },
+      { "hotelId": "h_cai_03", "name": "Steigenberger El Tahrir", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 180, "rating": 4.5, "amenities": ["Central", "Modern Design"] }
     ],
     "sightseeing": [
-      { "activityId": "s_cai_01", "title": "Giza Pyramids Tour", "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368", "price": 50, "duration": "4h", "type": "History" }
+      { "activityId": "s_cai_01", "title": "Giza Pyramids & Sphinx Tour", "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368", "price": 50, "duration": "4h", "type": "History" },
+      { "activityId": "s_cai_02", "title": "Egyptian Museum Guided Walk", "image": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee", "price": 30, "duration": "3h", "type": "Cultural" },
+      { "activityId": "s_cai_03", "title": "Khan el-Khalili Bazaar", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "price": 0, "duration": "2h", "type": "Shopping" }
+    ],
+    "flights": [
+      { "flightId": "f_cai_01", "airline": "EgyptAir", "day": "Tuesday", "price": 580, "time": "10:30" },
+      { "flightId": "f_cai_02", "airline": "Turkish Airlines", "day": "Thursday", "price": 420, "time": "16:00" },
+      { "flightId": "f_cai_03", "airline": "Emirates", "day": "Friday", "price": 650, "time": "22:15" },
+      { "flightId": "f_cai_04", "airline": "EgyptAir", "day": "Saturday", "price": 610, "time": "08:45" },
+      { "flightId": "f_cai_05", "airline": "Lufthansa", "day": "Sunday", "price": 530, "time": "14:10" }
     ]
   },
   {
@@ -245,13 +442,27 @@
     "overview": "Breathtaking landscapes, samba beats, and iconic Christ the Redeemer.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325",
-      "gallery": ["https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f", "https://images.unsplash.com/photo-1483729558449-99ef09a8c325"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f",
+        "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_rio_01", "name": "Copacabana Palace", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Beachfront", "Historic Style"] }
+      { "hotelId": "h_rio_01", "name": "Copacabana Palace", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Beachfront", "Historic Style"] },
+      { "hotelId": "h_rio_02", "name": "Hotel Fasano Rio", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "pricePerNight": 750, "rating": 4.9, "amenities": ["Rooftop Pool", "Ipanema View"] },
+      { "hotelId": "h_rio_03", "name": "Yoo2 Rio de Janeiro", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 220, "rating": 4.5, "amenities": ["Sugarloaf View", "Design Hotel"] }
     ],
     "sightseeing": [
-      { "activityId": "s_rio_01", "title": "Sugarloaf Mountain", "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325", "price": 40, "duration": "3h", "type": "Leisure" }
+      { "activityId": "s_rio_01", "title": "Christ the Redeemer Train", "image": "https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f", "price": 35, "duration": "3h", "type": "Cultural" },
+      { "activityId": "s_rio_02", "title": "Sugarloaf Mountain Cable Car", "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325", "price": 40, "duration": "3h", "type": "Leisure" },
+      { "activityId": "s_rio_03", "title": "Samba Show & Dinner", "image": "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "price": 100, "duration": "4h", "type": "Party" }
+    ],
+    "flights": [
+      { "flightId": "f_rio_01", "airline": "LATAM", "day": "Monday", "price": 850, "time": "21:00" },
+      { "flightId": "f_rio_02", "airline": "TAP Air Portugal", "day": "Wednesday", "price": 920, "time": "15:30" },
+      { "flightId": "f_rio_03", "airline": "GOL Airlines", "day": "Friday", "price": 450, "time": "08:15" },
+      { "flightId": "f_rio_04", "airline": "American Airlines", "day": "Saturday", "price": 1100, "time": "12:45" },
+      { "flightId": "f_rio_05", "airline": "LATAM", "day": "Sunday", "price": 880, "time": "19:00" }
     ]
   },
   {
@@ -262,13 +473,27 @@
     "overview": "Royal heritage, world-class museums, and the Thames riverbanks.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad",
-      "gallery": ["https://images.unsplash.com/photo-1486299267070-83823f5448dd", "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1486299267070-83823f5448dd",
+        "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_lon_01", "name": "The Savoy", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.9, "amenities": ["River View", "Butler Service"] }
+      { "hotelId": "h_lon_01", "name": "The Savoy", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.9, "amenities": ["River View", "Butler Service"] },
+      { "hotelId": "h_lon_02", "name": "The Ned", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 450, "rating": 4.7, "amenities": ["Rooftop Pool", "Historic Bank"] },
+      { "hotelId": "h_lon_03", "name": "CitizenM Tower of London", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "pricePerNight": 220, "rating": 4.6, "amenities": ["Tech Savvy", "View of Shard"] }
     ],
     "sightseeing": [
-      { "activityId": "s_lon_01", "title": "London Eye", "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad", "price": 35, "duration": "1h", "type": "Family" }
+      { "activityId": "s_lon_01", "title": "London Eye Flight", "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad", "price": 35, "duration": "1h", "type": "Family" },
+      { "activityId": "s_lon_02", "title": "Tower of London Tour", "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd", "price": 40, "duration": "3h", "type": "History" },
+      { "activityId": "s_lon_03", "title": "British Museum Guided Walk", "image": "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9", "price": 0, "duration": "4h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_lon_01", "airline": "British Airways", "day": "Monday", "price": 520, "time": "09:00" },
+      { "flightId": "f_lon_02", "airline": "Virgin Atlantic", "day": "Tuesday", "price": 480, "time": "14:30" },
+      { "flightId": "f_lon_03", "airline": "British Airways", "day": "Thursday", "price": 550, "time": "18:45" },
+      { "flightId": "f_lon_04", "airline": "EasyJet", "day": "Saturday", "price": 110, "time": "07:20" },
+      { "flightId": "f_lon_05", "airline": "Lufthansa", "day": "Sunday", "price": 340, "time": "11:10" }
     ]
   },
   {
@@ -279,13 +504,27 @@
     "overview": "Gaudí’s masterpieces, urban beaches, and world-class tapas.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1583422409516-2895a77efded",
-      "gallery": ["https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4", "https://images.unsplash.com/photo-1523531294919-4bcd7c65e215"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4",
+        "https://images.unsplash.com/photo-1523531294919-4bcd7c65e215"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_bar_01", "name": "W Barcelona", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.7, "amenities": ["Rooftop Bar", "Sea View"] }
+      { "hotelId": "h_bar_01", "name": "W Barcelona", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.7, "amenities": ["Rooftop Bar", "Sea View"] },
+      { "hotelId": "h_bar_02", "name": "Majestic Hotel & Spa", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 550, "rating": 4.9, "amenities": ["Luxury Spa", "Central"] },
+      { "hotelId": "h_bar_03", "name": "Praktik Garden", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "pricePerNight": 150, "rating": 4.5, "amenities": ["Garden Terrace", "Boutique"] }
     ],
     "sightseeing": [
-      { "activityId": "s_bar_01", "title": "Sagrada Familia", "image": "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4", "price": 30, "duration": "2h", "type": "Cultural" }
+      { "activityId": "s_bar_01", "title": "Sagrada Familia Entry", "image": "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4", "price": 30, "duration": "2h", "type": "Cultural" },
+      { "activityId": "s_bar_02", "title": "Park Guell Guided Walk", "image": "https://images.unsplash.com/photo-1523531294919-4bcd7c65e215", "price": 25, "duration": "2h", "type": "Art" },
+      { "activityId": "s_bar_03", "title": "La Boqueria Food Tour", "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded", "price": 60, "duration": "3h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_bar_01", "airline": "Iberia", "day": "Tuesday", "price": 210, "time": "08:15" },
+      { "flightId": "f_bar_02", "airline": "Vueling", "day": "Thursday", "price": 95, "time": "14:40" },
+      { "flightId": "f_bar_03", "airline": "Lufthansa", "day": "Friday", "price": 320, "time": "19:20" },
+      { "flightId": "f_bar_04", "airline": "EasyJet", "day": "Saturday", "price": 80, "time": "11:00" },
+      { "flightId": "f_bar_05", "airline": "Iberia", "day": "Sunday", "price": 250, "time": "22:15" }
     ]
   },
   {
@@ -296,13 +535,27 @@
     "overview": "A mix of mountains and sea with Table Mountain and stunning vineyards.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1580619171172-2757538d0f31",
-      "gallery": ["https://images.unsplash.com/photo-1576485736788-7b19d5a7d744", "https://images.unsplash.com/photo-1580619171172-2757538d0f31"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1576485736788-7b19d5a7d744",
+        "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_ct_01", "name": "The Silo Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 900, "rating": 5.0, "amenities": ["Harbor View", "Modern Art"] }
+      { "hotelId": "h_ct_01", "name": "The Silo Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 900, "rating": 5.0, "amenities": ["Harbor View", "Modern Art"] },
+      { "hotelId": "h_ct_02", "name": "Belmond Mount Nelson", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 600, "rating": 4.9, "amenities": ["Classic Charm", "Spa"] },
+      { "hotelId": "h_ct_03", "name": "Radisson Blu Waterfront", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "pricePerNight": 280, "rating": 4.6, "amenities": ["Sea View", "Infinity Pool"] }
     ],
     "sightseeing": [
-      { "activityId": "s_ct_01", "title": "Table Mountain Cableway", "image": "https://images.unsplash.com/photo-1580619171172-2757538d0f31", "price": 25, "duration": "2h", "type": "Nature" }
+      { "activityId": "s_ct_01", "title": "Table Mountain Cableway", "image": "https://images.unsplash.com/photo-1580619171172-2757538d0f31", "price": 25, "duration": "2h", "type": "Nature" },
+      { "activityId": "s_ct_02", "title": "Robben Island Ferry Tour", "image": "https://images.unsplash.com/photo-1576485736788-7b19d5a7d744", "price": 40, "duration": "4h", "type": "History" },
+      { "activityId": "s_ct_03", "title": "Cape Point Day Trip", "image": "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "price": 80, "duration": "8h", "type": "Adventure" }
+    ],
+    "flights": [
+      { "flightId": "f_ct_01", "airline": "South African Airways", "day": "Monday", "price": 750, "time": "09:30" },
+      { "flightId": "f_ct_02", "airline": "British Airways", "day": "Wednesday", "price": 920, "time": "21:15" },
+      { "flightId": "f_ct_03", "airline": "Emirates", "day": "Friday", "price": 880, "time": "14:45" },
+      { "flightId": "f_ct_04", "airline": "Qatar Airways", "day": "Saturday", "price": 840, "time": "18:00" },
+      { "flightId": "f_ct_05", "airline": "Air France", "day": "Sunday", "price": 980, "time": "11:20" }
     ]
   },
   {
@@ -313,13 +566,27 @@
     "overview": "Charming canals, historic houses, and world-class museums.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4",
-      "gallery": ["https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1534351590666-13e3e96b5017",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_ams_01", "name": "Pulitzer Amsterdam", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.8, "amenities": ["Canal Side", "Vintage Style"] }
+      { "hotelId": "h_ams_01", "name": "Pulitzer Amsterdam", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.8, "amenities": ["Canal Side", "Vintage Style"] },
+      { "hotelId": "h_ams_02", "name": "Hotel 717", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 420, "rating": 4.9, "amenities": ["Historic", "Luxury Boutique"] },
+      { "hotelId": "h_ams_03", "name": "The Hoxton", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "pricePerNight": 280, "rating": 4.6, "amenities": ["Trendy", "Central"] }
     ],
     "sightseeing": [
-      { "activityId": "s_ams_01", "title": "Canal Cruise", "image": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4", "price": 20, "duration": "1.5h", "type": "Leisure" }
+      { "activityId": "s_ams_01", "title": "Canal Sightseeing Cruise", "image": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4", "price": 20, "duration": "1.5h", "type": "Leisure" },
+      { "activityId": "s_ams_02", "title": "Rijksmuseum Tour", "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "price": 25, "duration": "3h", "type": "Art" },
+      { "activityId": "s_ams_03", "title": "Anne Frank House", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "price": 18, "duration": "2h", "type": "History" }
+    ],
+    "flights": [
+      { "flightId": "f_ams_01", "airline": "KLM", "day": "Monday", "price": 450, "time": "08:10" },
+      { "flightId": "f_ams_02", "airline": "Lufthansa", "day": "Tuesday", "price": 320, "time": "15:45" },
+      { "flightId": "f_ams_03", "airline": "KLM", "day": "Thursday", "price": 490, "time": "20:00" },
+      { "flightId": "f_ams_04", "airline": "EasyJet", "day": "Saturday", "price": 95, "time": "06:30" },
+      { "flightId": "f_ams_05", "airline": "Air France", "day": "Sunday", "price": 380, "time": "14:15" }
     ]
   },
   {
@@ -330,15 +597,30 @@
     "overview": "The City of a Hundred Spires, with gothic bridges and medieval charm.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1519677100203-ad0382b629e4",
-      "gallery": ["https://images.unsplash.com/photo-1541849546-216549ae216d", "https://images.unsplash.com/photo-1519677100203-ad0382b629e4"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1541849546-216549ae216d",
+        "https://images.unsplash.com/photo-1503917988258-f87a78e3c995"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_pra_01", "name": "Four Seasons Prague", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 4.9, "amenities": ["Castle View", "Riverside"] }
+      { "hotelId": "h_pra_01", "name": "Four Seasons Prague", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 4.9, "amenities": ["Castle View", "Riverside"] },
+      { "hotelId": "h_pra_02", "name": "Augustine, a Luxury Collection", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 450, "rating": 4.8, "amenities": ["Monastery Setting", "Spa"] },
+      { "hotelId": "h_pra_03", "name": "Mosaic House", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "pricePerNight": 140, "rating": 4.5, "amenities": ["Eco Friendly", "Modern"] }
     ],
     "sightseeing": [
-      { "activityId": "s_pra_01", "title": "Charles Bridge Walk", "image": "https://images.unsplash.com/photo-1519677100203-ad0382b629e4", "price": 0, "duration": "1h", "type": "Cultural" }
+      { "activityId": "s_pra_01", "title": "Charles Bridge Morning Walk", "image": "https://images.unsplash.com/photo-1519677100203-ad0382b629e4", "price": 0, "duration": "1h", "type": "Cultural" },
+      { "activityId": "s_pra_02", "title": "Prague Castle Guided Tour", "image": "https://images.unsplash.com/photo-1541849546-216549ae216d", "price": 20, "duration": "3h", "type": "History" },
+      { "activityId": "s_pra_03", "title": "Astronomical Clock Show", "image": "https://images.unsplash.com/photo-1503917988258-f87a78e3c995", "price": 0, "duration": "0.5h", "type": "History" }
+    ],
+    "flights": [
+      { "flightId": "f_pra_01", "airline": "Czech Airlines", "day": "Tuesday", "price": 280, "time": "10:15" },
+      { "flightId": "f_pra_02", "airline": "Lufthansa", "day": "Thursday", "price": 250, "time": "16:30" },
+      { "flightId": "f_pra_03", "airline": "Ryanair", "day": "Friday", "price": 75, "time": "08:45" },
+      { "flightId": "f_pra_04", "airline": "SWISS", "day": "Saturday", "price": 290, "time": "13:20" },
+      { "flightId": "f_pra_05", "airline": "Austrian Air", "day": "Sunday", "price": 310, "time": "20:50" }
     ]
-  },
+  }
+  ,
   {
     "id": "venice_01",
     "name": "Venice",
@@ -347,13 +629,27 @@
     "overview": "A city built on water, known for gondolas and Renaissance architecture.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9",
-      "gallery": ["https://images.unsplash.com/photo-1514890547357-a9ee2887ad8e", "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1514890547357-a9ee2887ad8e",
+        "https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_ven_01", "name": "Gritti Palace", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Grand Canal View", "Luxury Spa"] }
+      { "hotelId": "h_ven_01", "name": "Gritti Palace", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Grand Canal View", "Luxury Spa"] },
+      { "hotelId": "h_ven_02", "name": "Hotel Danieli", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 850, "rating": 4.9, "amenities": ["Rooftop Dining", "Historic Palace"] },
+      { "hotelId": "h_ven_03", "name": "Ca' Segredo Hotel", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 400, "rating": 4.7, "amenities": ["Art Collection", "Canal Side"] }
     ],
     "sightseeing": [
-      { "activityId": "s_ven_01", "title": "Gondola Ride", "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9", "price": 80, "duration": "45m", "type": "Romantic" }
+      { "activityId": "s_ven_01", "title": "Private Gondola Ride", "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9", "price": 80, "duration": "45m", "type": "Romantic" },
+      { "activityId": "s_ven_02", "title": "St. Mark's Basilica Tour", "image": "https://images.unsplash.com/photo-1514890547357-a9ee2887ad8e", "price": 30, "duration": "2h", "type": "History" },
+      { "activityId": "s_ven_03", "title": "Murano Glass Blowing", "image": "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "price": 45, "duration": "3h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_ven_01", "airline": "ITA Airways", "day": "Monday", "price": 280, "time": "08:15" },
+      { "flightId": "f_ven_02", "airline": "Lufthansa", "day": "Wednesday", "price": 310, "time": "14:40" },
+      { "flightId": "f_ven_03", "airline": "EasyJet", "day": "Thursday", "price": 95, "time": "11:20" },
+      { "flightId": "f_ven_04", "airline": "Air France", "day": "Saturday", "price": 340, "time": "19:00" },
+      { "flightId": "f_ven_05", "airline": "British Airways", "day": "Sunday", "price": 390, "time": "07:30" }
     ]
   },
   {
@@ -364,13 +660,27 @@
     "overview": "Hilly, coastal capital known for Fado music and custard tarts.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
-      "gallery": ["https://images.unsplash.com/photo-1558117627-172316732c5d", "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1558117627-172316732c5d",
+        "https://images.unsplash.com/photo-1509356843151-3e7d96241e11"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_lis_01", "name": "Bairro Alto Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Rooftop Terrace", "Central"] }
+      { "hotelId": "h_lis_01", "name": "Bairro Alto Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Rooftop Terrace", "Central"] },
+      { "hotelId": "h_lis_02", "name": "Pousada de Lisboa", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 550, "rating": 4.9, "amenities": ["Luxury Spa", "River View"] },
+      { "hotelId": "h_lis_03", "name": "LX Boutique Hotel", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 220, "rating": 4.6, "amenities": ["Boutique Design", "Breakfast"] }
     ],
     "sightseeing": [
-      { "activityId": "s_lis_01", "title": "Tram 28 Tour", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "price": 10, "duration": "1h", "type": "Cultural" }
+      { "activityId": "s_lis_01", "title": "Tram 28 Historic Tour", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "price": 10, "duration": "1h", "type": "Cultural" },
+      { "activityId": "s_lis_02", "title": "Belem Tower Visit", "image": "https://images.unsplash.com/photo-1558117627-172316732c5d", "price": 15, "duration": "2h", "type": "History" },
+      { "activityId": "s_lis_03", "title": "Alfama Food Walk", "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c", "price": 65, "duration": "3h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_lis_01", "airline": "TAP Air Portugal", "day": "Tuesday", "price": 190, "time": "10:00" },
+      { "flightId": "f_lis_02", "airline": "Iberia", "day": "Thursday", "price": 210, "time": "16:15" },
+      { "flightId": "f_lis_03", "airline": "Ryanair", "day": "Friday", "price": 70, "time": "08:30" },
+      { "flightId": "f_lis_04", "airline": "TAP Air Portugal", "day": "Saturday", "price": 280, "time": "21:45" },
+      { "flightId": "f_lis_05", "airline": "Lufthansa", "day": "Sunday", "price": 310, "time": "14:20" }
     ]
   },
   {
@@ -381,13 +691,27 @@
     "overview": "Ancient Inca citadel set high in the Andes Mountains.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1509216242873-7786f446f465",
-      "gallery": ["https://images.unsplash.com/photo-1526392060635-9d6019884377", "https://images.unsplash.com/photo-1509216242873-7786f446f465"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1526392060635-9d6019884377",
+        "https://images.unsplash.com/photo-1580619171172-2757538d0f31"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_mp_01", "name": "Belmond Sanctuary Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1200, "rating": 5.0, "amenities": ["On-site Access", "Mountain View"] }
+      { "hotelId": "h_mp_01", "name": "Belmond Sanctuary Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1200, "rating": 5.0, "amenities": ["On-site Access", "Mountain View"] },
+      { "hotelId": "h_mp_02", "name": "Inkaterra Machu Picchu", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 650, "rating": 4.9, "amenities": ["Eco-Garden", "Organic Spa"] },
+      { "hotelId": "h_mp_03", "name": "Sumaq Machu Picchu", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 450, "rating": 4.8, "amenities": ["Cultural Rituals", "Fine Dining"] }
     ],
     "sightseeing": [
-      { "activityId": "s_mp_01", "title": "Inca Trail Hike", "image": "https://images.unsplash.com/photo-1509216242873-7786f446f465", "price": 500, "duration": "4 Days", "type": "Adventure" }
+      { "activityId": "s_mp_01", "title": "Inca Trail Hike", "image": "https://images.unsplash.com/photo-1509216242873-7786f446f465", "price": 500, "duration": "4 Days", "type": "Adventure" },
+      { "activityId": "s_mp_02", "title": "Sun Gate Sunrise Walk", "image": "https://images.unsplash.com/photo-1526392060635-9d6019884377", "price": 20, "duration": "3h", "type": "Adventure" },
+      { "activityId": "s_mp_03", "title": "Citadel Guided Tour", "image": "https://images.unsplash.com/photo-1580619171172-2757538d0f31", "price": 60, "duration": "4h", "type": "History" }
+    ],
+    "flights": [
+      { "flightId": "f_mp_01", "airline": "LATAM", "day": "Monday", "price": 450, "time": "07:30" },
+      { "flightId": "f_mp_02", "airline": "Sky Airline", "day": "Wednesday", "price": 380, "time": "12:15" },
+      { "flightId": "f_mp_03", "airline": "LATAM", "day": "Friday", "price": 520, "time": "18:40" },
+      { "flightId": "f_mp_04", "airline": "JetSmart", "day": "Saturday", "price": 310, "time": "10:10" },
+      { "flightId": "f_mp_05", "airline": "LATAM", "day": "Sunday", "price": 480, "time": "15:20" }
     ]
   },
   {
@@ -398,13 +722,27 @@
     "overview": "The Paris of the South, famous for tango and steak.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849",
-      "gallery": ["https://images.unsplash.com/photo-1544735716-392fe2489ffa", "https://images.unsplash.com/photo-1589909202802-8f4aadce1849"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1544735716-392fe2489ffa",
+        "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_ba_01", "name": "Alvear Palace", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Butler", "Historic Charm"] }
+      { "hotelId": "h_ba_01", "name": "Alvear Palace", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Butler", "Historic Charm"] },
+      { "hotelId": "h_ba_02", "name": "Faena Hotel", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 650, "rating": 4.8, "amenities": ["Avant-garde Design", "Pool Bar"] },
+      { "hotelId": "h_ba_03", "name": "Legado Mitico", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 210, "rating": 4.7, "amenities": ["Boutique", "Palermo Soho"] }
     ],
     "sightseeing": [
-      { "activityId": "s_ba_01", "title": "Tango Dinner Show", "image": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849", "price": 100, "duration": "4h", "type": "Cultural" }
+      { "activityId": "s_ba_01", "title": "Tango Dinner Show", "image": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849", "price": 100, "duration": "4h", "type": "Cultural" },
+      { "activityId": "s_ba_02", "title": "La Recoleta Cemetery Walk", "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa", "price": 10, "duration": "2h", "type": "History" },
+      { "activityId": "s_ba_03", "title": "Parrilla Food Tour", "image": "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a", "price": 85, "duration": "3h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_ba_01", "airline": "Aerolineas Argentinas", "day": "Tuesday", "price": 620, "time": "11:20" },
+      { "flightId": "f_ba_02", "airline": "LATAM", "day": "Thursday", "price": 580, "time": "16:45" },
+      { "flightId": "f_ba_03", "airline": "Flybondi", "day": "Friday", "price": 250, "time": "08:10" },
+      { "flightId": "f_ba_04", "airline": "Aerolineas Argentinas", "day": "Saturday", "price": 710, "time": "22:30" },
+      { "flightId": "f_ba_05", "airline": "Lufthansa", "day": "Sunday", "price": 1200, "time": "14:00" }
     ]
   },
   {
@@ -415,13 +753,27 @@
     "overview": "The trekking capital of Argentina, gateway to Mount Fitz Roy.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1517059224940-d4af9eec41b7",
-      "gallery": ["https://images.unsplash.com/photo-1490750967868-88aa4486c946", "https://images.unsplash.com/photo-1517059224940-d4af9eec41b7"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1490750967868-88aa4486c946",
+        "https://images.unsplash.com/photo-1527838832700-5059252407fa"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_pat_01", "name": "Explora El Chalten", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 800, "rating": 4.9, "amenities": ["Adventure Guides", "Spa"] }
+      { "hotelId": "h_pat_01", "name": "Explora El Chalten", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 800, "rating": 4.9, "amenities": ["Adventure Guides", "Spa"] },
+      { "hotelId": "h_pat_02", "name": "Destino Sur Hotel", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 320, "rating": 4.7, "amenities": ["Sauna", "Mountain Gear Shop"] },
+      { "hotelId": "h_pat_03", "name": "Hostel Rancho Grande", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 85, "rating": 4.5, "amenities": ["Social Bar", "Trekking Info"] }
     ],
     "sightseeing": [
-      { "activityId": "s_pat_01", "title": "Laguna de los Tres Hike", "image": "https://images.unsplash.com/photo-1517059224940-d4af9eec41b7", "price": 0, "duration": "8h", "type": "Adventure" }
+      { "activityId": "s_pat_01", "title": "Laguna de los Tres Hike", "image": "https://images.unsplash.com/photo-1517059224940-d4af9eec41b7", "price": 0, "duration": "8h", "type": "Adventure" },
+      { "activityId": "s_pat_02", "title": "Viedma Glacier Navigation", "image": "https://images.unsplash.com/photo-1490750967868-88aa4486c946", "price": 120, "duration": "5h", "type": "Nature" },
+      { "activityId": "s_pat_03", "title": "Chorrillo del Salto Fall", "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa", "price": 0, "duration": "2h", "type": "Nature" }
+    ],
+    "flights": [
+      { "flightId": "f_pat_01", "airline": "Aerolineas Argentinas", "day": "Monday", "price": 310, "time": "09:45" },
+      { "flightId": "f_pat_02", "airline": "LADE", "day": "Wednesday", "price": 240, "time": "13:20" },
+      { "flightId": "f_pat_03", "airline": "Aerolineas Argentinas", "day": "Friday", "price": 350, "time": "07:15" },
+      { "flightId": "f_pat_04", "airline": "Flybondi", "day": "Saturday", "price": 190, "time": "18:00" },
+      { "flightId": "f_pat_05", "airline": "Aerolineas Argentinas", "day": "Sunday", "price": 330, "time": "11:30" }
     ]
   },
   {
@@ -432,13 +784,27 @@
     "overview": "Famed for the Great Migration and world-class safaris.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1516426122078-c23e76319801",
-      "gallery": ["https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "https://images.unsplash.com/photo-1516426122078-c23e76319801"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd",
+        "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_ser_01", "name": "Four Seasons Safari Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1500, "rating": 5.0, "amenities": ["Waterhole View", "Infinity Pool"] }
+      { "hotelId": "h_ser_01", "name": "Four Seasons Safari Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1500, "rating": 5.0, "amenities": ["Waterhole View", "Infinity Pool"] },
+      { "hotelId": "h_ser_02", "name": "Singita Sasakwa Lodge", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 2200, "rating": 5.0, "amenities": ["Vintage Manor", "Wine Tasting"] },
+      { "hotelId": "h_ser_03", "name": "Serengeti Serena Lodge", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 600, "rating": 4.7, "amenities": ["Traditional Design", "Outdoor Bar"] }
     ],
     "sightseeing": [
-      { "activityId": "s_ser_01", "title": "Sunrise Balloon Safari", "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801", "price": 600, "duration": "4h", "type": "Adventure" }
+      { "activityId": "s_ser_01", "title": "Sunrise Balloon Safari", "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801", "price": 600, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_ser_02", "title": "Great Migration Game Drive", "image": "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "price": 250, "duration": "Full Day", "type": "Wildlife" },
+      { "activityId": "s_ser_03", "title": "Maasai Village Visit", "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be", "price": 50, "duration": "3h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_ser_01", "airline": "Precision Air", "day": "Tuesday", "price": 280, "time": "08:00" },
+      { "flightId": "f_ser_02", "airline": "Coastal Aviation", "day": "Thursday", "price": 320, "time": "11:45" },
+      { "flightId": "f_ser_03", "airline": "Air Tanzania", "day": "Friday", "price": 210, "time": "15:20" },
+      { "flightId": "f_ser_04", "airline": "Precision Air", "day": "Saturday", "price": 295, "time": "07:30" },
+      { "flightId": "f_ser_05", "airline": "Coastal Aviation", "day": "Sunday", "price": 315, "time": "13:00" }
     ]
   },
   {
@@ -449,13 +815,27 @@
     "overview": "A sensory feast of souks, palaces, and desert landscapes.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1597212618440-806262de4fe1",
-      "gallery": ["https://images.unsplash.com/photo-1520939817395-0f2dee99f941", "https://images.unsplash.com/photo-1597212618440-806262de4fe1"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1520939817395-0f2dee99f941",
+        "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_mar_01", "name": "La Mamounia", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 850, "rating": 5.0, "amenities": ["Royal Gardens", "Luxury Spa"] }
+      { "hotelId": "h_mar_01", "name": "La Mamounia", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 850, "rating": 5.0, "amenities": ["Royal Gardens", "Luxury Spa"] },
+      { "hotelId": "h_mar_02", "name": "Royal Mansour", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 1400, "rating": 5.0, "amenities": ["Private Riad", "Fine Dining"] },
+      { "hotelId": "h_mar_03", "name": "El Fenn", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 450, "rating": 4.8, "amenities": ["Rooftop Bar", "Modern Art"] }
     ],
     "sightseeing": [
-      { "activityId": "s_mar_01", "title": "Jardin Majorelle Tour", "image": "https://images.unsplash.com/photo-1597212618440-806262de4fe1", "price": 15, "duration": "2h", "type": "Leisure" }
+      { "activityId": "s_mar_01", "title": "Jardin Majorelle Tour", "image": "https://images.unsplash.com/photo-1597212618440-806262de4fe1", "price": 15, "duration": "2h", "type": "Leisure" },
+      { "activityId": "s_mar_02", "title": "Bahia Palace Guided Walk", "image": "https://images.unsplash.com/photo-1520939817395-0f2dee99f941", "price": 10, "duration": "2h", "type": "History" },
+      { "activityId": "s_mar_03", "title": "Agafay Desert Dinner", "image": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57", "price": 120, "duration": "5h", "type": "Leisure" }
+    ],
+    "flights": [
+      { "flightId": "f_mar_01", "airline": "Royal Air Maroc", "day": "Monday", "price": 350, "time": "10:15" },
+      { "flightId": "f_mar_02", "airline": "EasyJet", "day": "Wednesday", "price": 110, "time": "16:40" },
+      { "flightId": "f_mar_03", "airline": "Ryanair", "day": "Friday", "price": 85, "time": "08:30" },
+      { "flightId": "f_mar_04", "airline": "Royal Air Maroc", "day": "Saturday", "price": 420, "time": "20:00" },
+      { "flightId": "f_mar_05", "airline": "Air France", "day": "Sunday", "price": 380, "time": "14:15" }
     ]
   },
   {
@@ -466,13 +846,27 @@
     "overview": "The Valley Isle, known for pristine beaches and volcanic peaks.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d",
-      "gallery": ["https://images.unsplash.com/photo-1510414842594-a61c69b5ae57", "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57",
+        "https://images.unsplash.com/photo-1525625239513-99732289947d"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_mau_01", "name": "Four Seasons Maui", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 4.9, "amenities": ["Oceanfront", "Kids Club"] }
+      { "hotelId": "h_mau_01", "name": "Four Seasons Maui", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 4.9, "amenities": ["Oceanfront", "Kids Club"] },
+      { "hotelId": "h_mau_02", "name": "Andaz Maui", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 850, "rating": 4.8, "amenities": ["Tiered Pools", "Farm-to-Table"] },
+      { "hotelId": "h_mau_03", "name": "The Westin Maui", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 500, "rating": 4.7, "amenities": ["Water Slides", "Luau"] }
     ],
     "sightseeing": [
-      { "activityId": "s_mau_01", "title": "Road to Hana Tour", "image": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d", "price": 180, "duration": "Full Day", "type": "Adventure" }
+      { "activityId": "s_mau_01", "title": "Road to Hana Tour", "image": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d", "price": 180, "duration": "Full Day", "type": "Adventure" },
+      { "activityId": "s_mau_02", "title": "Haleakala Sunrise", "image": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57", "price": 40, "duration": "4h", "type": "Nature" },
+      { "activityId": "s_mau_03", "title": "Snorkeling at Molokini", "image": "https://images.unsplash.com/photo-1525625239513-99732289947d", "price": 150, "duration": "5h", "type": "Adventure" }
+    ],
+    "flights": [
+      { "flightId": "f_mau_01", "airline": "Hawaiian Airlines", "day": "Tuesday", "price": 420, "time": "09:00" },
+      { "flightId": "f_mau_02", "airline": "United", "day": "Thursday", "price": 550, "time": "14:15" },
+      { "flightId": "f_mau_03", "airline": "Southwest", "day": "Friday", "price": 280, "time": "11:30" },
+      { "flightId": "f_mau_04", "airline": "Delta", "day": "Saturday", "price": 490, "time": "07:45" },
+      { "flightId": "f_mau_05", "airline": "Hawaiian Airlines", "day": "Sunday", "price": 450, "time": "18:20" }
     ]
   },
   {
@@ -483,13 +877,27 @@
     "overview": "The entertainment capital of the world, famous for casinos and nightlife.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1581351123004-757df051db8e",
-      "gallery": ["https://images.unsplash.com/photo-1541336032412-2048a678540d", "https://images.unsplash.com/photo-1581351123004-757df051db8e"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1541336032412-2048a678540d",
+        "https://images.unsplash.com/photo-1534430480872-3498386e7a56"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_lv_01", "name": "Bellagio", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 350, "rating": 4.8, "amenities": ["Fountain View", "Casino"] }
+      { "hotelId": "h_lv_01", "name": "Bellagio", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 350, "rating": 4.8, "amenities": ["Fountain View", "Casino"] },
+      { "hotelId": "h_lv_02", "name": "Wynn Las Vegas", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 450, "rating": 4.9, "amenities": ["Luxury Buffet", "Golf Club"] },
+      { "hotelId": "h_lv_03", "name": "The Cosmopolitan", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 380, "rating": 4.7, "amenities": ["Terrace View", "Nightclub"] }
     ],
     "sightseeing": [
-      { "activityId": "s_lv_01", "title": "Grand Canyon Helicopter", "image": "https://images.unsplash.com/photo-1581351123004-757df051db8e", "price": 450, "duration": "4h", "type": "Adventure" }
+      { "activityId": "s_lv_01", "title": "Grand Canyon Helicopter", "image": "https://images.unsplash.com/photo-1581351123004-757df051db8e", "price": 450, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_lv_02", "title": "Cirque du Soleil 'O'", "image": "https://images.unsplash.com/photo-1541336032412-2048a678540d", "price": 180, "duration": "2h", "type": "Cultural" },
+      { "activityId": "s_lv_03", "title": "The High Roller", "image": "https://images.unsplash.com/photo-1534430480872-3498386e7a56", "price": 35, "duration": "1h", "type": "Leisure" }
+    ],
+    "flights": [
+      { "flightId": "f_lv_01", "airline": "Southwest", "day": "Monday", "price": 120, "time": "08:30" },
+      { "flightId": "f_lv_02", "airline": "American Airlines", "day": "Wednesday", "price": 210, "time": "15:45" },
+      { "flightId": "f_lv_03", "airline": "Delta", "day": "Friday", "price": 280, "time": "19:00" },
+      { "flightId": "f_lv_04", "airline": "Spirit", "day": "Saturday", "price": 85, "time": "11:20" },
+      { "flightId": "f_lv_05", "airline": "United", "day": "Sunday", "price": 230, "time": "14:15" }
     ]
   },
   {
@@ -500,15 +908,30 @@
     "overview": "A coastal city where mountains meet modern high-rises.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1559511260-66a654ae982a",
-      "gallery": ["https://images.unsplash.com/photo-1522108702419-f90b4356401f", "https://images.unsplash.com/photo-1559511260-66a654ae982a"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1522108702419-f90b4356401f",
+        "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_van_01", "name": "Fairmont Pacific Rim", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.8, "amenities": ["Harbor View", "Spa"] }
+      { "hotelId": "h_van_01", "name": "Fairmont Pacific Rim", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.8, "amenities": ["Harbor View", "Spa"] },
+      { "hotelId": "h_van_02", "name": "Rosewood Hotel Georgia", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 520, "rating": 4.9, "amenities": ["Historic", "Indoor Pool"] },
+      { "hotelId": "h_van_03", "name": "The Burrard", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 180, "rating": 4.4, "amenities": ["Retro Design", "Central"] }
     ],
     "sightseeing": [
-      { "activityId": "s_van_01", "title": "Capilano Suspension Bridge", "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a", "price": 60, "duration": "3h", "type": "Leisure" }
+      { "activityId": "s_van_01", "title": "Capilano Suspension Bridge", "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a", "price": 60, "duration": "3h", "type": "Leisure" },
+      { "activityId": "s_van_02", "title": "Stanley Park Bike Tour", "image": "https://images.unsplash.com/photo-1522108702419-f90b4356401f", "price": 45, "duration": "2h", "type": "Nature" },
+      { "activityId": "s_van_03", "title": "Whale Watching Cruise", "image": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57", "price": 140, "duration": "4h", "type": "Adventure" }
+    ],
+    "flights": [
+      { "flightId": "f_van_01", "airline": "Air Canada", "day": "Tuesday", "price": 310, "time": "10:00" },
+      { "flightId": "f_van_02", "airline": "WestJet", "day": "Thursday", "price": 280, "time": "14:50" },
+      { "flightId": "f_van_03", "airline": "Air Canada", "day": "Friday", "price": 350, "time": "19:30" },
+      { "flightId": "f_van_04", "airline": "Flair Airlines", "day": "Saturday", "price": 120, "time": "08:15" },
+      { "flightId": "f_van_05", "airline": "WestJet", "day": "Sunday", "price": 295, "time": "21:00" }
     ]
-  },
+  }
+  ,
   {
     "id": "mexicocity_01",
     "name": "Mexico City",
@@ -517,13 +940,27 @@
     "overview": "A high-altitude capital known for its Aztec ruins and vibrant food.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a",
-      "gallery": ["https://images.unsplash.com/photo-1512813195391-454728c61405", "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396",
+        "https://images.unsplash.com/photo-1512813195391-454728c61405"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_mex_01", "name": "Four Seasons Mexico City", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.9, "amenities": ["Courtyard Pool", "Fine Dining"] }
+      { "hotelId": "h_mex_01", "name": "Four Seasons Mexico City", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.9, "amenities": ["Courtyard Pool", "Fine Dining"] },
+      { "hotelId": "h_mex_02", "name": "Casa Polanco", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 650, "rating": 4.9, "amenities": ["Boutique Luxury", "Park View"] },
+      { "hotelId": "h_mex_03", "name": "Downtown Mexico", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 220, "rating": 4.5, "amenities": ["Rooftop Pool", "Historic Style"] }
     ],
     "sightseeing": [
-      { "activityId": "s_mex_01", "title": "Teotihuacan Pyramids", "image": "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a", "price": 80, "duration": "6h", "type": "History" }
+      { "activityId": "s_mex_01", "title": "Teotihuacan Hot Air Balloon", "image": "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a", "price": 160, "duration": "5h", "type": "Adventure" },
+      { "activityId": "s_mex_02", "title": "Frida Kahlo Museum Entry", "image": "https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396", "price": 45, "duration": "2h", "type": "Cultural" },
+      { "activityId": "s_mex_03", "title": "Xochimilco Boat Party", "image": "https://images.unsplash.com/photo-1512813195391-454728c61405", "price": 55, "duration": "3h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_mex_01", "airline": "Aeromexico", "day": "Monday", "price": 320, "time": "08:30" },
+      { "flightId": "f_mex_02", "airline": "Volaris", "day": "Wednesday", "price": 150, "time": "14:15" },
+      { "flightId": "f_mex_03", "airline": "Delta", "day": "Friday", "price": 410, "time": "19:00" },
+      { "flightId": "f_mex_04", "airline": "Aeromexico", "day": "Saturday", "price": 380, "time": "10:00" },
+      { "flightId": "f_mex_05", "airline": "United", "day": "Sunday", "price": 440, "time": "06:45" }
     ]
   },
   {
@@ -534,13 +971,27 @@
     "overview": "The adventure capital, perfect for skiing and bungee jumping.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1589802829985-817e511f1b92",
-      "gallery": ["https://images.unsplash.com/photo-1507699622108-4be3abd695ad", "https://images.unsplash.com/photo-1589802829985-817e511f1b92"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1507699622108-4be3abd695ad",
+        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_qt_01", "name": "Matakauri Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1000, "rating": 5.0, "amenities": ["Lake View", "Luxury Cabin"] }
+      { "hotelId": "h_qt_01", "name": "Matakauri Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1000, "rating": 5.0, "amenities": ["Lake View", "Luxury Cabin"] },
+      { "hotelId": "h_qt_02", "name": "The Rees Hotel", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 380, "rating": 4.8, "amenities": ["Wine Cellar", "Private Jetty"] },
+      { "hotelId": "h_qt_03", "name": "QT Queenstown", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 320, "rating": 4.7, "amenities": ["Lake View", "Design Focused"] }
     ],
     "sightseeing": [
-      { "activityId": "s_qt_01", "title": "Nevis Bungee Jump", "image": "https://images.unsplash.com/photo-1589802829985-817e511f1b92", "price": 275, "duration": "4h", "type": "Adventure" }
+      { "activityId": "s_qt_01", "title": "Nevis Bungee Jump", "image": "https://images.unsplash.com/photo-1589802829985-817e511f1b92", "price": 275, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_qt_02", "title": "Milford Sound Flight", "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad", "price": 450, "duration": "Half Day", "type": "Nature" },
+      { "activityId": "s_qt_03", "title": "Shotover Jet Boat", "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800", "price": 120, "duration": "1h", "type": "Adventure" }
+    ],
+    "flights": [
+      { "flightId": "f_qt_01", "airline": "Air New Zealand", "day": "Tuesday", "price": 250, "time": "09:15" },
+      { "flightId": "f_qt_02", "airline": "Jetstar", "day": "Thursday", "price": 140, "time": "13:30" },
+      { "flightId": "f_qt_03", "airline": "Air New Zealand", "day": "Friday", "price": 290, "time": "18:00" },
+      { "flightId": "f_qt_04", "airline": "Qantas", "day": "Saturday", "price": 350, "time": "11:20" },
+      { "flightId": "f_qt_05", "airline": "Air New Zealand", "day": "Sunday", "price": 270, "time": "07:45" }
     ]
   },
   {
@@ -551,13 +1002,27 @@
     "overview": "Thailand's largest island, with busy beaches and nightlife.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3",
-      "gallery": ["https://images.unsplash.com/photo-1528181304800-2f1738b24a61", "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1528181304800-2f1738b24a61",
+        "https://images.unsplash.com/photo-1537996194471-e657df975ab4"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_phu_01", "name": "Amanpuri", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 950, "rating": 4.9, "amenities": ["Private Beach", "Thai Pavilions"] }
+      { "hotelId": "h_phu_01", "name": "Amanpuri", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 950, "rating": 4.9, "amenities": ["Private Beach", "Thai Pavilions"] },
+      { "hotelId": "h_phu_02", "name": "The Nai Harn Resort", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 320, "rating": 4.8, "amenities": ["Ocean View", "Wellness Spa"] },
+      { "hotelId": "h_phu_03", "name": "COMO Point Yamu", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 400, "rating": 4.7, "amenities": ["Infinity Pool", "Modern Design"] }
     ],
     "sightseeing": [
-      { "activityId": "s_phu_01", "title": "Phi Phi Island Day Trip", "image": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3", "price": 100, "duration": "Full Day", "type": "Leisure" }
+      { "activityId": "s_phu_01", "title": "Phi Phi Island Speedboat", "image": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3", "price": 100, "duration": "Full Day", "type": "Leisure" },
+      { "activityId": "s_phu_02", "title": "Phang Nga Bay Kayaking", "image": "https://images.unsplash.com/photo-1528181304800-2f1738b24a61", "price": 85, "duration": "6h", "type": "Adventure" },
+      { "activityId": "s_phu_03", "title": "Old Phuket Town Walk", "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4", "price": 0, "duration": "2h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_phu_01", "airline": "Thai Airways", "day": "Monday", "price": 180, "time": "10:30" },
+      { "flightId": "f_phu_02", "airline": "AirAsia", "day": "Wednesday", "price": 90, "time": "14:15" },
+      { "flightId": "f_phu_03", "airline": "Thai Airways", "day": "Friday", "price": 210, "time": "19:00" },
+      { "flightId": "f_phu_04", "airline": "Bangkok Airways", "day": "Saturday", "price": 150, "time": "08:45" },
+      { "flightId": "f_phu_05", "airline": "Scoot", "day": "Sunday", "price": 110, "time": "22:00" }
     ]
   },
   {
@@ -568,13 +1033,27 @@
     "overview": "A city-state known for its gardens and futuristic architecture.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1525625239513-99732289947d",
-      "gallery": ["https://images.unsplash.com/photo-1565967511849-76a60a516170", "https://images.unsplash.com/photo-1525625239513-99732289947d"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1565967511849-76a60a516170",
+        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_sin_01", "name": "Marina Bay Sands", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.8, "amenities": ["Infinity Pool", "Casino"] }
+      { "hotelId": "h_sin_01", "name": "Marina Bay Sands", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.8, "amenities": ["Infinity Pool", "Casino"] },
+      { "hotelId": "h_sin_02", "name": "Raffles Hotel Singapore", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 950, "rating": 5.0, "amenities": ["Heritage Suite", "Butler"] },
+      { "hotelId": "h_sin_03", "name": "Parkroyal Collection Pickering", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 350, "rating": 4.7, "amenities": ["Garden-in-a-Hotel", "Eco Pool"] }
     ],
     "sightseeing": [
-      { "activityId": "s_sin_01", "title": "Gardens by the Bay", "image": "https://images.unsplash.com/photo-1525625239513-99732289947d", "price": 20, "duration": "3h", "type": "Leisure" }
+      { "activityId": "s_sin_01", "title": "Gardens by the Bay", "image": "https://images.unsplash.com/photo-1525625239513-99732289947d", "price": 25, "duration": "3h", "type": "Leisure" },
+      { "activityId": "s_sin_02", "title": "Sentosa Island Adventure", "image": "https://images.unsplash.com/photo-1565967511849-76a60a516170", "price": 80, "duration": "Full Day", "type": "Family" },
+      { "activityId": "s_sin_03", "title": "Maxwell Food Centre Walk", "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c", "price": 0, "duration": "2h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_sin_01", "airline": "Singapore Airlines", "day": "Tuesday", "price": 450, "time": "09:00" },
+      { "flightId": "f_sin_02", "airline": "Scoot", "day": "Thursday", "price": 180, "time": "14:50" },
+      { "flightId": "f_sin_03", "airline": "Singapore Airlines", "day": "Friday", "price": 520, "time": "20:30" },
+      { "flightId": "f_sin_04", "airline": "Jetstar", "day": "Saturday", "price": 160, "time": "07:15" },
+      { "flightId": "f_sin_05", "airline": "Singapore Airlines", "day": "Sunday", "price": 480, "time": "11:10" }
     ]
   },
   {
@@ -585,13 +1064,27 @@
     "overview": "Hyper-modern city with deep historic roots and vibrant markets.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc",
-      "gallery": ["https://images.unsplash.com/photo-1546877625-cb8c71916608", "https://images.unsplash.com/photo-1538481199705-c710c4e965fc"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1546877625-cb8c71916608",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_seo_01", "name": "The Shilla Seoul", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Spa", "Mountain View"] }
+      { "hotelId": "h_seo_01", "name": "The Shilla Seoul", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Spa", "Mountain View"] },
+      { "hotelId": "h_seo_02", "name": "Four Seasons Seoul", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 550, "rating": 4.9, "amenities": ["City View", "Indoor Golf"] },
+      { "hotelId": "h_seo_03", "name": "Josun Palace Gangnam", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 480, "rating": 4.8, "amenities": ["Luxury Decor", "Art Collection"] }
     ],
     "sightseeing": [
-      { "activityId": "s_seo_01", "title": "Gyeongbokgung Palace", "image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc", "price": 5, "duration": "2h", "type": "Cultural" }
+      { "activityId": "s_seo_01", "title": "Gyeongbokgung Palace", "image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc", "price": 5, "duration": "2h", "type": "Cultural" },
+      { "activityId": "s_seo_02", "title": "N Seoul Tower", "image": "https://images.unsplash.com/photo-1546877625-cb8c71916608", "price": 15, "duration": "3h", "type": "Modern" },
+      { "activityId": "s_seo_03", "title": "Myeongdong Food Street", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "price": 0, "duration": "2h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_seo_01", "airline": "Korean Air", "day": "Monday", "price": 500, "time": "08:15" },
+      { "flightId": "f_seo_02", "airline": "Asiana Airlines", "day": "Wednesday", "price": 480, "time": "13:30" },
+      { "flightId": "f_seo_03", "airline": "Korean Air", "day": "Friday", "price": 610, "time": "19:00" },
+      { "flightId": "f_seo_04", "airline": "Jin Air", "day": "Saturday", "price": 310, "time": "10:45" },
+      { "flightId": "f_seo_05", "airline": "Korean Air", "day": "Sunday", "price": 550, "time": "21:30" }
     ]
   },
   {
@@ -602,13 +1095,27 @@
     "overview": "Gateway to the majestic Angkor Wat temple complex.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1500048993953-d23a436266cf",
-      "gallery": ["https://images.unsplash.com/photo-1569430469288-9f37c356b9c9", "https://images.unsplash.com/photo-1500048993953-d23a436266cf"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1569430469288-9f37c356b9c9",
+        "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_sr_01", "name": "Amansara", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Private Plunge Pool", "Cultural Guides"] }
+      { "hotelId": "h_sr_01", "name": "Amansara", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Private Pool", "Guides"] },
+      { "hotelId": "h_sr_02", "name": "Angkor Grace Wellness", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 250, "rating": 4.8, "amenities": ["Yoga", "Meditation Garden"] },
+      { "hotelId": "h_sr_03", "name": "Sokkhak Boutique Resort", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 150, "rating": 4.7, "amenities": ["Tropical Garden", "Pool"] }
     ],
     "sightseeing": [
-      { "activityId": "s_sr_01", "title": "Angkor Wat Sunrise Tour", "image": "https://images.unsplash.com/photo-1500048993953-d23a436266cf", "price": 40, "duration": "4h", "type": "History" }
+      { "activityId": "s_sr_01", "title": "Angkor Wat Sunrise Tour", "image": "https://images.unsplash.com/photo-1500048993953-d23a436266cf", "price": 40, "duration": "4h", "type": "History" },
+      { "activityId": "s_sr_02", "title": "Ta Prohm Jungle Temple", "image": "https://images.unsplash.com/photo-1569430469288-9f37c356b9c9", "price": 30, "duration": "3h", "type": "History" },
+      { "activityId": "s_sr_03", "title": "Tonle Sap Floating Village", "image": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb", "price": 25, "duration": "5h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_sr_01", "airline": "Cambodia Angkor Air", "day": "Tuesday", "price": 140, "time": "09:30" },
+      { "flightId": "f_sr_02", "airline": "Vietnam Airlines", "day": "Thursday", "price": 190, "time": "13:15" },
+      { "flightId": "f_sr_03", "airline": "Thai AirAsia", "day": "Friday", "price": 85, "time": "16:00" },
+      { "flightId": "f_sr_04", "airline": "Bangkok Airways", "day": "Saturday", "price": 210, "time": "08:10" },
+      { "flightId": "f_sr_05", "airline": "Cambodia Angkor Air", "day": "Sunday", "price": 160, "time": "18:45" }
     ]
   },
   {
@@ -619,13 +1126,27 @@
     "overview": "Ancient city carved into red sandstone cliffs.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1579606035222-19e083c27632",
-      "gallery": ["https://images.unsplash.com/photo-1579606035222-19e083c27632", "https://images.unsplash.com/photo-1579606035222-19e083c27632"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1549918837-33fb3940c83e",
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_pet_01", "name": "Old Village Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 200, "rating": 4.7, "amenities": ["Historic Setting", "Traditional Food"] }
+      { "hotelId": "h_pet_01", "name": "Old Village Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 200, "rating": 4.7, "amenities": ["Historic Setting", "Pool"] },
+      { "hotelId": "h_pet_02", "name": "Movenpick Resort Petra", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 350, "rating": 4.8, "amenities": ["Entrance Location", "Hammams"] },
+      { "hotelId": "h_pet_03", "name": "Petra Moon Luxury", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 250, "rating": 4.6, "amenities": ["Rooftop View", "Traditional Food"] }
     ],
     "sightseeing": [
-      { "activityId": "s_pet_01", "title": "The Treasury Walk", "image": "https://images.unsplash.com/photo-1579606035222-19e083c27632", "price": 70, "duration": "4h", "type": "History" }
+      { "activityId": "s_pet_01", "title": "The Treasury Walk", "image": "https://images.unsplash.com/photo-1579606035222-19e083c27632", "price": 70, "duration": "4h", "type": "History" },
+      { "activityId": "s_pet_02", "title": "Petra by Night", "image": "https://images.unsplash.com/photo-1549918837-33fb3940c83e", "price": 25, "duration": "2h", "type": "Romantic" },
+      { "activityId": "s_pet_03", "title": "Ad Deir Monastery Hike", "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470", "price": 0, "duration": "3h", "type": "Adventure" }
+    ],
+    "flights": [
+      { "flightId": "f_pet_01", "airline": "Royal Jordanian", "day": "Monday", "price": 420, "time": "10:15" },
+      { "flightId": "f_pet_02", "airline": "Turkish Airlines", "day": "Wednesday", "price": 380, "time": "15:30" },
+      { "flightId": "f_pet_03", "airline": "Royal Jordanian", "day": "Friday", "price": 450, "time": "08:45" },
+      { "flightId": "f_pet_04", "airline": "Emirates", "day": "Saturday", "price": 550, "time": "22:00" },
+      { "flightId": "f_pet_05", "airline": "Lufthansa", "day": "Sunday", "price": 490, "time": "13:20" }
     ]
   },
   {
@@ -636,13 +1157,27 @@
     "overview": "Home to the Taj Mahal, the world's greatest monument to love.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1564507592333-c60657ece523",
-      "gallery": ["https://images.unsplash.com/photo-1548013146-72479768bbaa", "https://images.unsplash.com/photo-1564507592333-c60657ece523"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1548013146-72479768bbaa",
+        "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_agr_01", "name": "Oberoi Amarvilas", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 5.0, "amenities": ["Taj Mahal View", "Butler"] }
+      { "hotelId": "h_agr_01", "name": "Oberoi Amarvilas", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 5.0, "amenities": ["Taj Mahal View", "Butler"] },
+      { "hotelId": "h_agr_02", "name": "ITC Mughal", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 250, "rating": 4.8, "amenities": ["Royal Spa", "Garden"] },
+      { "hotelId": "h_agr_03", "name": "Tajview Agra", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 150, "rating": 4.6, "amenities": ["Rooftop Cafe", "Central"] }
     ],
     "sightseeing": [
-      { "activityId": "s_agr_01", "title": "Taj Mahal Sunrise", "image": "https://images.unsplash.com/photo-1564507592333-c60657ece523", "price": 15, "duration": "3h", "type": "History" }
+      { "activityId": "s_agr_01", "title": "Taj Mahal Sunrise", "image": "https://images.unsplash.com/photo-1564507592333-c60657ece523", "price": 15, "duration": "3h", "type": "History" },
+      { "activityId": "s_agr_02", "title": "Agra Fort Guided Walk", "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa", "price": 10, "duration": "2h", "type": "History" },
+      { "activityId": "s_agr_03", "title": "Fatehpur Sikri Day Trip", "image": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57", "price": 25, "duration": "5h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_agr_01", "airline": "IndiGo", "day": "Tuesday", "price": 80, "time": "09:00" },
+      { "flightId": "f_agr_02", "airline": "Air India", "day": "Thursday", "price": 95, "time": "14:20" },
+      { "flightId": "f_agr_03", "airline": "IndiGo", "day": "Friday", "price": 110, "time": "18:30" },
+      { "flightId": "f_agr_04", "airline": "Vistara", "day": "Saturday", "price": 130, "time": "07:45" },
+      { "flightId": "f_agr_05", "airline": "IndiGo", "day": "Sunday", "price": 90, "time": "21:00" }
     ]
   },
   {
@@ -653,13 +1188,27 @@
     "overview": "Unique cave dwellings and famous hot air balloon skies.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1527838832700-5059252407fa",
-      "gallery": ["https://images.unsplash.com/photo-1550747528-cdb8677c8141", "https://images.unsplash.com/photo-1527838832700-5059252407fa"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1550747528-cdb8677c8141",
+        "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_cap_01", "name": "Museum Hotel Cave", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Cave Suites", "Infinity Pool"] }
+      { "hotelId": "h_cap_01", "name": "Museum Hotel Cave", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Cave Suites", "Infinity Pool"] },
+      { "hotelId": "h_cap_02", "name": "Dere Suites", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 320, "rating": 4.8, "amenities": ["Terrace View", "Historic Decor"] },
+      { "hotelId": "h_cap_03", "name": "Meleklerevi Cave Hotel", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 180, "rating": 4.6, "amenities": ["Traditional Charm", "Garden"] }
     ],
     "sightseeing": [
-      { "activityId": "s_cap_01", "title": "Hot Air Balloon Flight", "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa", "price": 250, "duration": "4h", "type": "Adventure" }
+      { "activityId": "s_cap_01", "title": "Hot Air Balloon Flight", "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa", "price": 250, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_cap_02", "title": "Goreme Open Air Museum", "image": "https://images.unsplash.com/photo-1550747528-cdb8677c8141", "price": 20, "duration": "3h", "type": "History" },
+      { "activityId": "s_cap_03", "title": "Pasabagi Valley Walk", "image": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4", "price": 0, "duration": "2h", "type": "Nature" }
+    ],
+    "flights": [
+      { "flightId": "f_cap_01", "airline": "Turkish Airlines", "day": "Monday", "price": 120, "time": "08:15" },
+      { "flightId": "f_cap_02", "airline": "Pegasus", "day": "Wednesday", "price": 80, "time": "14:40" },
+      { "flightId": "f_cap_03", "airline": "Turkish Airlines", "day": "Friday", "price": 150, "time": "19:20" },
+      { "flightId": "f_cap_04", "airline": "Pegasus", "day": "Saturday", "price": 95, "time": "07:30" },
+      { "flightId": "f_cap_05", "airline": "Turkish Airlines", "day": "Sunday", "price": 135, "time": "21:45" }
     ]
   },
   {
@@ -670,15 +1219,341 @@
     "overview": "Towering limestone pillars and emerald waters.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592",
-      "gallery": ["https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "https://images.unsplash.com/photo-1528127269322-539801943592"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd",
+        "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_hlb_01", "name": "Paradise Cruise", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 350, "rating": 4.8, "amenities": ["Luxury Cabin", "On-deck Dining"] }
+      { "hotelId": "h_hlb_01", "name": "Paradise Peak Cruise", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.9, "amenities": ["Private Balcony", "Butler"] },
+      { "hotelId": "h_hlb_02", "name": "Grand Pioneers Cruise", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 400, "rating": 4.8, "amenities": ["Infinity Pool", "Fine Dining"] },
+      { "hotelId": "h_hlb_03", "name": "Heritage Line Ginger", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 380, "rating": 4.7, "amenities": ["Wellness Focus", "Sunset Bar"] }
     ],
     "sightseeing": [
-      { "activityId": "s_hlb_01", "title": "Bay Kayaking", "image": "https://images.unsplash.com/photo-1528127269322-539801943592", "price": 40, "duration": "2h", "type": "Adventure" }
+      { "activityId": "s_hlb_01", "title": "Emerald Bay Kayaking", "image": "https://images.unsplash.com/photo-1528127269322-539801943592", "price": 45, "duration": "2h", "type": "Adventure" },
+      { "activityId": "s_hlb_02", "title": "Sung Sot Cave Tour", "image": "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "price": 0, "duration": "1.5h", "type": "History" },
+      { "activityId": "s_hlb_03", "title": "Ti Top Island Hike", "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad", "price": 0, "duration": "2h", "type": "Nature" }
+    ],
+    "flights": [
+      { "flightId": "f_hlb_01", "airline": "Vietnam Airlines", "day": "Tuesday", "price": 110, "time": "09:45" },
+      { "flightId": "f_hlb_02", "airline": "VietJet Air", "day": "Thursday", "price": 60, "time": "14:10" },
+      { "flightId": "f_hlb_03", "airline": "Vietnam Airlines", "day": "Friday", "price": 130, "time": "18:20" },
+      { "flightId": "f_hlb_04", "airline": "VietJet Air", "day": "Saturday", "price": 75, "time": "08:30" },
+      { "flightId": "f_hlb_05", "airline": "Bamboo Airways", "day": "Sunday", "price": 95, "time": "21:15" }
+    ]
+  }
+  ,
+  {
+    "id": "mexicocity_01",
+    "name": "Mexico City",
+    "country": "Mexico",
+    "tags": ["Culture", "Food", "History"],
+    "overview": "A high-altitude capital known for its Aztec ruins and vibrant food.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1512813195391-454728c61405",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396",
+        "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_mex_01", "name": "Four Seasons Mexico City", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.9, "amenities": ["Courtyard Pool", "Fine Dining"] },
+      { "hotelId": "h_mex_02", "name": "The St. Regis Mexico City", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 550, "rating": 4.8, "amenities": ["Butler Service", "City View"] },
+      { "hotelId": "h_mex_03", "name": "Andaz Condesa", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 320, "rating": 4.7, "amenities": ["Rooftop Bar", "Pet Friendly"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_mex_01", "title": "Teotihuacan Pyramids", "image": "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a", "price": 80, "duration": "6h", "type": "History" },
+      { "activityId": "s_mex_02", "title": "Frida Kahlo Museum", "image": "https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396", "price": 25, "duration": "2h", "type": "Art" },
+      { "activityId": "s_mex_03", "title": "Polanco Food Tour", "image": "https://images.unsplash.com/photo-1512813195391-454728c61405", "price": 95, "duration": "3h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_mex_01", "airline": "Aeromexico", "day": "Monday", "price": 380, "time": "08:15" },
+      { "flightId": "f_mex_02", "airline": "Volaris", "day": "Wednesday", "price": 190, "time": "14:40" },
+      { "flightId": "f_mex_03", "airline": "Delta", "day": "Friday", "price": 420, "time": "19:00" },
+      { "flightId": "f_mex_04", "airline": "Aeromexico", "day": "Saturday", "price": 450, "time": "10:30" },
+      { "flightId": "f_mex_05", "airline": "American Airlines", "day": "Sunday", "price": 310, "time": "16:20" }
     ]
   },
+  {
+    "id": "queenstown_01",
+    "name": "Queenstown",
+    "country": "New Zealand",
+    "tags": ["Adventure", "Mountains", "Cold"],
+    "overview": "The adventure capital, perfect for skiing and bungee jumping.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1589802829985-817e511f1b92",
+      "gallery": [
+        "https://images.unsplash.com/photo-1507699622108-4be3abd695ad",
+        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_qt_01", "name": "Matakauri Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1000, "rating": 5.0, "amenities": ["Lake View", "Luxury Cabin"] },
+      { "hotelId": "h_qt_02", "name": "The Rees Hotel", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 350, "rating": 4.8, "amenities": ["Wine Cellar", "Private Balcony"] },
+      { "hotelId": "h_qt_03", "name": "QT Queenstown", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 280, "rating": 4.7, "amenities": ["Bazaar Dining", "Chic Decor"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_qt_01", "title": "Nevis Bungee Jump", "image": "https://images.unsplash.com/photo-1589802829985-817e511f1b92", "price": 275, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_qt_02", "title": "Milford Sound Cruise", "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad", "price": 150, "duration": "Full Day", "type": "Nature" },
+      { "activityId": "s_qt_03", "title": "Skyline Gondola & Luge", "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800", "price": 45, "duration": "2h", "type": "Family" }
+    ],
+    "flights": [
+      { "flightId": "f_qt_01", "airline": "Air New Zealand", "day": "Tuesday", "price": 220, "time": "09:30" },
+      { "flightId": "f_qt_02", "airline": "Jetstar", "day": "Thursday", "price": 110, "time": "13:15" },
+      { "flightId": "f_qt_03", "airline": "Qantas", "day": "Friday", "price": 350, "time": "18:00" },
+      { "flightId": "f_qt_04", "airline": "Air New Zealand", "day": "Saturday", "price": 280, "time": "07:45" },
+      { "flightId": "f_qt_05", "airline": "Jetstar", "day": "Sunday", "price": 140, "time": "20:30" }
+    ]
+  },
+  {
+    "id": "phuket_01",
+    "name": "Phuket",
+    "country": "Thailand",
+    "tags": ["Beach", "Party", "Tropical"],
+    "overview": "Thailand's largest island, with busy beaches and nightlife.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3",
+      "gallery": [
+        "https://images.unsplash.com/photo-1528181304800-2f1738b24a61",
+        "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_phu_01", "name": "Amanpuri", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 950, "rating": 4.9, "amenities": ["Private Beach", "Thai Pavilions"] },
+      { "hotelId": "h_phu_02", "name": "The Shore at Katathani", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 600, "rating": 4.8, "amenities": ["Infinity Pool", "Ocean View"] },
+      { "hotelId": "h_phu_03", "name": "Keemala Phuket", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 750, "rating": 4.7, "amenities": ["Treehouse Villa", "Rainforest Spa"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_phu_01", "title": "Phi Phi Island Day Trip", "image": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3", "price": 100, "duration": "Full Day", "type": "Leisure" },
+      { "activityId": "s_phu_02", "title": "Elephant Sanctuary Visit", "image": "https://images.unsplash.com/photo-1528181304800-2f1738b24a61", "price": 80, "duration": "4h", "type": "Nature" },
+      { "activityId": "s_phu_03", "title": "Old Phuket Town Tour", "image": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57", "price": 40, "duration": "3h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_phu_01", "airline": "Thai Airways", "day": "Monday", "price": 150, "time": "08:15" },
+      { "flightId": "f_phu_02", "airline": "AirAsia", "day": "Wednesday", "price": 60, "time": "14:30" },
+      { "flightId": "f_phu_03", "airline": "Bangkok Airways", "day": "Friday", "price": 120, "time": "19:00" },
+      { "flightId": "f_phu_04", "airline": "Thai Airways", "day": "Saturday", "price": 180, "time": "10:45" },
+      { "flightId": "f_phu_05", "airline": "Scoot", "day": "Sunday", "price": 75, "time": "22:15" }
+    ]
+  },
+  {
+    "id": "singapore_01",
+    "name": "Singapore",
+    "country": "Singapore",
+    "tags": ["Urban", "Modern", "Food"],
+    "overview": "A city-state known for its gardens and futuristic architecture.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1525625239513-99732289947d",
+      "gallery": [
+        "https://images.unsplash.com/photo-1565967511849-76a60a516170",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_sin_01", "name": "Marina Bay Sands", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.8, "amenities": ["Infinity Pool", "Casino"] },
+      { "hotelId": "h_sin_02", "name": "Raffles Hotel Singapore", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 1200, "rating": 5.0, "amenities": ["Historic Butler", "Grand Lobby"] },
+      { "hotelId": "h_sin_03", "name": "Parkroyal Collection Pickering", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 350, "rating": 4.7, "amenities": ["Sky Garden", "Infinity Pool"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_sin_01", "title": "Gardens by the Bay", "image": "https://images.unsplash.com/photo-1525625239513-99732289947d", "price": 20, "duration": "3h", "type": "Leisure" },
+      { "activityId": "s_sin_02", "title": "Sentosa Island Adventure", "image": "https://images.unsplash.com/photo-1565967511849-76a60a516170", "price": 80, "duration": "6h", "type": "Family" },
+      { "activityId": "s_sin_03", "title": "Hawker Center Food Tour", "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "price": 60, "duration": "3h", "type": "Food" }
+    ],
+    "flights": [
+      { "flightId": "f_sin_01", "airline": "Singapore Airlines", "day": "Tuesday", "price": 450, "time": "09:00" },
+      { "flightId": "f_sin_02", "airline": "Scoot", "day": "Thursday", "price": 120, "time": "15:45" },
+      { "flightId": "f_sin_03", "airline": "Jetstar", "day": "Friday", "price": 150, "time": "21:00" },
+      { "flightId": "f_sin_04", "airline": "Singapore Airlines", "day": "Saturday", "price": 520, "time": "07:30" },
+      { "flightId": "f_sin_05", "airline": "Cathay Pacific", "day": "Sunday", "price": 380, "time": "11:20" }
+    ]
+  },
+  {
+    "id": "seoul_01",
+    "name": "Seoul",
+    "country": "South Korea",
+    "tags": ["Urban", "Tech", "Food"],
+    "overview": "Hyper-modern city with deep historic roots and vibrant markets.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546877625-cb8c71916608",
+        "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_seo_01", "name": "The Shilla Seoul", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Spa", "Mountain View"] },
+      { "hotelId": "h_seo_02", "name": "Signiel Seoul", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 750, "rating": 5.0, "amenities": ["Lotte Tower View", "Sky Pool"] },
+      { "hotelId": "h_seo_03", "name": "Ryse, Autograph Collection", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 250, "rating": 4.7, "amenities": ["Art Gallery", "Central"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_seo_01", "title": "Gyeongbokgung Palace", "image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc", "price": 5, "duration": "2h", "type": "Cultural" },
+      { "activityId": "s_seo_02", "title": "N Seoul Tower", "image": "https://images.unsplash.com/photo-1546877625-cb8c71916608", "price": 15, "duration": "3h", "type": "Leisure" },
+      { "activityId": "s_seo_03", "title": "Myeongdong Market Walk", "image": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57", "price": 0, "duration": "3h", "type": "Shopping" }
+    ],
+    "flights": [
+      { "flightId": "f_seo_01", "airline": "Korean Air", "day": "Monday", "price": 480, "time": "10:30" },
+      { "flightId": "f_seo_02", "airline": "Asiana", "day": "Wednesday", "price": 450, "time": "16:15" },
+      { "flightId": "f_seo_03", "airline": "Jin Air", "day": "Friday", "price": 220, "time": "08:45" },
+      { "flightId": "f_seo_04", "airline": "Korean Air", "day": "Saturday", "price": 550, "time": "21:30" },
+      { "flightId": "f_seo_05", "airline": "ANA", "day": "Sunday", "price": 310, "time": "14:20" }
+    ]
+  },
+  {
+    "id": "siemreap_01",
+    "name": "Siem Reap",
+    "country": "Cambodia",
+    "tags": ["History", "Culture", "Spiritual"],
+    "overview": "Gateway to the majestic Angkor Wat temple complex.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1500048993953-d23a436266cf",
+      "gallery": [
+        "https://images.unsplash.com/photo-1569430469288-9f37c356b9c9",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_sr_01", "name": "Amansara", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Private Plunge Pool", "Cultural Guides"] },
+      { "hotelId": "h_sr_02", "name": "Park Hyatt Siem Reap", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 400, "rating": 4.9, "amenities": ["Boutique Garden", "Spa"] },
+      { "hotelId": "h_sr_03", "name": "Zannier Hotels Phum Baitang", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 650, "rating": 4.8, "amenities": ["Luxury Villas", "Rice Field View"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_sr_01", "title": "Angkor Wat Sunrise Tour", "image": "https://images.unsplash.com/photo-1500048993953-d23a436266cf", "price": 40, "duration": "4h", "type": "History" },
+      { "activityId": "s_sr_02", "title": "Tonle Sap Floating Village", "image": "https://images.unsplash.com/photo-1569430469288-9f37c356b9c9", "price": 30, "duration": "3h", "type": "Nature" },
+      { "activityId": "s_sr_03", "title": "Temple Monk Blessing", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "price": 20, "duration": "1h", "type": "Spiritual" }
+    ],
+    "flights": [
+      { "flightId": "f_sr_01", "airline": "Cambodia Angkor Air", "day": "Tuesday", "price": 180, "time": "08:00" },
+      { "flightId": "f_sr_02", "airline": "Thai Smile", "day": "Thursday", "price": 140, "time": "14:45" },
+      { "flightId": "f_sr_03", "airline": "Singapore Airlines", "day": "Friday", "price": 320, "time": "19:15" },
+      { "flightId": "f_sr_04", "airline": "Bangkok Airways", "day": "Saturday", "price": 210, "time": "10:30" },
+      { "flightId": "f_sr_05", "airline": "AirAsia", "day": "Sunday", "price": 95, "time": "21:15" }
+    ]
+  },
+  {
+    "id": "petra_01",
+    "name": "Petra",
+    "country": "Jordan",
+    "tags": ["History", "Desert", "Adventure"],
+    "overview": "Ancient city carved into red sandstone cliffs.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1579606035222-19e083c27632",
+      "gallery": [
+        "https://images.unsplash.com/photo-1500048993953-d23a436266cf",
+        "https://images.unsplash.com/photo-1544161515-4af6b1d462c2"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_pet_01", "name": "Old Village Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 200, "rating": 4.7, "amenities": ["Historic Setting", "Traditional Food"] },
+      { "hotelId": "h_pet_02", "name": "Petra Moon Luxury Hotel", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 250, "rating": 4.9, "amenities": ["Rooftop Pool", "Modern Decor"] },
+      { "hotelId": "h_pet_03", "name": "Movenpick Resort Petra", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 320, "rating": 4.8, "amenities": ["Oriental Style", "Direct Entrance"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_pet_01", "title": "The Treasury Walk", "image": "https://images.unsplash.com/photo-1579606035222-19e083c27632", "price": 70, "duration": "4h", "type": "History" },
+      { "activityId": "s_pet_02", "title": "The Monastery Hike", "image": "https://images.unsplash.com/photo-1500048993953-d23a436266cf", "price": 0, "duration": "5h", "type": "Adventure" },
+      { "activityId": "s_pet_03", "title": "Petra by Night Tour", "image": "https://images.unsplash.com/photo-1544161515-4af6b1d462c2", "price": 25, "duration": "2h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_pet_01", "airline": "Royal Jordanian", "day": "Monday", "price": 380, "time": "09:15" },
+      { "flightId": "f_pet_02", "airline": "Turkish Airlines", "day": "Wednesday", "price": 410, "time": "15:30" },
+      { "flightId": "f_pet_03", "airline": "Ryanair", "day": "Friday", "price": 120, "time": "08:45" },
+      { "flightId": "f_pet_04", "airline": "Royal Jordanian", "day": "Saturday", "price": 450, "time": "20:00" },
+      { "flightId": "f_pet_05", "airline": "EasyJet", "day": "Sunday", "price": 140, "time": "11:20" }
+    ]
+  },
+  {
+    "id": "agra_01",
+    "name": "Agra",
+    "country": "India",
+    "tags": ["History", "Romantic", "Culture"],
+    "overview": "Home to the Taj Mahal, the world's greatest monument to love.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1564507592333-c60657ece523",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548013146-72479768bbaa",
+        "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_agr_01", "name": "Oberoi Amarvilas", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 5.0, "amenities": ["Taj Mahal View", "Butler"] },
+      { "hotelId": "h_agr_02", "name": "ITC Mughal", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 220, "rating": 4.8, "amenities": ["Sprawling Gardens", "Royal Spa"] },
+      { "hotelId": "h_agr_03", "name": "Courtyard by Marriott", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 140, "rating": 4.6, "amenities": ["Modern", "Family Suites"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_agr_01", "title": "Taj Mahal Sunrise", "image": "https://images.unsplash.com/photo-1564507592333-c60657ece523", "price": 15, "duration": "3h", "type": "History" },
+      { "activityId": "s_agr_02", "title": "Agra Fort Guided Walk", "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa", "price": 10, "duration": "2h", "type": "History" },
+      { "activityId": "s_agr_03", "title": "Mehtab Bagh Sunset View", "image": "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "price": 5, "duration": "1.5h", "type": "Nature" }
+    ],
+    "flights": [
+      { "flightId": "f_agr_01", "airline": "IndiGo", "day": "Tuesday", "price": 80, "time": "10:15" },
+      { "flightId": "f_agr_02", "airline": "Air India", "day": "Thursday", "price": 95, "time": "14:50" },
+      { "flightId": "f_agr_03", "airline": "IndiGo", "day": "Friday", "price": 110, "time": "18:30" },
+      { "flightId": "f_agr_04", "airline": "Vistara", "day": "Saturday", "price": 130, "time": "08:15" },
+      { "flightId": "f_agr_05", "airline": "IndiGo", "day": "Sunday", "price": 90, "time": "21:00" }
+    ]
+  },
+  {
+    "id": "cappadocia_01",
+    "name": "Cappadocia",
+    "country": "Turkey",
+    "tags": ["History", "Adventure", "Nature"],
+    "overview": "Unique cave dwellings and famous hot air balloon skies.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1527838832700-5059252407fa",
+      "gallery": [
+        "https://images.unsplash.com/photo-1550747528-cdb8677c8141",
+        "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_cap_01", "name": "Museum Hotel Cave", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Cave Suites", "Infinity Pool"] },
+      { "hotelId": "h_cap_02", "name": "Cappadocia Cave Suites", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 280, "rating": 4.8, "amenities": ["Traditional Design", "Spa"] },
+      { "hotelId": "h_cap_03", "name": "Kayakapi Premium Caves", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 450, "rating": 4.9, "amenities": ["Historic Site", "Luxury Hammam"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_cap_01", "title": "Hot Air Balloon Flight", "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa", "price": 250, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_cap_02", "title": "Goreme Open Air Museum", "image": "https://images.unsplash.com/photo-1550747528-cdb8677c8141", "price": 25, "duration": "3h", "type": "History" },
+      { "activityId": "s_cap_03", "title": "Underground City Tour", "image": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb", "price": 20, "duration": "2h", "type": "History" }
+    ],
+    "flights": [
+      { "flightId": "f_cap_01", "airline": "Turkish Airlines", "day": "Monday", "price": 320, "time": "09:30" },
+      { "flightId": "f_cap_02", "airline": "Pegasus Airlines", "day": "Wednesday", "price": 140, "time": "15:45" },
+      { "flightId": "f_cap_03", "airline": "Turkish Airlines", "day": "Friday", "price": 380, "time": "20:00" },
+      { "flightId": "f_cap_04", "airline": "AnadoluJet", "day": "Saturday", "price": 190, "time": "07:20" },
+      { "flightId": "f_cap_05", "airline": "Turkish Airlines", "day": "Sunday", "price": 340, "time": "13:10" }
+    ]
+  },
+  {
+    "id": "halongbay_01",
+    "name": "Ha Long Bay",
+    "country": "Vietnam",
+    "tags": ["Nature", "Water", "Leisure"],
+    "overview": "Towering limestone pillars and emerald waters.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592",
+      "gallery": [
+        "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd",
+        "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad"
+      ]
+    },
+    "hotels": [
+      { "hotelId": "h_hlb_01", "name": "Paradise Cruise", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 350, "rating": 4.8, "amenities": ["Luxury Cabin", "On-deck Dining"] },
+      { "hotelId": "h_hlb_02", "name": "Au Co Luxury Cruise", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 450, "rating": 4.9, "amenities": ["Private Balcony", "Jacuzzi"] },
+      { "hotelId": "h_hlb_03", "name": "Vinpearl Resort & Spa", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 220, "rating": 4.7, "amenities": ["Private Island", "Waterfront Pool"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_hlb_01", "title": "Bay Kayaking Adventure", "image": "https://images.unsplash.com/photo-1528127269322-539801943592", "price": 40, "duration": "2h", "type": "Adventure" },
+      { "activityId": "s_hlb_02", "title": "Sung Sot Cave Exploration", "image": "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "price": 15, "duration": "1.5h", "type": "Nature" },
+      { "activityId": "s_hlb_03", "title": "Ti Top Island Climb", "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad", "price": 0, "duration": "1h", "type": "Nature" }
+    ],
+    "flights": [
+      { "flightId": "f_hlb_01", "airline": "Vietnam Airlines", "day": "Tuesday", "price": 120, "time": "10:00" },
+      { "flightId": "f_hlb_02", "airline": "Bamboo Airways", "day": "Thursday", "price": 95, "time": "14:45" },
+      { "flightId": "f_hlb_03", "airline": "VietJet Air", "day": "Friday", "price": 60, "time": "19:30" },
+      { "flightId": "f_hlb_04", "airline": "Vietnam Airlines", "day": "Saturday", "price": 140, "time": "08:15" },
+      { "flightId": "f_hlb_05", "airline": "Bamboo Airways", "day": "Sunday", "price": 110, "time": "21:00" }
+    ]
+  }
+  ,
   {
     "id": "borabora_01",
     "name": "Bora Bora",
@@ -687,13 +1562,27 @@
     "overview": "Breathtaking turquoise lagoons and volcanic peaks.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017",
-      "gallery": ["https://images.unsplash.com/photo-1506929113675-b55f949b6552", "https://images.unsplash.com/photo-1534351590666-13e3e96b5017"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1506929113675-b55f949b6552",
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_bb_01", "name": "St. Regis Bora Bora", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1800, "rating": 5.0, "amenities": ["Overwater Villa", "Spa"] }
+      { "hotelId": "h_bb_01", "name": "St. Regis Bora Bora", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1800, "rating": 5.0, "amenities": ["Overwater Villa", "Spa"] },
+      { "hotelId": "h_bb_02", "name": "Four Seasons Resort", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 1650, "rating": 4.9, "amenities": ["Private Plunge Pool", "Marine Life Tour"] },
+      { "hotelId": "h_bb_03", "name": "InterContinental Thalasso", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 1100, "rating": 4.8, "amenities": ["Eco-Friendly", "Glass-Bottom Floor"] }
     ],
     "sightseeing": [
-      { "activityId": "s_bb_01", "title": "Lagoon Safari", "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "price": 150, "duration": "4h", "type": "Adventure" }
+      { "activityId": "s_bb_01", "title": "Lagoon Safari & Shark Feeding", "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "price": 150, "duration": "4h", "type": "Adventure" },
+      { "activityId": "s_bb_02", "title": "Mount Otemanu Photo Trek", "image": "https://images.unsplash.com/photo-1506929113675-b55f949b6552", "price": 90, "duration": "3h", "type": "Nature" },
+      { "activityId": "s_bb_03", "title": "Polynesian Canoe Breakfast", "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e", "price": 200, "duration": "2h", "type": "Leisure" }
+    ],
+    "flights": [
+      { "flightId": "f_bb_01", "airline": "Air Tahiti Nui", "day": "Monday", "price": 1200, "time": "08:15" },
+      { "flightId": "f_bb_02", "airline": "French Bee", "day": "Wednesday", "price": 950, "time": "14:40" },
+      { "flightId": "f_bb_03", "airline": "Air Tahiti", "day": "Friday", "price": 250, "time": "09:30" },
+      { "flightId": "f_bb_04", "airline": "United", "day": "Saturday", "price": 1350, "time": "11:20" },
+      { "flightId": "f_bb_05", "airline": "Air Tahiti Nui", "day": "Sunday", "price": 1100, "time": "20:50" }
     ]
   },
   {
@@ -704,30 +1593,58 @@
     "overview": "Stunning beaches and world-class surfing.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9",
-      "gallery": ["https://images.unsplash.com/photo-1523482580672-f109ba8cb9be", "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_gc_01", "name": "The Langham Gold Coast", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Beachfront", "High Tea"] }
+      { "hotelId": "h_gc_01", "name": "The Langham Gold Coast", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Beachfront", "High Tea"] },
+      { "hotelId": "h_gc_02", "name": "The Star Grand", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 320, "rating": 4.7, "amenities": ["Casino Access", "Day Spa"] },
+      { "hotelId": "h_gc_03", "name": "QT Gold Coast", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 250, "rating": 4.6, "amenities": ["Rooftop Bar", "Modern Art"] }
     ],
     "sightseeing": [
-      { "activityId": "s_gc_01", "title": "Surfers Paradise Lessons", "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9", "price": 80, "duration": "2h", "type": "Adventure" }
+      { "activityId": "s_gc_01", "title": "Surfers Paradise Lessons", "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9", "price": 80, "duration": "2h", "type": "Adventure" },
+      { "activityId": "s_gc_02", "title": "Skypoint Observation Deck", "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be", "price": 30, "duration": "1.5h", "type": "Leisure" },
+      { "activityId": "s_gc_03", "title": "Warner Bros. Movie World", "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "price": 105, "duration": "Full Day", "type": "Family" }
+    ],
+    "flights": [
+      { "flightId": "f_gc_01", "airline": "Qantas", "day": "Tuesday", "price": 220, "time": "08:00" },
+      { "flightId": "f_gc_02", "airline": "Jetstar", "day": "Thursday", "price": 85, "time": "14:15" },
+      { "flightId": "f_gc_03", "airline": "Virgin Australia", "day": "Friday", "price": 140, "time": "18:30" },
+      { "flightId": "f_gc_04", "airline": "Rex Airlines", "day": "Saturday", "price": 110, "time": "10:20" },
+      { "flightId": "f_gc_05", "airline": "Qantas", "day": "Sunday", "price": 195, "time": "21:00" }
     ]
   },
   {
-    "id": "greatbarrierreef_01",
+    "id": "cairns_01",
     "name": "Cairns",
     "country": "Australia",
     "tags": ["Nature", "Adventure", "Tropical"],
     "overview": "Gateway to the world's largest coral reef system.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
-      "gallery": ["https://images.unsplash.com/photo-1506929113675-b55f949b6552", "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1506929113675-b55f949b6552",
+        "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_cai_02", "name": "Riley Crystalbrook Collection", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 350, "rating": 4.8, "amenities": ["Lagoon Pool", "Eco Friendly"] }
+      { "hotelId": "h_cai_02", "name": "Riley Crystalbrook Collection", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 350, "rating": 4.8, "amenities": ["Lagoon Pool", "Eco Friendly"] },
+      { "hotelId": "h_cai_03", "name": "Shangri-La The Marina", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 280, "rating": 4.7, "amenities": ["Marina View", "Central"] },
+      { "hotelId": "h_cai_04", "name": "Silky Oaks Lodge", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 650, "rating": 4.9, "amenities": ["Rainforest Spa", "Riverside Dining"] }
     ],
     "sightseeing": [
-      { "activityId": "s_cai_02", "title": "Great Barrier Reef Scuba", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "price": 250, "duration": "Full Day", "type": "Adventure" }
+      { "activityId": "s_cai_02", "title": "Great Barrier Reef Scuba", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "price": 250, "duration": "Full Day", "type": "Adventure" },
+      { "activityId": "s_cai_03", "title": "Kuranda Scenic Railway", "image": "https://images.unsplash.com/photo-1506929113675-b55f949b6552", "price": 110, "duration": "5h", "type": "Leisure" },
+      { "activityId": "s_cai_04", "title": "Daintree Rainforest Walk", "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1", "price": 140, "duration": "Full Day", "type": "Nature" }
+    ],
+    "flights": [
+      { "flightId": "f_cai_01", "airline": "Jetstar", "day": "Monday", "price": 140, "time": "07:30" },
+      { "flightId": "f_cai_02", "airline": "Virgin Australia", "day": "Wednesday", "price": 180, "time": "12:15" },
+      { "flightId": "f_cai_03", "airline": "Qantas", "day": "Friday", "price": 260, "time": "16:45" },
+      { "flightId": "f_cai_04", "airline": "Bonza", "day": "Saturday", "price": 95, "time": "09:00" },
+      { "flightId": "f_cai_05", "airline": "Jetstar", "day": "Sunday", "price": 130, "time": "22:00" }
     ]
   },
   {
@@ -738,13 +1655,27 @@
     "overview": "The roof of the world, home to the Potala Palace.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1500048993953-d23a436266cf",
-      "gallery": ["https://images.unsplash.com/photo-1569430469288-9f37c356b9c9", "https://images.unsplash.com/photo-1500048993953-d23a436266cf"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1569430469288-9f37c356b9c9",
+        "https://images.unsplash.com/photo-1544416151-4af6b1d462c2"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_lha_01", "name": "The St. Regis Lhasa Resort", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.9, "amenities": ["Oxygen Lounge", "Spiritual Tours"] }
+      { "hotelId": "h_lha_01", "name": "The St. Regis Lhasa Resort", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.9, "amenities": ["Oxygen Lounge", "Spiritual Tours"] },
+      { "hotelId": "h_lha_02", "name": "Shangri-La Lhasa", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 350, "rating": 4.8, "amenities": ["Mountain View", "Zen Garden"] },
+      { "hotelId": "h_lha_03", "name": "House of Shambhala", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 120, "rating": 4.6, "amenities": ["Historic Courtyard", "Organic Tea"] }
     ],
     "sightseeing": [
-      { "activityId": "s_lha_01", "title": "Potala Palace Tour", "image": "https://images.unsplash.com/photo-1500048993953-d23a436266cf", "price": 30, "duration": "3h", "type": "History" }
+      { "activityId": "s_lha_01", "title": "Potala Palace Tour", "image": "https://images.unsplash.com/photo-1500048993953-d23a436266cf", "price": 30, "duration": "3h", "type": "History" },
+      { "activityId": "s_lha_02", "title": "Jokhang Temple Visit", "image": "https://images.unsplash.com/photo-1569430469288-9f37c356b9c9", "price": 15, "duration": "2h", "type": "Spiritual" },
+      { "activityId": "s_lha_03", "title": "Barkhor Street Pilgrimage", "image": "https://images.unsplash.com/photo-1544416151-4af6b1d462c2", "price": 0, "duration": "3h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_lha_01", "airline": "Air China", "day": "Tuesday", "price": 420, "time": "08:30" },
+      { "flightId": "f_lha_02", "airline": "Tibet Airlines", "day": "Thursday", "price": 380, "time": "14:15" },
+      { "flightId": "f_lha_03", "airline": "China Southern", "day": "Friday", "price": 490, "time": "19:00" },
+      { "flightId": "f_lha_04", "airline": "Air China", "day": "Saturday", "price": 450, "time": "10:45" },
+      { "flightId": "f_lha_05", "airline": "Tibet Airlines", "day": "Sunday", "price": 400, "time": "16:20" }
     ]
   },
   {
@@ -755,13 +1686,27 @@
     "overview": "Chaotic, beautiful capital known for its old quarter and street food.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592",
-      "gallery": ["https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "https://images.unsplash.com/photo-1528127269322-539801943592"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_han_01", "name": "Sofitel Legend Metropole", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.9, "amenities": ["Historic French Quarter", "Pool"] }
+      { "hotelId": "h_han_01", "name": "Sofitel Legend Metropole", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.9, "amenities": ["Historic French Quarter", "Pool"] },
+      { "hotelId": "h_han_02", "name": "Capella Hanoi", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 600, "rating": 5.0, "amenities": ["Opera House Decor", "Spa"] },
+      { "hotelId": "h_han_03", "name": "Hanoi La Siesta Hotel", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 110, "rating": 4.7, "amenities": ["Sky Bar", "Boutique Comfort"] }
     ],
     "sightseeing": [
-      { "activityId": "s_han_01", "title": "Old Quarter Food Tour", "image": "https://images.unsplash.com/photo-1528127269322-539801943592", "price": 40, "duration": "3h", "type": "Cultural" }
+      { "activityId": "s_han_01", "title": "Old Quarter Food Tour", "image": "https://images.unsplash.com/photo-1528127269322-539801943592", "price": 40, "duration": "3h", "type": "Cultural" },
+      { "activityId": "s_han_02", "title": "Water Puppet Theatre", "image": "https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "price": 10, "duration": "1h", "type": "Family" },
+      { "activityId": "s_han_03", "title": "Ho Chi Minh Mausoleum", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "price": 5, "duration": "2h", "type": "History" }
+    ],
+    "flights": [
+      { "flightId": "f_han_01", "airline": "Vietnam Airlines", "day": "Monday", "price": 180, "time": "09:00" },
+      { "flightId": "f_han_02", "airline": "Bamboo Airways", "day": "Wednesday", "price": 120, "time": "15:45" },
+      { "flightId": "f_han_03", "airline": "VietJet Air", "day": "Friday", "price": 85, "time": "19:20" },
+      { "flightId": "f_han_04", "airline": "Vietnam Airlines", "day": "Saturday", "price": 210, "time": "08:15" },
+      { "flightId": "f_han_05", "airline": "VietJet Air", "day": "Sunday", "price": 95, "time": "22:15" }
     ]
   },
   {
@@ -772,13 +1717,27 @@
     "overview": "A city of contrasting shrines and street life with modern malls.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3",
-      "gallery": ["https://images.unsplash.com/photo-1528181304800-2f1738b24a61", "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1528181304800-2f1738b24a61",
+        "https://images.unsplash.com/photo-1550747528-cdb8677c8141"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_bkk_01", "name": "Mandarin Oriental", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 5.0, "amenities": ["Riverside", "High-end Spa"] }
+      { "hotelId": "h_bkk_01", "name": "Mandarin Oriental", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 5.0, "amenities": ["Riverside", "High-end Spa"] },
+      { "hotelId": "h_bkk_02", "name": "The Standard, Mahanakhon", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 320, "rating": 4.8, "amenities": ["Sky Bar", "Modern Art"] },
+      { "hotelId": "h_bkk_03", "name": "Siam Kempinski Hotel", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 450, "rating": 4.9, "amenities": ["Garden Pool", "Shopping Access"] }
     ],
     "sightseeing": [
-      { "activityId": "s_bkk_01", "title": "Grand Palace Tour", "image": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3", "price": 20, "duration": "3h", "type": "History" }
+      { "activityId": "s_bkk_01", "title": "Grand Palace Tour", "image": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3", "price": 20, "duration": "3h", "type": "History" },
+      { "activityId": "s_bkk_02", "title": "Wat Arun Evening Climb", "image": "https://images.unsplash.com/photo-1528181304800-2f1738b24a61", "price": 5, "duration": "1.5h", "type": "Spiritual" },
+      { "activityId": "s_bkk_03", "title": "Chao Phraya Dinner Cruise", "image": "https://images.unsplash.com/photo-1550747528-cdb8677c8141", "price": 70, "duration": "3h", "type": "Romantic" }
+    ],
+    "flights": [
+      { "flightId": "f_bkk_01", "airline": "Thai Airways", "day": "Tuesday", "price": 240, "time": "08:15" },
+      { "flightId": "f_bkk_02", "airline": "AirAsia", "day": "Thursday", "price": 90, "time": "14:45" },
+      { "flightId": "f_bkk_03", "airline": "Emirates", "day": "Friday", "price": 450, "time": "21:00" },
+      { "flightId": "f_bkk_04", "airline": "Bangkok Airways", "day": "Saturday", "price": 180, "time": "10:30" },
+      { "flightId": "f_bkk_05", "airline": "Thai Smile", "day": "Sunday", "price": 110, "time": "22:15" }
     ]
   },
   {
@@ -789,13 +1748,27 @@
     "overview": "Friendly city known for its literary history and lively pubs.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1549918837-33fb3940c83e",
-      "gallery": ["https://images.unsplash.com/photo-1549918837-33fb3940c83e", "https://images.unsplash.com/photo-1549918837-33fb3940c83e"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_dub_02", "name": "The Shelbourne", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Classic Decor", "Central"] }
+      { "hotelId": "h_dub_02", "name": "The Shelbourne", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Classic Decor", "Central"] },
+      { "hotelId": "h_dub_03", "name": "The Westbury", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 480, "rating": 4.9, "amenities": ["Luxury Afternoon Tea", "Concierge"] },
+      { "hotelId": "h_dub_04", "name": "The Clarence Hotel", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 220, "rating": 4.6, "amenities": ["Boutique Style", "Music History"] }
     ],
     "sightseeing": [
-      { "activityId": "s_dub_02", "title": "Guinness Storehouse", "image": "https://images.unsplash.com/photo-1549918837-33fb3940c83e", "price": 30, "duration": "2h", "type": "Leisure" }
+      { "activityId": "s_dub_02", "title": "Guinness Storehouse", "image": "https://images.unsplash.com/photo-1549918837-33fb3940c83e", "price": 30, "duration": "2h", "type": "Leisure" },
+      { "activityId": "s_dub_03", "title": "Trinity College Library", "image": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4", "price": 20, "duration": "1.5h", "type": "History" },
+      { "activityId": "s_dub_04", "title": "Temple Bar Pub Crawl", "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "price": 50, "duration": "4h", "type": "Cultural" }
+    ],
+    "flights": [
+      { "flightId": "f_dub_01", "airline": "Aer Lingus", "day": "Monday", "price": 210, "time": "09:30" },
+      { "flightId": "f_dub_02", "airline": "Ryanair", "day": "Wednesday", "price": 65, "time": "14:45" },
+      { "flightId": "f_dub_03", "airline": "British Airways", "day": "Friday", "price": 280, "time": "19:00" },
+      { "flightId": "f_dub_04", "airline": "Aer Lingus", "day": "Saturday", "price": 240, "time": "10:15" },
+      { "flightId": "f_dub_05", "airline": "Lufthansa", "day": "Sunday", "price": 310, "time": "21:30" }
     ]
   },
   {
@@ -806,13 +1779,27 @@
     "overview": "Elegant boulevards and world-class art collections.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4",
-      "gallery": ["https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "https://images.unsplash.com/photo-1539037116277-4db20889f2d4"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
+        "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_mad_01", "name": "The Ritz Madrid", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.9, "amenities": ["Classic Grandeur", "Central"] }
+      { "hotelId": "h_mad_01", "name": "The Ritz Madrid", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.9, "amenities": ["Classic Grandeur", "Central"] },
+      { "hotelId": "h_mad_02", "name": "The Madrid Edition", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 550, "rating": 4.8, "amenities": ["Skyline Pool", "Fine Dining"] },
+      { "hotelId": "h_mad_03", "name": "Hotel Urban", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 320, "rating": 4.7, "amenities": ["Modern Design", "Oyster Bar"] }
     ],
     "sightseeing": [
-      { "activityId": "s_mad_01", "title": "Prado Museum Tour", "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4", "price": 25, "duration": "3h", "type": "Cultural" }
+      { "activityId": "s_mad_01", "title": "Prado Museum Tour", "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4", "price": 25, "duration": "3h", "type": "Cultural" },
+      { "activityId": "s_mad_02", "title": "Royal Palace Guided Walk", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "price": 20, "duration": "2h", "type": "History" },
+      { "activityId": "s_mad_03", "title": "Retiro Park Rowboat", "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e", "price": 10, "duration": "1h", "type": "Leisure" }
+    ],
+    "flights": [
+      { "flightId": "f_mad_01", "airline": "Iberia", "day": "Tuesday", "price": 190, "time": "08:00" },
+      { "flightId": "f_mad_02", "airline": "Vueling", "day": "Thursday", "price": 75, "time": "14:50" },
+      { "flightId": "f_mad_03", "airline": "Air Europa", "day": "Friday", "price": 210, "time": "18:30" },
+      { "flightId": "f_mad_04", "airline": "Iberia", "day": "Saturday", "price": 260, "time": "11:20" },
+      { "flightId": "f_mad_05", "airline": "Lufthansa", "day": "Sunday", "price": 340, "time": "21:00" }
     ]
   },
   {
@@ -823,13 +1810,27 @@
     "overview": "Edgy and historic, a city of art, museums, and nightlife.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1560969184-10fe8719e047",
-      "gallery": ["https://images.unsplash.com/photo-1560930950-5cc60f862ed9", "https://images.unsplash.com/photo-1560969184-10fe8719e047"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1560930950-5cc60f862ed9",
+        "https://images.unsplash.com/photo-1534351590666-13e3e96b5017"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_ber_01", "name": "Hotel Adlon Kempinski", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Gate View", "Historic Pool"] }
+      { "hotelId": "h_ber_01", "name": "Hotel Adlon Kempinski", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Gate View", "Historic Pool"] },
+      { "hotelId": "h_ber_02", "name": "Soho House Berlin", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 420, "rating": 4.8, "amenities": ["Rooftop Pool", "Artistic"] },
+      { "hotelId": "h_ber_03", "name": "Hotel Zoo Berlin", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 280, "rating": 4.7, "amenities": ["Fashionable", "Central"] }
     ],
     "sightseeing": [
-      { "activityId": "s_ber_01", "title": "Berlin Wall Tour", "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047", "price": 20, "duration": "3h", "type": "History" }
+      { "activityId": "s_ber_01", "title": "Berlin Wall Tour", "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047", "price": 20, "duration": "3h", "type": "History" },
+      { "activityId": "s_ber_02", "title": "Museum Island Pass", "image": "https://images.unsplash.com/photo-1560930950-5cc60f862ed9", "price": 35, "duration": "Full Day", "type": "Cultural" },
+      { "activityId": "s_ber_03", "title": "Brandenburg Gate Walk", "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "price": 0, "duration": "1h", "type": "History" }
+    ],
+    "flights": [
+      { "flightId": "f_ber_01", "airline": "Lufthansa", "day": "Monday", "price": 240, "time": "09:15" },
+      { "flightId": "f_ber_02", "airline": "EasyJet", "day": "Wednesday", "price": 85, "time": "15:30" },
+      { "flightId": "f_ber_03", "airline": "Eurowings", "day": "Friday", "price": 160, "time": "08:45" },
+      { "flightId": "f_ber_04", "airline": "Lufthansa", "day": "Saturday", "price": 310, "time": "18:00" },
+      { "flightId": "f_ber_05", "airline": "SWISS", "day": "Sunday", "price": 290, "time": "21:45" }
     ]
   },
   {
@@ -840,13 +1841,30 @@
     "overview": "Stunning archipelago city with modern design and royal history.",
     "media": {
       "heroImage": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11",
-      "gallery": ["https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "https://images.unsplash.com/photo-1509356843151-3e7d96241e11"]
+      "gallery": [
+        "https://images.unsplash.com/photo-1534351590666-13e3e96b5017",
+        "https://images.unsplash.com/photo-1527668752968-14dc70a27c95"
+      ]
     },
     "hotels": [
-      { "hotelId": "h_sto_01", "name": "Grand Hôtel Stockholm", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 550, "rating": 4.9, "amenities": ["Harbor View", "Classic Luxury"] }
+      { "hotelId": "h_sto_01", "name": "Grand Hôtel Stockholm", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 550, "rating": 4.9, "amenities": ["Harbor View", "Classic Luxury"] },
+      { "hotelId": "h_sto_02", "name": "Ett Hem", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 650, "rating": 5.0, "amenities": ["Private Residence", "Fine Dining"] },
+      { "hotelId": "h_sto_03", "name": "Blique by Nobis", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 210, "rating": 4.6, "amenities": ["Rooftop Bar", "Modern Art"] }
     ],
     "sightseeing": [
-      { "activityId": "s_sto_01", "title": "Vasa Museum Tour", "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11", "price": 25, "duration": "2h", "type": "History" }
+      { "activityId": "s_sto_01", "title": "Vasa Museum Tour", "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11", "price": 25, "duration": "2h", "type": "History" },
+      { "activityId": "s_sto_02", "title": "Gamla Stan Walk", "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "price": 0, "duration": "2.5h", "type": "History" },
+      { "activityId": "s_sto_03", "title": "Archipelago Boat Cruise", "image": "https://images.unsplash.com/photo-1527668752968-14dc70a27c95", "price": 60, "duration": "4h", "type": "Nature" }
+    ],
+    "flights": [
+      { "flightId": "f_sto_01", "airline": "SAS", "day": "Tuesday", "price": 280, "time": "10:00" },
+      { "flightId": "f_sto_02", "airline": "Norwegian Air", "day": "Thursday", "price": 110, "time": "16:45" },
+      { "flightId": "f_sto_03", "airline": "SAS", "day": "Friday", "price": 320, "time": "08:15" },
+      { "flightId": "f_sto_04", "airline": "Finnair", "day": "Saturday", "price": 295, "time": "13:30" },
+      { "flightId": "f_sto_05", "airline": "British Airways", "day": "Sunday", "price": 380, "time": "20:00" }
     ]
   }
 ]
+
+
+
