@@ -1,1202 +1,852 @@
 [
   {
-    "id": "1",
-    "name": "Bali",
-    "location": "Indonesia",
-    "image": "https://picsum.photos/seed/bali/800/600",
-    "description": "Tropical paradise with lush jungles and beaches.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "7 Days",
-    "highlights": ["Ubud Monkey Forest", "Tegalalang Rice Terrace"],
-    "tags": ["Nature", "Relaxation", "Beach"]
-  },
-  {
-    "id": "2",
-    "name": "Santorini",
-    "location": "Greece",
-    "image": "https://picsum.photos/seed/santorini/800/600",
-    "description": "Iconic white-washed buildings overlooking the Aegean Sea.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "5 Days",
-    "highlights": ["Oia Sunsets", "Red Beach"],
-    "tags": ["Romantic", "Luxury", "Beach"]
-  },
-  {
-    "id": "3",
-    "name": "Machu Picchu",
-    "location": "Peru",
-    "image": "https://picsum.photos/seed/machupicchu/800/600",
-    "description": "Ancient Incan citadel set high in the Andes Mountains.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "4 Days",
-    "highlights": ["Inca Trail", "Sun Gate"],
-    "tags": ["History", "Mountains", "Hiking"]
-  },
-  {
-    "id": "4",
-    "name": "Swiss Alps",
-    "location": "Switzerland",
-    "image": "https://picsum.photos/seed/swissalps/800/600",
-    "description": "World-class skiing and breathtaking alpine mountain scenery.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "7 Days",
-    "highlights": ["Matterhorn", "Glacier Express"],
-    "tags": ["Snow", "Mountains", "Skiing"]
-  },
-  {
-    "id": "5",
-    "name": "Kyoto",
-    "location": "Japan",
-    "image": "https://picsum.photos/seed/kyoto/800/600",
-    "description": "Famous for classical Buddhist temples, gardens, and Shinto shrines.",
-    "budget": "High",
-    "type": "Cultural",
-    "duration": "6 Days",
-    "highlights": ["Fushimi Inari Taisha", "Arashiyama Bamboo Grove"],
-    "tags": ["History", "Temples", "Nature"]
-  },
-  {
-    "id": "6",
+    "id": "banff_01",
     "name": "Banff National Park",
-    "location": "Canada",
-    "image": "https://picsum.photos/seed/banff/800/600",
-    "description": "Glacial lakes and rugged peaks perfect for outdoor exploration.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "5 Days",
-    "highlights": ["Lake Louise", "Icefields Parkway"],
-    "tags": ["Nature", "Hiking", "Mountains"]
+    "country": "Canada",
+    "tags": ["Mountains", "Nature", "Cold"],
+    "overview": "Glacial lakes and rugged peaks perfect for outdoor exploration.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1550503006-258169123653",
+      "gallery": ["https://images.unsplash.com/photo-1542640244-7e672d6cb466", "https://images.unsplash.com/photo-1518314916590-7212453f2d24"]
+    },
+    "hotels": [
+      { "hotelId": "h_ban_01", "name": "Fairmont Chateau Lake Louise", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.9, "amenities": ["Lake View", "Spa"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_ban_01", "title": "Banff Gondola", "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd", "price": 60, "duration": "2h", "type": "Family" }
+    ]
   },
   {
-    "id": "7",
-    "name": "Maldives",
-    "location": "Maldives",
-    "image": "https://picsum.photos/seed/maldives/800/600",
-    "description": "An archipelago of stunning islands with crystal-clear waters.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "7 Days",
-    "highlights": ["Overwater Bungalows", "Snorkeling"],
-    "tags": ["Luxury", "Beach", "Relaxation"]
+    "id": "santorini_01",
+    "name": "Santorini",
+    "country": "Greece",
+    "tags": ["Beach", "Luxury", "Romantic"],
+    "overview": "Iconic blue-domed churches and world-famous sunsets over the Aegean.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff",
+      "gallery": ["https://images.unsplash.com/photo-1533105079780-92b9be482077", "https://images.unsplash.com/photo-1469796466635-455ede028ca6"]
+    },
+    "hotels": [
+      { "hotelId": "h_san_01", "name": "Canaves Oia Luxury", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 850, "rating": 5.0, "amenities": ["Private Pool", "Caldera View"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_san_01", "title": "Catamaran Cruise", "image": "https://images.unsplash.com/photo-1516939884455-1445c8652f83", "price": 120, "duration": "5h", "type": "Leisure" }
+    ]
   },
   {
-    "id": "8",
-    "name": "Rome",
-    "location": "Italy",
-    "image": "https://picsum.photos/seed/rome/800/600",
-    "description": "The capital of the Roman Empire, rich in art and architecture.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "5 Days",
-    "highlights": ["Colosseum", "Vatican City"],
-    "tags": ["History", "Architecture", "City"]
+    "id": "kyoto_01",
+    "name": "Kyoto",
+    "country": "Japan",
+    "tags": ["Cultural", "History", "Serene"],
+    "overview": "Ancient temples and traditional tea houses in Japan's cultural heart.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+      "gallery": ["https://images.unsplash.com/photo-1528360983277-13d401cd18f9", "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36"]
+    },
+    "hotels": [
+      { "hotelId": "h_kyo_01", "name": "The Ritz-Carlton Kyoto", "image": "https://images.unsplash.com/photo-1506059612708-99d6c258160e", "pricePerNight": 900, "rating": 4.9, "amenities": ["Zen Garden", "Tea Service"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_kyo_01", "title": "Bamboo Grove Walk", "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f", "price": 15, "duration": "2h", "type": "Nature" }
+    ]
   },
   {
-    "id": "9",
-    "name": "Queenstown",
-    "location": "New Zealand",
-    "image": "https://picsum.photos/seed/queenstown/800/600",
-    "description": "The adventure capital of the world, featuring extreme sports.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "8 Days",
-    "highlights": ["Bungee Jumping", "Milford Sound"],
-    "tags": ["Thrill", "Mountains", "Nature"]
+    "id": "bali_01",
+    "name": "Ubud",
+    "country": "Indonesia",
+    "tags": ["Tropical", "Wellness", "Nature"],
+    "overview": "Lush rice terraces and spiritual rainforest retreats.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+      "gallery": ["https://images.unsplash.com/photo-1559628233-eb1b1a45564b", "https://images.unsplash.com/photo-1537953391648-762d01e830e0"]
+    },
+    "hotels": [
+      { "hotelId": "h_ubud_01", "name": "Maya Ubud Resort", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "pricePerNight": 320, "rating": 4.8, "amenities": ["Infinity Pool", "Yoga Deck"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_ubud_01", "title": "Rice Terrace Trek", "image": "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8", "price": 25, "duration": "3h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "10",
-    "name": "Amalfi Coast",
-    "location": "Italy",
-    "image": "https://picsum.photos/seed/amalfi/800/600",
-    "description": "A striking coastline dotted with charming, colorful villages.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "6 Days",
-    "highlights": ["Positano", "Ravello"],
-    "tags": ["Coastal", "Romantic", "Food"]
+    "id": "paris_01",
+    "name": "Paris",
+    "country": "France",
+    "tags": ["Urban", "Art", "Romantic"],
+    "overview": "The City of Light, home to the Eiffel Tower and the Louvre.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+      "gallery": ["https://images.unsplash.com/photo-1431274172761-fca41d930114", "https://images.unsplash.com/photo-1499856871958-5b9627545d1a"]
+    },
+    "hotels": [
+      { "hotelId": "h_par_01", "name": "Hôtel Plaza Athénée", "image": "https://images.unsplash.com/photo-1551882547-ff43c61f3635", "pricePerNight": 1200, "rating": 5.0, "amenities": ["Eiffel View", "Fine Dining"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_par_01", "title": "Louvre Private Tour", "image": "https://images.unsplash.com/photo-1491153059943-412f4b00ca1a", "price": 110, "duration": "4h", "type": "Cultural" }
+    ]
   },
   {
-    "id": "11",
-    "name": "Angkor Wat",
-    "location": "Cambodia",
-    "image": "https://picsum.photos/seed/angkor/800/600",
-    "description": "The largest religious monument in the world.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "3 Days",
-    "highlights": ["Bayon Temple", "Ta Prohm"],
-    "tags": ["History", "Temples", "Ancient"]
+    "id": "maldives_01",
+    "name": "Male Atoll",
+    "country": "Maldives",
+    "tags": ["Beach", "Luxury", "Tropical"],
+    "overview": "Unrivaled luxury in overwater villas surrounded by turquoise waters.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8",
+      "gallery": ["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "https://images.unsplash.com/photo-1506929113675-b55f949b6552"]
+    },
+    "hotels": [
+      { "hotelId": "h_mal_01", "name": "Soneva Fushi", "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6", "pricePerNight": 1500, "rating": 5.0, "amenities": ["Butler Service", "Stargazing"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_mal_01", "title": "Manta Snorkeling", "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5", "price": 200, "duration": "4h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "12",
-    "name": "Patagonia",
-    "location": "Argentina",
-    "image": "https://picsum.photos/seed/patagonia/800/600",
-    "description": "Dramatic mountain peaks and massive glaciers at the edge of the world.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "10 Days",
-    "highlights": ["Perito Moreno Glacier", "Mount Fitz Roy"],
-    "tags": ["Trekking", "Nature", "Mountains"]
-  },
-  {
-    "id": "13",
-    "name": "Bora Bora",
-    "location": "French Polynesia",
-    "image": "https://picsum.photos/seed/borabora/800/600",
-    "description": "Luxury overwater bungalows and turquoise lagoons.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "7 Days",
-    "highlights": ["Mount Otemanu", "Shark Diving"],
-    "tags": ["Luxury", "Beach", "Relaxation"]
-  },
-  {
-    "id": "14",
-    "name": "Petra",
-    "location": "Jordan",
-    "image": "https://picsum.photos/seed/petra/800/600",
-    "description": "The famous historical and archaeological city carved into rock.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "3 Days",
-    "highlights": ["The Treasury", "The Monastery"],
-    "tags": ["History", "Desert", "Ancient"]
-  },
-  {
-    "id": "15",
-    "name": "Costa Rica",
-    "location": "Costa Rica",
-    "image": "https://picsum.photos/seed/costarica/800/600",
-    "description": "Rainforests teeming with biodiversity and zip-lining adventures.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "8 Days",
-    "highlights": ["Arenal Volcano", "Monteverde Cloud Forest"],
-    "tags": ["Nature", "Wildlife", "Thrill"]
-  },
-  {
-    "id": "16",
-    "name": "Tulum",
-    "location": "Mexico",
-    "image": "https://picsum.photos/seed/tulum/800/600",
-    "description": "Relaxed bohemian beach town with ancient Mayan ruins.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "5 Days",
-    "highlights": ["Tulum Ruins", "Cenotes"],
-    "tags": ["Beach", "History", "Relaxation"]
-  },
-  {
-    "id": "17",
-    "name": "Athens",
-    "location": "Greece",
-    "image": "https://picsum.photos/seed/athens/800/600",
-    "description": "The heart of Ancient Greece, home to the iconic Acropolis.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "4 Days",
-    "highlights": ["Acropolis", "Parthenon"],
-    "tags": ["History", "City", "Architecture"]
-  },
-  {
-    "id": "18",
-    "name": "Mount Kilimanjaro",
-    "location": "Tanzania",
-    "image": "https://picsum.photos/seed/kilimanjaro/800/600",
-    "description": "Trek to the roof of Africa on this massive dormant volcano.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "9 Days",
-    "highlights": ["Uhuru Peak", "Lemosho Route"],
-    "tags": ["Mountains", "Trekking", "Thrill"]
-  },
-  {
-    "id": "19",
-    "name": "Fiji",
-    "location": "Fiji",
-    "image": "https://picsum.photos/seed/fiji/800/600",
-    "description": "Palm-lined beaches, coral reefs, and clear lagoons.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "8 Days",
-    "highlights": ["Mamanuca Islands", "Coral Coast"],
-    "tags": ["Beach", "Relaxation", "Nature"]
-  },
-  {
-    "id": "20",
-    "name": "Taj Mahal",
-    "location": "India",
-    "image": "https://picsum.photos/seed/tajmahal/800/600",
-    "description": "An immense mausoleum of white marble, built for love.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Taj Mahal", "Agra Fort"],
-    "tags": ["History", "Architecture", "Romantic"]
-  },
-  {
-    "id": "21",
-    "name": "Grand Canyon",
-    "location": "USA",
-    "image": "https://picsum.photos/seed/grandcanyon/800/600",
-    "description": "Vast, magnificent canyon ideal for hiking and white-water rafting.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "4 Days",
-    "highlights": ["South Rim", "Colorado River"],
-    "tags": ["Nature", "Hiking", "Mountains"]
-  },
-  {
-    "id": "22",
-    "name": "Phuket",
-    "location": "Thailand",
-    "image": "https://picsum.photos/seed/phuket/800/600",
-    "description": "Beautiful beaches, vibrant nightlife, and luxurious resorts.",
-    "budget": "Low",
-    "type": "Leisure",
-    "duration": "7 Days",
-    "highlights": ["Patong Beach", "Phi Phi Islands"],
-    "tags": ["Beach", "Party", "Relaxation"]
-  },
-  {
-    "id": "23",
-    "name": "Cairo",
-    "location": "Egypt",
-    "image": "https://picsum.photos/seed/cairo/800/600",
-    "description": "Home to the ancient Pyramids of Giza and the Sphinx.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "4 Days",
-    "highlights": ["Pyramids of Giza", "Egyptian Museum"],
-    "tags": ["History", "Desert", "Ancient"]
-  },
-  {
-    "id": "24",
-    "name": "Moab",
-    "location": "USA",
-    "image": "https://picsum.photos/seed/moab/800/600",
-    "description": "Red rock canyons famous for mountain biking and off-roading.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "5 Days",
-    "highlights": ["Arches National Park", "Canyonlands"],
-    "tags": ["Nature", "Thrill", "Desert"]
-  },
-  {
-    "id": "25",
-    "name": "Seychelles",
-    "location": "Seychelles",
-    "image": "https://picsum.photos/seed/seychelles/800/600",
-    "description": "Pristine beaches, giant tortoises, and lush nature reserves.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "7 Days",
-    "highlights": ["Anse Source d'Argent", "Vallée de Mai"],
-    "tags": ["Luxury", "Beach", "Wildlife"]
-  },
-  {
-    "id": "26",
-    "name": "Istanbul",
-    "location": "Turkey",
-    "image": "https://picsum.photos/seed/istanbul/800/600",
-    "description": "A cultural melting pot where Europe meets Asia.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "5 Days",
-    "highlights": ["Hagia Sophia", "Grand Bazaar"],
-    "tags": ["History", "City", "Food"]
-  },
-  {
-    "id": "27",
-    "name": "Chamonix",
-    "location": "France",
-    "image": "https://picsum.photos/seed/chamonix/800/600",
-    "description": "The base for Mont Blanc, offering extreme skiing and mountaineering.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "6 Days",
-    "highlights": ["Aiguille du Midi", "Mer de Glace"],
-    "tags": ["Snow", "Skiing", "Mountains"]
-  },
-  {
-    "id": "28",
-    "name": "Mykonos",
-    "location": "Greece",
-    "image": "https://picsum.photos/seed/mykonos/800/600",
-    "description": "Iconic windmills, beautiful bays, and vibrant summer parties.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "5 Days",
-    "highlights": ["Little Venice", "Paradise Beach"],
-    "tags": ["Beach", "Party", "Luxury"]
-  },
-  {
-    "id": "29",
-    "name": "Florence",
-    "location": "Italy",
-    "image": "https://picsum.photos/seed/florence/800/600",
-    "description": "The birthplace of the Renaissance, filled with masterpieces.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "4 Days",
-    "highlights": ["Uffizi Gallery", "Duomo"],
-    "tags": ["History", "Art", "Architecture"]
-  },
-  {
-    "id": "30",
-    "name": "Yosemite",
-    "location": "USA",
-    "image": "https://picsum.photos/seed/yosemite/800/600",
-    "description": "Iconic granite cliffs and towering waterfalls for outdoor lovers.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "5 Days",
-    "highlights": ["El Capitan", "Half Dome"],
-    "tags": ["Nature", "Hiking", "Mountains"]
-  },
-  {
-    "id": "31",
-    "name": "Maui",
-    "location": "USA",
-    "image": "https://picsum.photos/seed/maui/800/600",
-    "description": "The Valley Isle, offering diverse beaches and the Road to Hana.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "7 Days",
-    "highlights": ["Road to Hana", "Haleakala"],
-    "tags": ["Beach", "Nature", "Relaxation"]
-  },
-  {
-    "id": "32",
-    "name": "Jerusalem",
-    "location": "Israel",
-    "image": "https://picsum.photos/seed/jerusalem/800/600",
-    "description": "One of the oldest cities in the world, sacred to three religions.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "4 Days",
-    "highlights": ["Western Wall", "Dome of the Rock"],
-    "tags": ["History", "Ancient", "City"]
-  },
-  {
-    "id": "33",
+    "id": "swiss_01",
     "name": "Zermatt",
-    "location": "Switzerland",
-    "image": "https://picsum.photos/seed/zermatt/800/600",
-    "description": "Mountain resort famous for skiing and the iconic Matterhorn.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "6 Days",
-    "highlights": ["Matterhorn Glacier Paradise", "Gornergrat"],
-    "tags": ["Snow", "Mountains", "Skiing"]
+    "country": "Switzerland",
+    "tags": ["Cold", "Mountains", "Ski"],
+    "overview": "Car-free village at the foot of the iconic Matterhorn peak.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1527668752968-14dc70a27c95",
+      "gallery": ["https://images.unsplash.com/photo-1464822759023-fed622ff2c3b", "https://images.unsplash.com/photo-1506905925346-21bda4d32df4"]
+    },
+    "hotels": [
+      { "hotelId": "h_zer_01", "name": "The Omnia", "image": "https://images.unsplash.com/photo-1517840901100-8179e982ad91", "pricePerNight": 550, "rating": 4.9, "amenities": ["Matterhorn View", "Ski-in"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_zer_01", "title": "Gornergrat Railway", "image": "https://images.unsplash.com/photo-1531310197839-ccf54634509e", "price": 95, "duration": "Half Day", "type": "Leisure" }
+    ]
   },
   {
-    "id": "34",
-    "name": "Lake Como",
-    "location": "Italy",
-    "image": "https://picsum.photos/seed/lakecomo/800/600",
-    "description": "Upscale resort area known for its dramatic scenery and villas.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "5 Days",
-    "highlights": ["Bellagio", "Villa del Balbianello"],
-    "tags": ["Luxury", "Nature", "Relaxation"]
+    "id": "iceland_01",
+    "name": "Reykjavik",
+    "country": "Iceland",
+    "tags": ["Nature", "Adventure", "Cold"],
+    "overview": "Vibrant capital gateway to glaciers, hot springs, and auroras.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1",
+      "gallery": ["https://images.unsplash.com/photo-1490750967868-88aa4486c946", "https://images.unsplash.com/photo-1500382017468-9049fed747ef"]
+    },
+    "hotels": [
+      { "hotelId": "h_ice_01", "name": "Blue Lagoon Retreat", "image": "https://images.unsplash.com/photo-1544161515-4af6b1d462c2", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Private Lagoon", "Spa"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_ice_01", "title": "Northern Lights Hunt", "image": "https://images.unsplash.com/photo-1483347756197-71ef80e95f73", "price": 80, "duration": "4h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "35",
+    "id": "dubai_01",
+    "name": "Dubai",
+    "country": "UAE",
+    "tags": ["Urban", "Luxury", "Desert"],
+    "overview": "Futuristic skyline with the Burj Khalifa and vast desert dunes.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+      "gallery": ["https://images.unsplash.com/photo-1518684079-3c830dcef090", "https://images.unsplash.com/photo-1540206351-d6465b3ac5c1"]
+    },
+    "hotels": [
+      { "hotelId": "h_dub_01", "name": "Burj Al Arab", "image": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb", "pricePerNight": 1800, "rating": 5.0, "amenities": ["Private Beach", "Helipad"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_dub_01", "title": "Burj Observation Deck", "image": "https://images.unsplash.com/photo-1526495124232-a02e1849118a", "price": 50, "duration": "2h", "type": "Cultural" }
+    ]
+  },
+  {
+    "id": "sydney_01",
+    "name": "Sydney",
+    "country": "Australia",
+    "tags": ["Urban", "Beach", "Modern"],
+    "overview": "Stunning harbor views, the Opera House, and Bondi Beach surf.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9",
+      "gallery": ["https://images.unsplash.com/photo-1523482580672-f109ba8cb9be", "https://images.unsplash.com/photo-1524230572899-a752b3835840"]
+    },
+    "hotels": [
+      { "hotelId": "h_syd_01", "name": "Park Hyatt Sydney", "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427", "pricePerNight": 750, "rating": 4.9, "amenities": ["Harbor View", "Rooftop Pool"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_syd_01", "title": "Harbor Bridge Climb", "image": "https://images.unsplash.com/photo-1524230572899-a752b3835840", "price": 280, "duration": "3h", "type": "Adventure" }
+    ]
+  },
+  {
+    "id": "tokyo_01",
+    "name": "Tokyo",
+    "country": "Japan",
+    "tags": ["Urban", "Tech", "Food"],
+    "overview": "Neon-lit streets, world-class sushi, and deep-rooted traditions.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+      "gallery": ["https://images.unsplash.com/photo-1503899036084-c55cdd92da26", "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e"]
+    },
+    "hotels": [
+      { "hotelId": "h_tok_01", "name": "Park Hyatt Tokyo", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 600, "rating": 4.8, "amenities": ["Skyline View", "Jazz Bar"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_tok_01", "title": "Shibuya Crossing", "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989", "price": 0, "duration": "1h", "type": "Cultural" }
+    ]
+  },
+  {
+    "id": "rome_01",
+    "name": "Rome",
+    "country": "Italy",
+    "tags": ["History", "Art", "Food"],
+    "overview": "The Eternal City, home to the Colosseum, Vatican, and fine pasta.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1552832230-c0197dd311b5",
+      "gallery": ["https://images.unsplash.com/photo-1529260830199-42c24126f198", "https://images.unsplash.com/photo-1515542641795-06ed2039c695"]
+    },
+    "hotels": [
+      { "hotelId": "h_rom_01", "name": "Hotel Hassler Roma", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 780, "rating": 4.9, "amenities": ["Vatican View", "Italian Decor"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_rom_01", "title": "Colosseum Tour", "image": "https://images.unsplash.com/photo-1555990538-2352f0594a86", "price": 65, "duration": "3h", "type": "Cultural" }
+    ]
+  },
+  {
+    "id": "nyc_01",
+    "name": "New York City",
+    "country": "USA",
+    "tags": ["Urban", "Shopping", "Art"],
+    "overview": "The city that never sleeps, from Times Square to Central Park.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
+      "gallery": ["https://images.unsplash.com/photo-1485871982741-997ef2c4f4a0", "https://images.unsplash.com/photo-1534430480872-3498386e7a56"]
+    },
+    "hotels": [
+      { "hotelId": "h_nyc_01", "name": "The Plaza", "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb", "pricePerNight": 950, "rating": 4.8, "amenities": ["Central Park View", "Butler"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_nyc_01", "title": "Broadway Show", "image": "https://images.unsplash.com/photo-1514302240736-b1fee5985889", "price": 150, "duration": "3h", "type": "Cultural" }
+    ]
+  },
+  {
+    "id": "cairo_01",
+    "name": "Cairo",
+    "country": "Egypt",
+    "tags": ["History", "Desert", "Cultural"],
+    "overview": "Ancient wonders meet a bustling modern metropolis on the Nile.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368",
+      "gallery": ["https://images.unsplash.com/photo-1539136788836-5699e78bac75", "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368"]
+    },
+    "hotels": [
+      { "hotelId": "h_cai_01", "name": "Mena House", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.7, "amenities": ["Pyramid View", "Garden Pool"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_cai_01", "title": "Giza Pyramids Tour", "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368", "price": 50, "duration": "4h", "type": "History" }
+    ]
+  },
+  {
+    "id": "rio_01",
+    "name": "Rio de Janeiro",
+    "country": "Brazil",
+    "tags": ["Beach", "Party", "Nature"],
+    "overview": "Breathtaking landscapes, samba beats, and iconic Christ the Redeemer.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325",
+      "gallery": ["https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f", "https://images.unsplash.com/photo-1483729558449-99ef09a8c325"]
+    },
+    "hotels": [
+      { "hotelId": "h_rio_01", "name": "Copacabana Palace", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Beachfront", "Historic Style"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_rio_01", "title": "Sugarloaf Mountain", "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325", "price": 40, "duration": "3h", "type": "Leisure" }
+    ]
+  },
+  {
+    "id": "london_01",
+    "name": "London",
+    "country": "UK",
+    "tags": ["Urban", "History", "Modern"],
+    "overview": "Royal heritage, world-class museums, and the Thames riverbanks.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad",
+      "gallery": ["https://images.unsplash.com/photo-1486299267070-83823f5448dd", "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad"]
+    },
+    "hotels": [
+      { "hotelId": "h_lon_01", "name": "The Savoy", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.9, "amenities": ["River View", "Butler Service"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_lon_01", "title": "London Eye", "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad", "price": 35, "duration": "1h", "type": "Family" }
+    ]
+  },
+  {
+    "id": "barcelona_01",
+    "name": "Barcelona",
+    "country": "Spain",
+    "tags": ["Art", "Beach", "Food"],
+    "overview": "Gaudí’s masterpieces, urban beaches, and world-class tapas.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1583422409516-2895a77efded",
+      "gallery": ["https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4", "https://images.unsplash.com/photo-1523531294919-4bcd7c65e215"]
+    },
+    "hotels": [
+      { "hotelId": "h_bar_01", "name": "W Barcelona", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.7, "amenities": ["Rooftop Bar", "Sea View"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_bar_01", "title": "Sagrada Familia", "image": "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4", "price": 30, "duration": "2h", "type": "Cultural" }
+    ]
+  },
+  {
+    "id": "capetown_01",
+    "name": "Cape Town",
+    "country": "South Africa",
+    "tags": ["Nature", "Beach", "Wine"],
+    "overview": "A mix of mountains and sea with Table Mountain and stunning vineyards.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1580619171172-2757538d0f31",
+      "gallery": ["https://images.unsplash.com/photo-1576485736788-7b19d5a7d744", "https://images.unsplash.com/photo-1580619171172-2757538d0f31"]
+    },
+    "hotels": [
+      { "hotelId": "h_ct_01", "name": "The Silo Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 900, "rating": 5.0, "amenities": ["Harbor View", "Modern Art"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_ct_01", "title": "Table Mountain Cableway", "image": "https://images.unsplash.com/photo-1580619171172-2757538d0f31", "price": 25, "duration": "2h", "type": "Nature" }
+    ]
+  },
+  {
+    "id": "amsterdam_01",
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "tags": ["Urban", "Art", "Culture"],
+    "overview": "Charming canals, historic houses, and world-class museums.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4",
+      "gallery": ["https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4"]
+    },
+    "hotels": [
+      { "hotelId": "h_ams_01", "name": "Pulitzer Amsterdam", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.8, "amenities": ["Canal Side", "Vintage Style"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_ams_01", "title": "Canal Cruise", "image": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4", "price": 20, "duration": "1.5h", "type": "Leisure" }
+    ]
+  },
+  {
+    "id": "prague_01",
     "name": "Prague",
-    "location": "Czechia",
-    "image": "https://picsum.photos/seed/prague/800/600",
-    "description": "The City of a Hundred Spires, known for its Old Town Square.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "4 Days",
-    "highlights": ["Charles Bridge", "Prague Castle"],
-    "tags": ["History", "Architecture", "City"]
+    "country": "Czech Republic",
+    "tags": ["History", "Art", "Romantic"],
+    "overview": "The City of a Hundred Spires, with gothic bridges and medieval charm.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1519677100203-ad0382b629e4",
+      "gallery": ["https://images.unsplash.com/photo-1541849546-216549ae216d", "https://images.unsplash.com/photo-1519677100203-ad0382b629e4"]
+    },
+    "hotels": [
+      { "hotelId": "h_pra_01", "name": "Four Seasons Prague", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 4.9, "amenities": ["Castle View", "Riverside"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_pra_01", "title": "Charles Bridge Walk", "image": "https://images.unsplash.com/photo-1519677100203-ad0382b629e4", "price": 0, "duration": "1h", "type": "Cultural" }
+    ]
   },
   {
-    "id": "36",
-    "name": "Galapagos Islands",
-    "location": "Ecuador",
-    "image": "https://picsum.photos/seed/galapagos/800/600",
-    "description": "Volcanic archipelago rich in unique and fearless wildlife.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "8 Days",
-    "highlights": ["Tortuga Bay", "Charles Darwin Station"],
-    "tags": ["Wildlife", "Nature", "Ocean"]
+    "id": "venice_01",
+    "name": "Venice",
+    "country": "Italy",
+    "tags": ["Romantic", "History", "Water"],
+    "overview": "A city built on water, known for gondolas and Renaissance architecture.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9",
+      "gallery": ["https://images.unsplash.com/photo-1514890547357-a9ee2887ad8e", "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9"]
+    },
+    "hotels": [
+      { "hotelId": "h_ven_01", "name": "Gritti Palace", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Grand Canal View", "Luxury Spa"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_ven_01", "title": "Gondola Ride", "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9", "price": 80, "duration": "45m", "type": "Romantic" }
+    ]
   },
   {
-    "id": "37",
-    "name": "Cinque Terre",
-    "location": "Italy",
-    "image": "https://picsum.photos/seed/cinqueterre/800/600",
-    "description": "String of centuries-old seaside villages on the rugged coastline.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "4 Days",
-    "highlights": ["Vernazza", "Monterosso al Mare"],
-    "tags": ["Coastal", "Food", "Relaxation"]
+    "id": "lisbon_01",
+    "name": "Lisbon",
+    "country": "Portugal",
+    "tags": ["Urban", "History", "Food"],
+    "overview": "Hilly, coastal capital known for Fado music and custard tarts.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
+      "gallery": ["https://images.unsplash.com/photo-1558117627-172316732c5d", "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"]
+    },
+    "hotels": [
+      { "hotelId": "h_lis_01", "name": "Bairro Alto Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Rooftop Terrace", "Central"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_lis_01", "title": "Tram 28 Tour", "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "price": 10, "duration": "1h", "type": "Cultural" }
+    ]
   },
   {
-    "id": "38",
-    "name": "Marrakech",
-    "location": "Morocco",
-    "image": "https://picsum.photos/seed/marrakech/800/600",
-    "description": "A vibrant city of mosques, palaces, and sprawling markets.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "5 Days",
-    "highlights": ["Jemaa el-Fnaa", "Majorelle Garden"],
-    "tags": ["History", "City", "Architecture"]
+    "id": "machupicchu_01",
+    "name": "Machu Picchu",
+    "country": "Peru",
+    "tags": ["History", "Mountains", "Adventure"],
+    "overview": "Ancient Inca citadel set high in the Andes Mountains.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1509216242873-7786f446f465",
+      "gallery": ["https://images.unsplash.com/photo-1526392060635-9d6019884377", "https://images.unsplash.com/photo-1509216242873-7786f446f465"]
+    },
+    "hotels": [
+      { "hotelId": "h_mp_01", "name": "Belmond Sanctuary Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1200, "rating": 5.0, "amenities": ["On-site Access", "Mountain View"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_mp_01", "title": "Inca Trail Hike", "image": "https://images.unsplash.com/photo-1509216242873-7786f446f465", "price": 500, "duration": "4 Days", "type": "Adventure" }
+    ]
   },
   {
-    "id": "39",
-    "name": "Iceland",
-    "location": "Iceland",
-    "image": "https://picsum.photos/seed/iceland/800/600",
-    "description": "Land of fire and ice, offering glacier hikes and volcano tours.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "7 Days",
-    "highlights": ["Blue Lagoon", "Golden Circle"],
-    "tags": ["Nature", "Mountains", "Thrill"]
+    "id": "buenosaires_01",
+    "name": "Buenos Aires",
+    "country": "Argentina",
+    "tags": ["Culture", "Food", "Urban"],
+    "overview": "The Paris of the South, famous for tango and steak.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849",
+      "gallery": ["https://images.unsplash.com/photo-1544735716-392fe2489ffa", "https://images.unsplash.com/photo-1589909202802-8f4aadce1849"]
+    },
+    "hotels": [
+      { "hotelId": "h_ba_01", "name": "Alvear Palace", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Butler", "Historic Charm"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_ba_01", "title": "Tango Dinner Show", "image": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849", "price": 100, "duration": "4h", "type": "Cultural" }
+    ]
   },
   {
-    "id": "40",
-    "name": "Turks and Caicos",
-    "location": "Turks and Caicos",
-    "image": "https://picsum.photos/seed/turks/800/600",
-    "description": "Tropical paradise known for uncrowded, pristine white-sand beaches.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "6 Days",
-    "highlights": ["Grace Bay", "Chalk Sound"],
-    "tags": ["Beach", "Luxury", "Relaxation"]
+    "id": "patagonia_01",
+    "name": "El Chalten",
+    "country": "Argentina",
+    "tags": ["Nature", "Adventure", "Mountains"],
+    "overview": "The trekking capital of Argentina, gateway to Mount Fitz Roy.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1517059224940-d4af9eec41b7",
+      "gallery": ["https://images.unsplash.com/photo-1490750967868-88aa4486c946", "https://images.unsplash.com/photo-1517059224940-d4af9eec41b7"]
+    },
+    "hotels": [
+      { "hotelId": "h_pat_01", "name": "Explora El Chalten", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 800, "rating": 4.9, "amenities": ["Adventure Guides", "Spa"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_pat_01", "title": "Laguna de los Tres Hike", "image": "https://images.unsplash.com/photo-1517059224940-d4af9eec41b7", "price": 0, "duration": "8h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "41",
-    "name": "Vienna",
-    "location": "Austria",
-    "image": "https://picsum.photos/seed/vienna/800/600",
-    "description": "Imperial palaces and a legacy of classical music.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "4 Days",
-    "highlights": ["Schönbrunn Palace", "St. Stephen's Cathedral"],
-    "tags": ["History", "Art", "City"]
+    "id": "serengeti_01",
+    "name": "Serengeti",
+    "country": "Tanzania",
+    "tags": ["Nature", "Adventure", "Wildlife"],
+    "overview": "Famed for the Great Migration and world-class safaris.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1516426122078-c23e76319801",
+      "gallery": ["https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "https://images.unsplash.com/photo-1516426122078-c23e76319801"]
+    },
+    "hotels": [
+      { "hotelId": "h_ser_01", "name": "Four Seasons Safari Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1500, "rating": 5.0, "amenities": ["Waterhole View", "Infinity Pool"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_ser_01", "title": "Sunrise Balloon Safari", "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801", "price": 600, "duration": "4h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "42",
-    "name": "Great Barrier Reef",
-    "location": "Australia",
-    "image": "https://picsum.photos/seed/gbr/800/600",
-    "description": "The world's largest coral reef system, perfect for scuba diving.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "6 Days",
-    "highlights": ["Whitehaven Beach", "Scuba Diving"],
-    "tags": ["Ocean", "Wildlife", "Nature"]
+    "id": "marrakesh_01",
+    "name": "Marrakesh",
+    "country": "Morocco",
+    "tags": ["Culture", "History", "Desert"],
+    "overview": "A sensory feast of souks, palaces, and desert landscapes.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1597212618440-806262de4fe1",
+      "gallery": ["https://images.unsplash.com/photo-1520939817395-0f2dee99f941", "https://images.unsplash.com/photo-1597212618440-806262de4fe1"]
+    },
+    "hotels": [
+      { "hotelId": "h_mar_01", "name": "La Mamounia", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 850, "rating": 5.0, "amenities": ["Royal Gardens", "Luxury Spa"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_mar_01", "title": "Jardin Majorelle Tour", "image": "https://images.unsplash.com/photo-1597212618440-806262de4fe1", "price": 15, "duration": "2h", "type": "Leisure" }
+    ]
   },
   {
-    "id": "43",
-    "name": "Riviera Maya",
-    "location": "Mexico",
-    "image": "https://picsum.photos/seed/rivieramaya/800/600",
-    "description": "Beautiful stretch of Caribbean coastline with all-inclusive resorts.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "5 Days",
-    "highlights": ["Playa del Carmen", "Xcaret Park"],
-    "tags": ["Beach", "Relaxation", "Food"]
+    "id": "hawaii_01",
+    "name": "Maui",
+    "country": "USA",
+    "tags": ["Beach", "Nature", "Tropical"],
+    "overview": "The Valley Isle, known for pristine beaches and volcanic peaks.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d",
+      "gallery": ["https://images.unsplash.com/photo-1510414842594-a61c69b5ae57", "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d"]
+    },
+    "hotels": [
+      { "hotelId": "h_mau_01", "name": "Four Seasons Maui", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 4.9, "amenities": ["Oceanfront", "Kids Club"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_mau_01", "title": "Road to Hana Tour", "image": "https://images.unsplash.com/photo-1505852679233-d9fd70aff56d", "price": 180, "duration": "Full Day", "type": "Adventure" }
+    ]
   },
   {
-    "id": "44",
-    "name": "Chichen Itza",
-    "location": "Mexico",
-    "image": "https://picsum.photos/seed/chichenitza/800/600",
-    "description": "A complex of Mayan ruins featuring the massive El Castillo pyramid.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["El Castillo", "Cenote Sagrado"],
-    "tags": ["History", "Ancient", "Architecture"]
+    "id": "lasvegas_01",
+    "name": "Las Vegas",
+    "country": "USA",
+    "tags": ["Urban", "Party", "Desert"],
+    "overview": "The entertainment capital of the world, famous for casinos and nightlife.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1581351123004-757df051db8e",
+      "gallery": ["https://images.unsplash.com/photo-1541336032412-2048a678540d", "https://images.unsplash.com/photo-1581351123004-757df051db8e"]
+    },
+    "hotels": [
+      { "hotelId": "h_lv_01", "name": "Bellagio", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 350, "rating": 4.8, "amenities": ["Fountain View", "Casino"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_lv_01", "title": "Grand Canyon Helicopter", "image": "https://images.unsplash.com/photo-1581351123004-757df051db8e", "price": 450, "duration": "4h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "45",
-    "name": "Sahara Desert",
-    "location": "Morocco",
-    "image": "https://picsum.photos/seed/sahara/800/600",
-    "description": "Vast dunes perfect for camel trekking and stargazing.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "4 Days",
-    "highlights": ["Merzouga", "Erg Chebbi"],
-    "tags": ["Desert", "Nature", "Thrill"]
+    "id": "vancouver_01",
+    "name": "Vancouver",
+    "country": "Canada",
+    "tags": ["Urban", "Nature", "Modern"],
+    "overview": "A coastal city where mountains meet modern high-rises.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1559511260-66a654ae982a",
+      "gallery": ["https://images.unsplash.com/photo-1522108702419-f90b4356401f", "https://images.unsplash.com/photo-1559511260-66a654ae982a"]
+    },
+    "hotels": [
+      { "hotelId": "h_van_01", "name": "Fairmont Pacific Rim", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.8, "amenities": ["Harbor View", "Spa"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_van_01", "title": "Capilano Suspension Bridge", "image": "https://images.unsplash.com/photo-1559511260-66a654ae982a", "price": 60, "duration": "3h", "type": "Leisure" }
+    ]
   },
   {
-    "id": "46",
-    "name": "Capri",
-    "location": "Italy",
-    "image": "https://picsum.photos/seed/capri/800/600",
-    "description": "Island in the Bay of Naples famed for its rugged landscape.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "4 Days",
-    "highlights": ["Blue Grotto", "Piazzetta"],
-    "tags": ["Luxury", "Coastal", "Relaxation"]
+    "id": "mexicocity_01",
+    "name": "Mexico City",
+    "country": "Mexico",
+    "tags": ["Culture", "Food", "History"],
+    "overview": "A high-altitude capital known for its Aztec ruins and vibrant food.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a",
+      "gallery": ["https://images.unsplash.com/photo-1512813195391-454728c61405", "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a"]
+    },
+    "hotels": [
+      { "hotelId": "h_mex_01", "name": "Four Seasons Mexico City", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.9, "amenities": ["Courtyard Pool", "Fine Dining"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_mex_01", "title": "Teotihuacan Pyramids", "image": "https://images.unsplash.com/photo-1518105779142-d975b22f1b0a", "price": 80, "duration": "6h", "type": "History" }
+    ]
   },
   {
-    "id": "47",
-    "name": "Havana",
-    "location": "Cuba",
-    "image": "https://picsum.photos/seed/havana/800/600",
-    "description": "Vintage cars, Spanish colonial architecture, and salsa music.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "5 Days",
-    "highlights": ["Old Havana", "Malecon"],
-    "tags": ["History", "City", "Art"]
+    "id": "queenstown_01",
+    "name": "Queenstown",
+    "country": "New Zealand",
+    "tags": ["Adventure", "Mountains", "Cold"],
+    "overview": "The adventure capital, perfect for skiing and bungee jumping.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1589802829985-817e511f1b92",
+      "gallery": ["https://images.unsplash.com/photo-1507699622108-4be3abd695ad", "https://images.unsplash.com/photo-1589802829985-817e511f1b92"]
+    },
+    "hotels": [
+      { "hotelId": "h_qt_01", "name": "Matakauri Lodge", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1000, "rating": 5.0, "amenities": ["Lake View", "Luxury Cabin"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_qt_01", "title": "Nevis Bungee Jump", "image": "https://images.unsplash.com/photo-1589802829985-817e511f1b92", "price": 275, "duration": "4h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "48",
-    "name": "Interlaken",
-    "location": "Switzerland",
-    "image": "https://picsum.photos/seed/interlaken/800/600",
-    "description": "Nestled between two lakes, it's a hub for skydiving and paragliding.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "5 Days",
-    "highlights": ["Harder Kulm", "Paragliding"],
-    "tags": ["Mountains", "Thrill", "Nature"]
+    "id": "phuket_01",
+    "name": "Phuket",
+    "country": "Thailand",
+    "tags": ["Beach", "Party", "Tropical"],
+    "overview": "Thailand's largest island, with busy beaches and nightlife.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3",
+      "gallery": ["https://images.unsplash.com/photo-1528181304800-2f1738b24a61", "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3"]
+    },
+    "hotels": [
+      { "hotelId": "h_phu_01", "name": "Amanpuri", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 950, "rating": 4.9, "amenities": ["Private Beach", "Thai Pavilions"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_phu_01", "title": "Phi Phi Island Day Trip", "image": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3", "price": 100, "duration": "Full Day", "type": "Leisure" }
+    ]
   },
   {
-    "id": "49",
-    "name": "Bahamas",
-    "location": "Bahamas",
-    "image": "https://picsum.photos/seed/bahamas/800/600",
-    "description": "Coral-based archipelago known for its clear waters and swimming pigs.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "6 Days",
-    "highlights": ["Pig Beach", "Atlantis Resort"],
-    "tags": ["Beach", "Luxury", "Wildlife"]
+    "id": "singapore_01",
+    "name": "Singapore",
+    "country": "Singapore",
+    "tags": ["Urban", "Modern", "Food"],
+    "overview": "A city-state known for its gardens and futuristic architecture.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1525625239513-99732289947d",
+      "gallery": ["https://images.unsplash.com/photo-1565967511849-76a60a516170", "https://images.unsplash.com/photo-1525625239513-99732289947d"]
+    },
+    "hotels": [
+      { "hotelId": "h_sin_01", "name": "Marina Bay Sands", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.8, "amenities": ["Infinity Pool", "Casino"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_sin_01", "title": "Gardens by the Bay", "image": "https://images.unsplash.com/photo-1525625239513-99732289947d", "price": 20, "duration": "3h", "type": "Leisure" }
+    ]
   },
   {
-    "id": "50",
+    "id": "seoul_01",
     "name": "Seoul",
-    "location": "South Korea",
-    "image": "https://picsum.photos/seed/seoul/800/600",
-    "description": "A sprawling metropolis where modern skyscrapers meet pop culture and history.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "5 Days",
-    "highlights": ["Gyeongbokgung Palace", "Myeong-dong"],
-    "tags": ["City", "History", "Food"]
+    "country": "South Korea",
+    "tags": ["Urban", "Tech", "Food"],
+    "overview": "Hyper-modern city with deep historic roots and vibrant markets.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc",
+      "gallery": ["https://images.unsplash.com/photo-1546877625-cb8c71916608", "https://images.unsplash.com/photo-1538481199705-c710c4e965fc"]
+    },
+    "hotels": [
+      { "hotelId": "h_seo_01", "name": "The Shilla Seoul", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Spa", "Mountain View"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_seo_01", "title": "Gyeongbokgung Palace", "image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc", "price": 5, "duration": "2h", "type": "Cultural" }
+    ]
   },
   {
-    "id": "51",
-    "name": "Varanasi",
-    "location": "India",
-    "image": "https://picsum.photos/seed/varanasi/800/600",
-    "description": "The spiritual capital of India, situated on the banks of the Ganges.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "3 Days",
-    "highlights": ["Ganga Aarti", "Kashi Vishwanath Temple"],
-    "tags": ["Spiritual", "History", "Culture"]
+    "id": "siemreap_01",
+    "name": "Siem Reap",
+    "country": "Cambodia",
+    "tags": ["History", "Culture", "Spiritual"],
+    "overview": "Gateway to the majestic Angkor Wat temple complex.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1500048993953-d23a436266cf",
+      "gallery": ["https://images.unsplash.com/photo-1569430469288-9f37c356b9c9", "https://images.unsplash.com/photo-1500048993953-d23a436266cf"]
+    },
+    "hotels": [
+      { "hotelId": "h_sr_01", "name": "Amansara", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1100, "rating": 5.0, "amenities": ["Private Plunge Pool", "Cultural Guides"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_sr_01", "title": "Angkor Wat Sunrise Tour", "image": "https://images.unsplash.com/photo-1500048993953-d23a436266cf", "price": 40, "duration": "4h", "type": "History" }
+    ]
   },
   {
-    "id": "52",
-    "name": "Goa",
-    "location": "India",
-    "image": "https://picsum.photos/seed/goa/800/600",
-    "description": "Famous for its stunning beaches, nightlife, and Portuguese heritage.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "5 Days",
-    "highlights": ["Baga Beach", "Basilica of Bom Jesus"],
-    "tags": ["Beach", "Party", "Relaxation"]
+    "id": "petra_01",
+    "name": "Petra",
+    "country": "Jordan",
+    "tags": ["History", "Desert", "Adventure"],
+    "overview": "Ancient city carved into red sandstone cliffs.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1579606035222-19e083c27632",
+      "gallery": ["https://images.unsplash.com/photo-1579606035222-19e083c27632", "https://images.unsplash.com/photo-1579606035222-19e083c27632"]
+    },
+    "hotels": [
+      { "hotelId": "h_pet_01", "name": "Old Village Hotel", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 200, "rating": 4.7, "amenities": ["Historic Setting", "Traditional Food"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_pet_01", "title": "The Treasury Walk", "image": "https://images.unsplash.com/photo-1579606035222-19e083c27632", "price": 70, "duration": "4h", "type": "History" }
+    ]
   },
   {
-    "id": "53",
-    "name": "Manali",
-    "location": "India",
-    "image": "https://picsum.photos/seed/manali/800/600",
-    "description": "A high-altitude Himalayan resort town known for backpacking and honeymoons.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "4 Days",
-    "highlights": ["Rohtang Pass", "Solang Valley"],
-    "tags": ["Mountains", "Snow", "Nature"]
-  },
-  {
-    "id": "54",
-    "name": "Udaipur",
-    "location": "India",
-    "image": "https://picsum.photos/seed/udaipur/800/600",
-    "description": "The City of Lakes, known for its lavish royal residences.",
-    "budget": "High",
-    "type": "Cultural",
-    "duration": "3 Days",
-    "highlights": ["City Palace", "Lake Pichola"],
-    "tags": ["History", "Architecture", "Luxury"]
-  },
-  {
-    "id": "55",
-    "name": "Kerala Backwaters",
-    "location": "India",
-    "image": "https://picsum.photos/seed/kerala/800/600",
-    "description": "A network of brackish lagoons and lakes parallel to the Malabar Coast.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "4 Days",
-    "highlights": ["Alleppey Houseboats", "Kumarakom"],
-    "tags": ["Nature", "Relaxation", "Water"]
-  },
-  {
-    "id": "56",
-    "name": "Rishikesh",
-    "location": "India",
-    "image": "https://picsum.photos/seed/rishikesh/800/600",
-    "description": "The Yoga Capital of the World and a hub for river rafting.",
-    "budget": "Low",
-    "type": "Adventure",
-    "duration": "3 Days",
-    "highlights": ["Ganga Aarti at Triveni Ghat", "White Water Rafting"],
-    "tags": ["Spiritual", "Thrill", "Nature"]
-  },
-  {
-    "id": "57",
-    "name": "Hampi",
-    "location": "India",
-    "image": "https://picsum.photos/seed/hampi/800/600",
-    "description": "Ancient village dotted with ruined temple complexes from the Vijayanagara Empire.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "3 Days",
-    "highlights": ["Virupaksha Temple", "Matanga Hill"],
-    "tags": ["History", "Ruins", "Architecture"]
-  },
-  {
-    "id": "58",
-    "name": "Leh Ladakh",
-    "location": "India",
-    "image": "https://picsum.photos/seed/ladakh/800/600",
-    "description": "Dramatic landscapes, high mountain passes, and ancient Buddhist monasteries.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "7 Days",
-    "highlights": ["Pangong Lake", "Nubra Valley"],
-    "tags": ["Mountains", "Trekking", "Nature"]
-  },
-  {
-    "id": "59",
-    "name": "Andaman Islands",
-    "location": "India",
-    "image": "https://picsum.photos/seed/andaman/800/600",
-    "description": "Pristine white-sand beaches and world-class scuba diving.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "6 Days",
-    "highlights": ["Radhanagar Beach", "Cellular Jail"],
-    "tags": ["Beach", "Ocean", "Relaxation"]
-  },
-  {
-    "id": "60",
-    "name": "Jaipur",
-    "location": "India",
-    "image": "https://picsum.photos/seed/jaipur/800/600",
-    "description": "The Pink City, forming part of the Golden Triangle tourist circuit.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "3 Days",
-    "highlights": ["Amer Fort", "Hawa Mahal"],
-    "tags": ["History", "Architecture", "City"]
-  },
-  {
-    "id": "61",
-    "name": "Spiti Valley",
-    "location": "India",
-    "image": "https://picsum.photos/seed/spiti/800/600",
-    "description": "A cold desert mountain valley located high in the Himalayas.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "6 Days",
-    "highlights": ["Key Monastery", "Chandratal Lake"],
-    "tags": ["Mountains", "Desert", "Thrill"]
-  },
-  {
-    "id": "62",
-    "name": "Munnar",
-    "location": "India",
-    "image": "https://picsum.photos/seed/munnar/800/600",
-    "description": "Rolling hills dotted with tea plantations established in the late 19th century.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["Eravikulam National Park", "Tea Museum"],
-    "tags": ["Nature", "Hills", "Relaxation"]
-  },
-  {
-    "id": "63",
-    "name": "Coorg",
-    "location": "India",
-    "image": "https://picsum.photos/seed/coorg/800/600",
-    "description": "Lush hill station in Karnataka famous for its coffee plantations.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["Abbey Falls", "Raja's Seat"],
-    "tags": ["Nature", "Coffee", "Hills"]
-  },
-  {
-    "id": "64",
-    "name": "Gokarna",
-    "location": "India",
-    "image": "https://picsum.photos/seed/gokarna/800/600",
-    "description": "A quieter alternative to Goa, known for pristine beaches and temples.",
-    "budget": "Low",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["Om Beach", "Mahabaleshwar Temple"],
-    "tags": ["Beach", "Spiritual", "Relaxation"]
-  },
-  {
-    "id": "65",
+    "id": "agra_01",
     "name": "Agra",
-    "location": "India",
-    "image": "https://picsum.photos/seed/agra/800/600",
-    "description": "Home to the iconic Taj Mahal and rich Mughal history.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Taj Mahal", "Fatehpur Sikri"],
-    "tags": ["History", "Architecture", "Culture"]
+    "country": "India",
+    "tags": ["History", "Romantic", "Culture"],
+    "overview": "Home to the Taj Mahal, the world's greatest monument to love.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1564507592333-c60657ece523",
+      "gallery": ["https://images.unsplash.com/photo-1548013146-72479768bbaa", "https://images.unsplash.com/photo-1564507592333-c60657ece523"]
+    },
+    "hotels": [
+      { "hotelId": "h_agr_01", "name": "Oberoi Amarvilas", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 5.0, "amenities": ["Taj Mahal View", "Butler"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_agr_01", "title": "Taj Mahal Sunrise", "image": "https://images.unsplash.com/photo-1564507592333-c60657ece523", "price": 15, "duration": "3h", "type": "History" }
+    ]
   },
   {
-    "id": "66",
-    "name": "Darjeeling",
-    "location": "India",
-    "image": "https://picsum.photos/seed/darjeeling/800/600",
-    "description": "Famous for its distinctive black tea and the Himalayan Railway.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "4 Days",
-    "highlights": ["Tiger Hill", "Batasia Loop"],
-    "tags": ["Hills", "Nature", "Relaxation"]
+    "id": "cappadocia_01",
+    "name": "Cappadocia",
+    "country": "Turkey",
+    "tags": ["History", "Adventure", "Nature"],
+    "overview": "Unique cave dwellings and famous hot air balloon skies.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1527838832700-5059252407fa",
+      "gallery": ["https://images.unsplash.com/photo-1550747528-cdb8677c8141", "https://images.unsplash.com/photo-1527838832700-5059252407fa"]
+    },
+    "hotels": [
+      { "hotelId": "h_cap_01", "name": "Museum Hotel Cave", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Cave Suites", "Infinity Pool"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_cap_01", "title": "Hot Air Balloon Flight", "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa", "price": 250, "duration": "4h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "67",
-    "name": "Ranthambore",
-    "location": "India",
-    "image": "https://picsum.photos/seed/ranthambore/800/600",
-    "description": "One of the best places in India to see Bengal tigers in the wild.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "3 Days",
-    "highlights": ["Tiger Safari", "Ranthambore Fort"],
-    "tags": ["Wildlife", "Nature", "Photography"]
+    "id": "halongbay_01",
+    "name": "Ha Long Bay",
+    "country": "Vietnam",
+    "tags": ["Nature", "Water", "Leisure"],
+    "overview": "Towering limestone pillars and emerald waters.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592",
+      "gallery": ["https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "https://images.unsplash.com/photo-1528127269322-539801943592"]
+    },
+    "hotels": [
+      { "hotelId": "h_hlb_01", "name": "Paradise Cruise", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 350, "rating": 4.8, "amenities": ["Luxury Cabin", "On-deck Dining"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_hlb_01", "title": "Bay Kayaking", "image": "https://images.unsplash.com/photo-1528127269322-539801943592", "price": 40, "duration": "2h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "68",
-    "name": "Meghalaya",
-    "location": "India",
-    "image": "https://picsum.photos/seed/meghalaya/800/600",
-    "description": "The abode of clouds, famous for living root bridges and waterfalls.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "5 Days",
-    "highlights": ["Cherrapunji", "Dawki River"],
-    "tags": ["Nature", "Trekking", "Rainforest"]
+    "id": "borabora_01",
+    "name": "Bora Bora",
+    "country": "French Polynesia",
+    "tags": ["Beach", "Luxury", "Tropical"],
+    "overview": "Breathtaking turquoise lagoons and volcanic peaks.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017",
+      "gallery": ["https://images.unsplash.com/photo-1506929113675-b55f949b6552", "https://images.unsplash.com/photo-1534351590666-13e3e96b5017"]
+    },
+    "hotels": [
+      { "hotelId": "h_bb_01", "name": "St. Regis Bora Bora", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 1800, "rating": 5.0, "amenities": ["Overwater Villa", "Spa"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_bb_01", "title": "Lagoon Safari", "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "price": 150, "duration": "4h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "69",
-    "name": "Mysore",
-    "location": "India",
-    "image": "https://picsum.photos/seed/mysore/800/600",
-    "description": "Known for its glittering royal heritage and magnificent monuments and buildings.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Mysore Palace", "Chamundi Hill"],
-    "tags": ["History", "Architecture", "Culture"]
+    "id": "goldcoast_01",
+    "name": "Gold Coast",
+    "country": "Australia",
+    "tags": ["Beach", "Urban", "Party"],
+    "overview": "Stunning beaches and world-class surfing.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9",
+      "gallery": ["https://images.unsplash.com/photo-1523482580672-f109ba8cb9be", "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9"]
+    },
+    "hotels": [
+      { "hotelId": "h_gc_01", "name": "The Langham Gold Coast", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Beachfront", "High Tea"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_gc_01", "title": "Surfers Paradise Lessons", "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9", "price": 80, "duration": "2h", "type": "Adventure" }
+    ]
   },
   {
-    "id": "70",
-    "name": "Jaisalmer",
-    "location": "India",
-    "image": "https://picsum.photos/seed/jaisalmer/800/600",
-    "description": "The Golden City, known for its yellow sandstone architecture.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "3 Days",
-    "highlights": ["Jaisalmer Fort", "Sam Sand Dunes"],
-    "tags": ["Desert", "History", "Architecture"]
+    "id": "greatbarrierreef_01",
+    "name": "Cairns",
+    "country": "Australia",
+    "tags": ["Nature", "Adventure", "Tropical"],
+    "overview": "Gateway to the world's largest coral reef system.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
+      "gallery": ["https://images.unsplash.com/photo-1506929113675-b55f949b6552", "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"]
+    },
+    "hotels": [
+      { "hotelId": "h_cai_02", "name": "Riley Crystalbrook Collection", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 350, "rating": 4.8, "amenities": ["Lagoon Pool", "Eco Friendly"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_cai_02", "title": "Great Barrier Reef Scuba", "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4", "price": 250, "duration": "Full Day", "type": "Adventure" }
+    ]
   },
   {
-    "id": "71",
-    "name": "Sikkim",
-    "location": "India",
-    "image": "https://picsum.photos/seed/sikkim/800/600",
-    "description": "Home to glaciers, alpine meadows and thousands of varieties of wildflowers.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "6 Days",
-    "highlights": ["Nathu La Pass", "Tsomgo Lake"],
-    "tags": ["Mountains", "Nature", "Hiking"]
+    "id": "lhasa_01",
+    "name": "Lhasa",
+    "country": "Tibet",
+    "tags": ["History", "Culture", "Spiritual"],
+    "overview": "The roof of the world, home to the Potala Palace.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1500048993953-d23a436266cf",
+      "gallery": ["https://images.unsplash.com/photo-1569430469288-9f37c356b9c9", "https://images.unsplash.com/photo-1500048993953-d23a436266cf"]
+    },
+    "hotels": [
+      { "hotelId": "h_lha_01", "name": "The St. Regis Lhasa Resort", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.9, "amenities": ["Oxygen Lounge", "Spiritual Tours"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_lha_01", "title": "Potala Palace Tour", "image": "https://images.unsplash.com/photo-1500048993953-d23a436266cf", "price": 30, "duration": "3h", "type": "History" }
+    ]
   },
   {
-    "id": "72",
-    "name": "Mahabaleshwar",
-    "location": "India",
-    "image": "https://picsum.photos/seed/mahabaleshwar/800/600",
-    "description": "A hill station in India's forested Western Ghats range.",
-    "budget": "Low",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["Elephant's Head Point", "Venna Lake"],
-    "tags": ["Hills", "Nature", "Relaxation"]
+    "id": "hanoi_01",
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "tags": ["Urban", "Food", "History"],
+    "overview": "Chaotic, beautiful capital known for its old quarter and street food.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592",
+      "gallery": ["https://images.unsplash.com/photo-1534067783941-51c9c23ecefd", "https://images.unsplash.com/photo-1528127269322-539801943592"]
+    },
+    "hotels": [
+      { "hotelId": "h_han_01", "name": "Sofitel Legend Metropole", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 450, "rating": 4.9, "amenities": ["Historic French Quarter", "Pool"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_han_01", "title": "Old Quarter Food Tour", "image": "https://images.unsplash.com/photo-1528127269322-539801943592", "price": 40, "duration": "3h", "type": "Cultural" }
+    ]
   },
   {
-    "id": "73",
-    "name": "Kaziranga",
-    "location": "India",
-    "image": "https://picsum.photos/seed/kaziranga/800/600",
-    "description": "A national park hosting two-thirds of the world's great one-horned rhinoceroses.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "3 Days",
-    "highlights": ["Jeep Safari", "Elephant Safari"],
-    "tags": ["Wildlife", "Nature", "Photography"]
+    "id": "bangkok_01",
+    "name": "Bangkok",
+    "country": "Thailand",
+    "tags": ["Urban", "Culture", "Food"],
+    "overview": "A city of contrasting shrines and street life with modern malls.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3",
+      "gallery": ["https://images.unsplash.com/photo-1528181304800-2f1738b24a61", "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3"]
+    },
+    "hotels": [
+      { "hotelId": "h_bkk_01", "name": "Mandarin Oriental", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 600, "rating": 5.0, "amenities": ["Riverside", "High-end Spa"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_bkk_01", "title": "Grand Palace Tour", "image": "https://images.unsplash.com/photo-1589394815804-964ed9be2eb3", "price": 20, "duration": "3h", "type": "History" }
+    ]
   },
   {
-    "id": "74",
-    "name": "Khajuraho",
-    "location": "India",
-    "image": "https://picsum.photos/seed/khajuraho/800/600",
-    "description": "Famous for its stunning temples adorned with intricate and erotic carvings.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Kandariya Mahadeva Temple", "Lakshmana Temple"],
-    "tags": ["History", "Architecture", "Art"]
+    "id": "dublin_01",
+    "name": "Dublin",
+    "country": "Ireland",
+    "tags": ["Urban", "History", "Food"],
+    "overview": "Friendly city known for its literary history and lively pubs.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1549918837-33fb3940c83e",
+      "gallery": ["https://images.unsplash.com/photo-1549918837-33fb3940c83e", "https://images.unsplash.com/photo-1549918837-33fb3940c83e"]
+    },
+    "hotels": [
+      { "hotelId": "h_dub_02", "name": "The Shelbourne", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 400, "rating": 4.8, "amenities": ["Classic Decor", "Central"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_dub_02", "title": "Guinness Storehouse", "image": "https://images.unsplash.com/photo-1549918837-33fb3940c83e", "price": 30, "duration": "2h", "type": "Leisure" }
+    ]
   },
   {
-    "id": "75",
-    "name": "Pondicherry",
-    "location": "India",
-    "image": "https://picsum.photos/seed/pondicherry/800/600",
-    "description": "A French colonial settlement offering quaint streets and vibrant beaches.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["Auroville", "Promenade Beach"],
-    "tags": ["Coastal", "Culture", "Relaxation"]
+    "id": "madrid_01",
+    "name": "Madrid",
+    "country": "Spain",
+    "tags": ["Urban", "Art", "Food"],
+    "overview": "Elegant boulevards and world-class art collections.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4",
+      "gallery": ["https://images.unsplash.com/photo-1512917774080-9991f1c4c750", "https://images.unsplash.com/photo-1539037116277-4db20889f2d4"]
+    },
+    "hotels": [
+      { "hotelId": "h_mad_01", "name": "The Ritz Madrid", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 700, "rating": 4.9, "amenities": ["Classic Grandeur", "Central"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_mad_01", "title": "Prado Museum Tour", "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4", "price": 25, "duration": "3h", "type": "Cultural" }
+    ]
   },
   {
-    "id": "76",
-    "name": "Auli",
-    "location": "India",
-    "image": "https://picsum.photos/seed/auli/800/600",
-    "description": "A Himalayan ski resort and hill station surrounded by coniferous and oak forests.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "4 Days",
-    "highlights": ["Auli Ropeway", "Skiing"],
-    "tags": ["Snow", "Mountains", "Skiing"]
+    "id": "berlin_01",
+    "name": "Berlin",
+    "country": "Germany",
+    "tags": ["Urban", "History", "Party"],
+    "overview": "Edgy and historic, a city of art, museums, and nightlife.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1560969184-10fe8719e047",
+      "gallery": ["https://images.unsplash.com/photo-1560930950-5cc60f862ed9", "https://images.unsplash.com/photo-1560969184-10fe8719e047"]
+    },
+    "hotels": [
+      { "hotelId": "h_ber_01", "name": "Hotel Adlon Kempinski", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 500, "rating": 4.9, "amenities": ["Gate View", "Historic Pool"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_ber_01", "title": "Berlin Wall Tour", "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047", "price": 20, "duration": "3h", "type": "History" }
+    ]
   },
   {
-    "id": "77",
-    "name": "Mount Abu",
-    "location": "India",
-    "image": "https://picsum.photos/seed/mountabu/800/600",
-    "description": "A high-altitude rocky plateau in the Aravalli Range and surrounded by forest.",
-    "budget": "Low",
-    "type": "Leisure",
-    "duration": "2 Days",
-    "highlights": ["Dilwara Temples", "Nakki Lake"],
-    "tags": ["Hills", "Nature", "Temples"]
-  },
-  {
-    "id": "78",
-    "name": "Pushkar",
-    "location": "India",
-    "image": "https://picsum.photos/seed/pushkar/800/600",
-    "description": "A holy city known for its sacred lake and the annual camel fair.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Pushkar Lake", "Brahma Temple"],
-    "tags": ["Spiritual", "Culture", "Desert"]
-  },
-  {
-    "id": "79",
-    "name": "Kodaikanal",
-    "location": "India",
-    "image": "https://picsum.photos/seed/kodaikanal/800/600",
-    "description": "The Princess of Hill Stations, featuring star-shaped lakes and wooded valleys.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["Kodaikanal Lake", "Coaker's Walk"],
-    "tags": ["Hills", "Nature", "Relaxation"]
-  },
-  {
-    "id": "80",
-    "name": "Tawang",
-    "location": "India",
-    "image": "https://picsum.photos/seed/tawang/800/600",
-    "description": "A high-altitude town famous for its 400-year-old monastery.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "5 Days",
-    "highlights": ["Tawang Monastery", "Sela Pass"],
-    "tags": ["Mountains", "Spiritual", "Nature"]
-  },
-  {
-    "id": "81",
-    "name": "Jodhpur",
-    "location": "India",
-    "image": "https://picsum.photos/seed/jodhpur/800/600",
-    "description": "The Blue City, overlooked by the massive Mehrangarh Fort.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "3 Days",
-    "highlights": ["Mehrangarh Fort", "Umaid Bhawan Palace"],
-    "tags": ["History", "Architecture", "City"]
-  },
-  {
-    "id": "82",
-    "name": "Jim Corbett",
-    "location": "India",
-    "image": "https://picsum.photos/seed/jimcorbett/800/600",
-    "description": "The oldest national park in India, known for its Bengal tigers.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "3 Days",
-    "highlights": ["Jungle Safari", "Dhikala Zone"],
-    "tags": ["Wildlife", "Nature", "Photography"]
-  },
-  {
-    "id": "83",
-    "name": "Kutch",
-    "location": "India",
-    "image": "https://picsum.photos/seed/kutch/800/600",
-    "description": "An island that resembles the shape of a tortoise, known for its white salt desert.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "4 Days",
-    "highlights": ["Rann of Kutch", "Kala Dungar"],
-    "tags": ["Desert", "Culture", "Photography"]
-  },
-  {
-    "id": "84",
-    "name": "Udupi",
-    "location": "India",
-    "image": "https://picsum.photos/seed/udupi/800/600",
-    "description": "A coastal town known for its historic temples and beautiful beaches.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Sri Krishna Matha", "Malpe Beach"],
-    "tags": ["Temples", "Beach", "Food"]
-  },
-  {
-    "id": "85",
-    "name": "Gulmarg",
-    "location": "India",
-    "image": "https://picsum.photos/seed/gulmarg/800/600",
-    "description": "A premier skiing destination surrounded by snow-capped mountains.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "4 Days",
-    "highlights": ["Gulmarg Gondola", "Skiing"],
-    "tags": ["Snow", "Mountains", "Thrill"]
-  },
-  {
-    "id": "86",
-    "name": "Varkala",
-    "location": "India",
-    "image": "https://picsum.photos/seed/varkala/800/600",
-    "description": "A coastal town known for its unique red sandstone cliffs adjacent to the Arabian Sea.",
-    "budget": "Low",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["Varkala Cliff", "Janardanaswamy Temple"],
-    "tags": ["Beach", "Relaxation", "Spiritual"]
-  },
-  {
-    "id": "87",
-    "name": "Bandhavgarh",
-    "location": "India",
-    "image": "https://picsum.photos/seed/bandhavgarh/800/600",
-    "description": "A park with a large biodiversity, known for a very high density of Bengal tigers.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "3 Days",
-    "highlights": ["Tiger Safari", "Bandhavgarh Fort"],
-    "tags": ["Wildlife", "Nature", "Forest"]
-  },
-  {
-    "id": "88",
-    "name": "Shimla",
-    "location": "India",
-    "image": "https://picsum.photos/seed/shimla/800/600",
-    "description": "The former summer capital of British India, retaining its colonial charm.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["The Ridge", "Mall Road"],
-    "tags": ["Hills", "History", "City"]
-  },
-  {
-    "id": "89",
-    "name": "Madurai",
-    "location": "India",
-    "image": "https://picsum.photos/seed/madurai/800/600",
-    "description": "An energetic, ancient city on the Vaigai River, known for its skyline of towering gopurams.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Meenakshi Amman Temple", "Thirumalai Nayakkar Mahal"],
-    "tags": ["History", "Temples", "Architecture"]
-  },
-  {
-    "id": "90",
-    "name": "Wayanad",
-    "location": "India",
-    "image": "https://picsum.photos/seed/wayanad/800/600",
-    "description": "A rural district in Kerala known for its spice plantations and wildlife.",
-    "budget": "Medium",
-    "type": "Adventure",
-    "duration": "3 Days",
-    "highlights": ["Edakkal Caves", "Chembra Peak"],
-    "tags": ["Nature", "Trekking", "Hills"]
-  },
-  {
-    "id": "91",
-    "name": "Bikaner",
-    "location": "India",
-    "image": "https://picsum.photos/seed/bikaner/800/600",
-    "description": "A city surrounded by the Thar Desert, known for its opulent palaces.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Junagarh Fort", "Karni Mata Temple"],
-    "tags": ["Desert", "History", "Architecture"]
-  },
-  {
-    "id": "92",
-    "name": "Lakshadweep",
-    "location": "India",
-    "image": "https://picsum.photos/seed/lakshadweep/800/600",
-    "description": "A tropical archipelago known for its exotic and sun-kissed beaches.",
-    "budget": "High",
-    "type": "Leisure",
-    "duration": "5 Days",
-    "highlights": ["Agatti Island", "Scuba Diving"],
-    "tags": ["Beach", "Luxury", "Ocean"]
-  },
-  {
-    "id": "93",
-    "name": "Shillong",
-    "location": "India",
-    "image": "https://picsum.photos/seed/shillong/800/600",
-    "description": "A hill station known as the 'Scotland of the East'.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "4 Days",
-    "highlights": ["Umiam Lake", "Elephant Falls"],
-    "tags": ["Hills", "Nature", "Relaxation"]
-  },
-  {
-    "id": "94",
-    "name": "Dalhousie",
-    "location": "India",
-    "image": "https://picsum.photos/seed/dalhousie/800/600",
-    "description": "A high-altitude town spread across 5 hills, famous for colonial-era buildings.",
-    "budget": "Low",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["Khajjiar", "Dainkund Peak"],
-    "tags": ["Hills", "Nature", "History"]
-  },
-  {
-    "id": "95",
-    "name": "Ajanta & Ellora",
-    "location": "India",
-    "image": "https://picsum.photos/seed/ajanta/800/600",
-    "description": "Ancient rock-cut caves featuring extraordinary sculptures and paintings.",
-    "budget": "Medium",
-    "type": "Cultural",
-    "duration": "3 Days",
-    "highlights": ["Kailasa Temple", "Buddhist Caves"],
-    "tags": ["History", "Art", "Ancient"]
-  },
-  {
-    "id": "96",
-    "name": "Majuli",
-    "location": "India",
-    "image": "https://picsum.photos/seed/majuli/800/600",
-    "description": "The world's largest river island, known for its vibrant Assamese neo-Vaishnavite culture.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Satras", "Brahmaputra River"],
-    "tags": ["Culture", "Nature", "Remote"]
-  },
-  {
-    "id": "97",
-    "name": "Nainital",
-    "location": "India",
-    "image": "https://picsum.photos/seed/nainital/800/600",
-    "description": "A Himalayan resort town built around a picturesque, eye-shaped lake.",
-    "budget": "Medium",
-    "type": "Leisure",
-    "duration": "3 Days",
-    "highlights": ["Naini Lake", "Snow View Point"],
-    "tags": ["Hills", "Lake", "Relaxation"]
-  },
-  {
-    "id": "98",
-    "name": "Zanskar Valley",
-    "location": "India",
-    "image": "https://picsum.photos/seed/zanskar/800/600",
-    "description": "A remote and stunning valley known for extreme winter treks.",
-    "budget": "High",
-    "type": "Adventure",
-    "duration": "8 Days",
-    "highlights": ["Chadar Trek", "Phugtal Monastery"],
-    "tags": ["Trekking", "Mountains", "Extreme"]
-  },
-  {
-    "id": "99",
-    "name": "Chitkul",
-    "location": "India",
-    "image": "https://picsum.photos/seed/chitkul/800/600",
-    "description": "The last inhabited village near the Indo-China border.",
-    "budget": "Low",
-    "type": "Adventure",
-    "duration": "4 Days",
-    "highlights": ["Baspa River", "Mathi Temple"],
-    "tags": ["Mountains", "Remote", "Nature"]
-  },
-  {
-    "id": "100",
-    "name": "Amritsar",
-    "location": "India",
-    "image": "https://picsum.photos/seed/amritsar/800/600",
-    "description": "The spiritual and cultural center for the Sikh religion.",
-    "budget": "Low",
-    "type": "Cultural",
-    "duration": "2 Days",
-    "highlights": ["Golden Temple", "Wagah Border"],
-    "tags": ["Spiritual", "History", "Food"]
+    "id": "stockholm_01",
+    "name": "Stockholm",
+    "country": "Sweden",
+    "tags": ["Urban", "Modern", "Water"],
+    "overview": "Stunning archipelago city with modern design and royal history.",
+    "media": {
+      "heroImage": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11",
+      "gallery": ["https://images.unsplash.com/photo-1534351590666-13e3e96b5017", "https://images.unsplash.com/photo-1509356843151-3e7d96241e11"]
+    },
+    "hotels": [
+      { "hotelId": "h_sto_01", "name": "Grand Hôtel Stockholm", "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945", "pricePerNight": 550, "rating": 4.9, "amenities": ["Harbor View", "Classic Luxury"] }
+    ],
+    "sightseeing": [
+      { "activityId": "s_sto_01", "title": "Vasa Museum Tour", "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11", "price": 25, "duration": "2h", "type": "History" }
+    ]
   }
 ]
