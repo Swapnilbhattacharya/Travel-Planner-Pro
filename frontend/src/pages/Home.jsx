@@ -2,14 +2,14 @@ import React, { useState, useContext, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   Search, Map, Loader2, Filter, X, 
-  MapPin 
+  MapPin, Info, Headphones, Sparkles 
 } from 'lucide-react';
 import destinationsData from '../data/destinations.json';
 import DestinationCard from '../components/DestinationCard';
 import { PlanContext } from '../context/PlanContext';
 
 const Home = () => {
-  const { startPlanning } = useContext(PlanContext);
+  const { startPlanning, tripHistory } = useContext(PlanContext);
   const navigate = useNavigate();
   
   // 1. SEARCH & SUGGESTION STATES
@@ -91,7 +91,7 @@ const Home = () => {
   return (
     <div className="w-full pb-20 bg-white dark:bg-gray-950 transition-colors duration-500 overflow-x-hidden">
       
-      {/* 1. HERO & SEARCH SECTION (Duplicates Removed) */}
+      {/* 1. HERO & SEARCH SECTION */}
       <div className="relative h-[500px] md:h-[600px] w-full flex items-center justify-center overflow-hidden">
         <img 
           src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200" 
@@ -144,8 +144,31 @@ const Home = () => {
         </div>
       </div>
 
-      {/* 2. POPULAR ESCAPES GRID SECTION */}
       <div className="max-w-7xl mx-auto pt-20 px-6">
+        
+        {/* BONUS FEATURE: RECENT PLANS */}
+        {tripHistory && tripHistory.length > 0 && (
+          <div className="mb-24">
+            <div className="flex items-center gap-3 mb-8">
+              <Sparkles className="text-blue-600" />
+              <h2 className="text-2xl font-black dark:text-white tracking-tighter uppercase">Your Recent Plans</h2>
+            </div>
+            <div className="flex gap-6 overflow-x-auto pb-8">
+               {tripHistory.map((trip, i) => (
+                 <div key={i} className="min-w-[300px] p-6 bg-slate-50 dark:bg-gray-900 rounded-[2rem] border dark:border-gray-800 shadow-sm">
+                    <p className="text-[10px] font-black text-blue-600 uppercase mb-1">{trip.bookingId}</p>
+                    <h4 className="text-xl font-black dark:text-white mb-4">{trip.baseData.name}</h4>
+                    <div className="flex justify-between items-center text-xs font-bold text-slate-400">
+                       <span>{new Date(trip.bookedAt).toLocaleDateString()}</span>
+                       <span className="text-green-500 uppercase">Confirmed</span>
+                    </div>
+                 </div>
+               ))}
+            </div>
+          </div>
+        )}
+
+        {/* 2. POPULAR ESCAPES GRID SECTION */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
           <div>
             <h2 className="text-4xl font-black text-slate-900 dark:text-white tracking-tight">Popular Escapes</h2>
@@ -246,4 +269,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home; // <--- THIS WAS THE MISSING LINE!

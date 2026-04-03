@@ -4,15 +4,18 @@ export const PlanContext = createContext();
 
 export const PlanProvider = ({ children }) => {
   const [activeTrip, setActiveTrip] = useState(null);
-  const [user, setUser] = useState(null); // NEW: User state
+  const [user, setUser] = useState(null);
+  const [tripHistory, setTripHistory] = useState([]);
 
-  // 1. Initial Sync: Pull trip AND user from localStorage
   useEffect(() => {
     const savedTrip = JSON.parse(localStorage.getItem('activeTrip'));
     if (savedTrip) setActiveTrip(savedTrip);
 
     const savedUser = JSON.parse(localStorage.getItem('travel_user'));
     if (savedUser) setUser(savedUser);
+
+    const savedHistory = JSON.parse(localStorage.getItem('trip_history'));
+    if (savedHistory) setTripHistory(savedHistory || []);
   }, []);
 
   const updateAndSaveTrip = (updatedTrip) => {
@@ -20,7 +23,7 @@ export const PlanProvider = ({ children }) => {
     localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
   };
 
-  // --- AUTH LOGIC ---
+  // AUTH LOGIC
   const login = (userData) => {
     setUser(userData);
     localStorage.setItem('travel_user', JSON.stringify(userData));
@@ -29,10 +32,10 @@ export const PlanProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
     localStorage.removeItem('travel_user');
-    localStorage.removeItem('activeTrip'); // Clear trip on logout for security
+    localStorage.removeItem('activeTrip');
   };
 
-  // --- TRIP LOGIC ---
+  // TRIP & SELECTION LOGIC
   const startPlanning = (destination, selectedDates) => {
     const newTrip = {
       id: destination.id,
@@ -44,9 +47,14 @@ export const PlanProvider = ({ children }) => {
       returnFlight: null,
       flightClass: 'Economy',
       selectedActivities: [],
-      totalBudget: 0
     };
     updateAndSaveTrip(newTrip);
+  };
+
+  // REORDER LOGIC (Itinerary Builder Feature)
+  const reorderActivities = (newOrder) => {
+    if (!activeTrip) return;
+    updateAndSaveTrip({ ...activeTrip, selectedActivities: newOrder });
   };
 
   const setTripDates = (dates) => {
@@ -84,18 +92,30 @@ export const PlanProvider = ({ children }) => {
     updateAndSaveTrip({ ...activeTrip, selectedActivities: newActivities });
   };
 
-  const clearTrip = () => {
+  // FINALIZATION (Save to Local Storage Feature)
+  const completeBooking = () => {
+    if (!activeTrip) return;
+    const bookedTrip = {
+      ...activeTrip,
+      bookingId: `TRV-${Math.floor(100000 + Math.random() * 900000)}`,
+      status: 'Confirmed',
+      bookedAt: new Date().toISOString()
+    };
+    const updatedHistory = [bookedTrip, ...tripHistory];
+    setTripHistory(updatedHistory);
+    localStorage.setItem('trip_history', JSON.stringify(updatedHistory));
     setActiveTrip(null);
     localStorage.removeItem('activeTrip');
   };
 
   return (
     <PlanContext.Provider value={{ 
-      user, login, logout, // NEW: Auth exports
-      activeTrip, startPlanning, clearTrip, 
+      user, login, logout,
+      activeTrip, startPlanning, 
       confirmHotelSelection, clearHotelSelection, 
       selectFlightSelection, clearFlightSelection, 
-      toggleActivity, setTripDates 
+      toggleActivity, setTripDates,
+      reorderActivities, completeBooking, tripHistory
     }}>
       {children}
     </PlanContext.Provider>
