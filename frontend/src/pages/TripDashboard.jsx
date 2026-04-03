@@ -3,193 +3,128 @@ import { Link, useNavigate } from 'react-router-dom';
 import { PlanContext } from '../context/PlanContext';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-// Added X icon for the error prompt
-import { ArrowLeft, Star, Clock, MapPin, Check, ChevronRight, Plane, Calendar, X } from 'lucide-react';
+import { 
+  ArrowLeft, MapPin, Check, ChevronRight, Plane, 
+  Calendar, X, Hotel, CheckCircle, Map as MapIcon, Trash2 
+} from 'lucide-react';
 
 const TripDashboard = () => {
-  const { activeTrip, selectHotel, selectFlight, toggleActivity, setTripDates } = useContext(PlanContext);
-  const [activeTab, setActiveTab] = useState('hotels');
-  const [showDateError, setShowDateError] = useState(false); // NEW: State for custom prompt
+  const { 
+    activeTrip, toggleActivity, setTripDates, 
+    clearHotelSelection, clearFlightSelection 
+  } = useContext(PlanContext);
+  
+  const [showDateError, setShowDateError] = useState(false);
   const navigate = useNavigate();
 
-  // 1. CALCULATE NIGHTS
   const nights = useMemo(() => {
     if (!activeTrip?.dates?.start || !activeTrip?.dates?.end) return 1;
     const start = new Date(activeTrip.dates.start);
     const end = new Date(activeTrip.dates.end);
-    const diffTime = Math.abs(end - start);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const diffDays = Math.ceil(Math.abs(end - start) / (1000 * 60 * 60 * 24));
     return diffDays > 0 ? diffDays : 1; 
   }, [activeTrip?.dates]);
 
-  // 2. SAFETY CHECK
-  if (!activeTrip) {
-    return (
-      <div className="flex flex-col items-center justify-center h-screen bg-slate-50 dark:bg-gray-950 transition-colors duration-500">
-        <h2 className="text-2xl font-bold mb-4 text-slate-800 dark:text-gray-200">Trip session expired.</h2>
-        <Link to="/" className="text-blue-600 font-bold hover:underline">Return to Search</Link>
-      </div>
-    );
-  }
-
+  if (!activeTrip) return null;
   const dest = activeTrip.baseData;
-  const hotels = dest.hotels || [];
-  const activities = dest.sightseeing || [];
-  const flights = dest.flights || [];
 
-  const isActivitySelected = (activityId) => {
-    return activeTrip.selectedActivities?.some(a => a.activityId === activityId);
-  };
+  // MASTER PRICE CALCULATION
+  const flightClassMultipliers = { 'Economy': 1, 'Premium': 1.5, 'Business': 3, 'First Class': 5 };
+  const currentMultiplier = flightClassMultipliers[activeTrip.flightClass] || 1;
+  const flightTotal = ((activeTrip.outboundFlight?.price || 0) + (activeTrip.returnFlight?.price || 0)) * currentMultiplier;
 
-  // 3. CALCULATIONS
-  const hotelBasePrice = activeTrip.selectedHotel?.pricePerNight || 0;
-  const hotelTotal = hotelBasePrice * nights; 
-  const flightTotal = activeTrip.selectedFlight?.price || 0;
+  const hotelTotal = activeTrip.selectedHotel 
+    ? (activeTrip.selectedHotel.pricePerNight + (activeTrip.selectedRoom?.price || 0)) * nights 
+    : 0;
+
   const activitiesTotal = activeTrip.selectedActivities?.reduce((sum, act) => sum + act.price, 0) || 0;
-  const tripTotal = hotelTotal + activitiesTotal + flightTotal;
+  const tripTotal = Math.round(hotelTotal + activitiesTotal + flightTotal);
+
+  const hasSelections = activeTrip.outboundFlight || activeTrip.selectedHotel || activeTrip.selectedActivities.length > 0;
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] dark:bg-gray-950 pb-40 transition-colors duration-500 relative">
-      
-      {/* --- PROPER UI PROMPT --- */}
+    <div className="min-h-screen bg-[#F8FAFC] dark:bg-gray-950 pb-44 transition-colors relative">
       {showDateError && (
-        <div className="fixed top-24 left-1/2 -translate-x-1/2 z-[100] w-full max-w-md px-6 animate-in fade-in slide-in-from-top-4 duration-300">
-          <div className="bg-red-600 text-white p-4 rounded-2xl shadow-2xl flex items-center justify-between border border-red-500/50 backdrop-blur-md">
-            <div className="flex items-center gap-3">
-              <div className="bg-white/20 p-2 rounded-xl">
-                <Calendar size={20} />
-              </div>
-              <p className="font-bold text-sm tracking-tight">Please select your travel dates first!</p>
-            </div>
-            <button 
-              onClick={() => setShowDateError(false)} 
-              className="hover:bg-white/10 p-1 rounded-lg transition-colors"
-            >
-              <X size={18} />
-            </button>
+        <div className="fixed top-24 left-0 right-0 z-[100] flex justify-center px-6 animate-in fade-in slide-in-from-top-4">
+          <div className="bg-red-600 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4">
+            <Calendar size={20} /><p className="font-bold text-sm tracking-tight">Please select travel dates first!</p>
+            <button onClick={() => setShowDateError(false)} className="ml-4"><X size={18} /></button>
           </div>
         </div>
       )}
 
       <div className="max-w-6xl mx-auto p-6 md:p-10">
-        <Link to="/" className="flex items-center text-slate-500 dark:text-gray-400 hover:text-blue-600 mb-8 font-semibold w-fit transition-colors">
-          <ArrowLeft size={18} className="mr-2" /> Back to Search
-        </Link>
+        <Link to="/" className="flex items-center text-slate-500 dark:text-gray-400 hover:text-blue-600 mb-8 font-semibold"><ArrowLeft size={18} className="mr-2" /> Back</Link>
 
-        {/* DATE PLANNING SECTION */}
-        <div className="bg-white dark:bg-gray-900 p-8 rounded-[2rem] border-2 border-blue-100 dark:border-blue-900/30 mb-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 transition-all">
+        {/* DATE PICKER */}
+        <div className={`bg-white dark:bg-gray-900 p-8 rounded-[2.5rem] border-2 mb-12 flex flex-col md:flex-row items-center justify-between gap-6 transition-all ${showDateError ? 'border-red-500' : 'border-blue-100 dark:border-blue-900/30'}`}>
           <div>
-            <h2 className="text-2xl font-black text-slate-900 dark:text-white mb-1">Planning for {dest.name}</h2>
-            <p className={`font-medium text-sm transition-colors ${showDateError ? 'text-red-500 animate-pulse' : 'text-slate-500 dark:text-gray-400'}`}>
-              {activeTrip.dates?.end 
-                ? `Staying for ${nights} ${nights === 1 ? 'night' : 'nights'}` 
-                : 'Pick your travel dates to calculate total cost'}
-            </p>
+            <h2 className="text-2xl font-black dark:text-white">Planning for {dest.name}</h2>
+            <p className="text-sm font-medium text-slate-500">{activeTrip.dates?.end ? `Adventure for ${nights} nights` : 'Pick dates to enable calculation'}</p>
           </div>
-          <div className={`p-5 rounded-2xl flex items-center gap-4 w-full md:w-auto border transition-all duration-500 ${showDateError ? 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 scale-105' : 'bg-slate-50 dark:bg-gray-800 border-slate-100 dark:border-gray-700'}`}>
-            <Calendar className={showDateError ? 'text-red-500' : 'text-blue-600'} size={24} />
+          <div className="bg-slate-50 dark:bg-gray-800 p-5 rounded-2xl flex items-center gap-4 w-full md:w-auto border dark:border-gray-700">
+            <Calendar className="text-blue-600" size={24} />
             <DatePicker
-              selectsRange={true}
-              startDate={activeTrip.dates?.start ? new Date(activeTrip.dates.start) : null}
+              selectsRange startDate={activeTrip.dates?.start ? new Date(activeTrip.dates.start) : null}
               endDate={activeTrip.dates?.end ? new Date(activeTrip.dates.end) : null}
-              onChange={(update) => {
-                setTripDates({ start: update[0], end: update[1] });
-                if (update[0] && update[1]) setShowDateError(false); // Hide error once dates picked
-              }}
-              minDate={new Date()} 
-              placeholderText="Choose your date range"
-              className="bg-transparent font-black text-slate-800 dark:text-white outline-none cursor-pointer text-lg w-full"
+              onChange={(u) => { setTripDates({ start: u[0], end: u[1] }); if (u[1]) setShowDateError(false); }}
+              minDate={new Date()} placeholderText="Choose date range" className="bg-transparent font-black dark:text-white outline-none cursor-pointer w-full"
             />
           </div>
         </div>
 
-        {/* HERO SECTION */}
-        <div className="w-full h-80 md:h-[450px] rounded-[2rem] overflow-hidden relative mb-12 shadow-2xl">
-          <img src={dest.media?.heroImage || dest.image} alt={dest.name} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent flex items-end p-8 md:p-12">
-            <div>
-              <span className="bg-blue-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-4 inline-block shadow-lg">
-                {dest.type || dest.tags?.[0] || 'Destination'}
-              </span>
-              <h1 className="text-5xl md:text-7xl font-black text-white mb-3 drop-shadow-lg leading-none">{dest.name}</h1>
-              <p className="text-slate-200 font-medium text-xl flex items-center gap-2 drop-shadow-md"><MapPin size={20} /> {dest.country}</p>
+        {/* LAUNCHER CARDS */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div onClick={() => navigate('/book-flight')} className={`group p-10 rounded-[3rem] border-2 cursor-pointer transition-all flex flex-col justify-between h-[340px] relative ${activeTrip.outboundFlight ? 'border-green-500 bg-white dark:bg-gray-900 shadow-xl' : 'border-slate-100 dark:border-gray-800 bg-white dark:bg-gray-900'}`}>
+            <div className="flex justify-between items-start w-full">
+              <div className={`p-5 rounded-2xl ${activeTrip.outboundFlight ? 'bg-green-100 text-green-600' : 'bg-blue-50 dark:bg-blue-900/30 text-blue-600'}`}><Plane size={36} /></div>
+              {activeTrip.outboundFlight && <button onClick={(e) => { e.stopPropagation(); clearFlightSelection(); }} className="p-2 text-red-500"><Trash2 size={20} /></button>}
+            </div>
+            <div><h3 className="text-3xl font-black dark:text-white mb-2 tracking-tighter">Transport</h3><p className="text-slate-500 font-medium">{activeTrip.outboundFlight ? `${activeTrip.outboundFlight.airline} • ${activeTrip.flightClass}` : 'Select your journey flights'}</p></div>
+            <div className="flex items-center gap-2 font-black text-xs tracking-widest text-blue-600 uppercase">
+              {activeTrip.outboundFlight ? <span className="text-green-500 flex items-center gap-2"><CheckCircle size={18}/> Flights Confirmed</span> : 'Choose Flights'} <ChevronRight size={18}/>
+            </div>
+          </div>
+
+          <div onClick={() => navigate('/book-hotel')} className={`group p-10 rounded-[3rem] border-2 cursor-pointer transition-all flex flex-col justify-between h-[340px] relative ${activeTrip.selectedHotel ? 'border-green-500 bg-white dark:bg-gray-900 shadow-xl' : 'border-slate-100 dark:border-gray-800 bg-white dark:bg-gray-900'}`}>
+            <div className="flex justify-between items-start w-full">
+              <div className={`p-5 rounded-2xl ${activeTrip.selectedHotel ? 'bg-green-100 text-green-600' : 'bg-purple-50 dark:bg-purple-900/30 text-purple-600'}`}><Hotel size={36} /></div>
+              {activeTrip.selectedHotel && <button onClick={(e) => { e.stopPropagation(); clearHotelSelection(); }} className="p-2 text-red-500"><Trash2 size={20} /></button>}
+            </div>
+            <div><h3 className="text-3xl font-black dark:text-white mb-2 tracking-tighter">Stay</h3><p className="text-slate-500 font-medium">{activeTrip.selectedHotel ? `${activeTrip.selectedHotel.name} • ${activeTrip.selectedRoom?.name || 'Standard'}` : 'Pick a top-rated hotel'}</p></div>
+            <div className="flex items-center gap-2 font-black text-xs tracking-widest text-purple-600 uppercase">
+              {activeTrip.selectedHotel ? <span className="text-green-500 flex items-center gap-2"><CheckCircle size={18}/> Hotel Confirmed</span> : 'Choose Stay'} <ChevronRight size={18}/>
             </div>
           </div>
         </div>
 
-        {/* TAB NAVIGATION */}
-        <div className="flex gap-10 border-b-2 border-slate-200 dark:border-gray-800 mb-10 pb-0 overflow-x-auto whitespace-nowrap scrollbar-hide">
-          {['hotels', 'activities', 'flights'].map(tab => (
-            <button key={tab} onClick={() => setActiveTab(tab)} className={`text-xl font-black capitalize transition-all pb-4 border-b-4 -mb-[2px] ${activeTab === tab ? 'text-blue-600 border-blue-600' : 'text-slate-400 dark:text-gray-500 border-transparent hover:text-slate-600 dark:hover:text-gray-300'}`}>{tab}</button>
-          ))}
-        </div>
-
-        {/* DYNAMIC CONTENT */}
-        <div className="space-y-6">
-          {activeTab === 'hotels' && hotels.map(hotel => {
-            const isSelected = activeTrip.selectedHotel?.hotelId === hotel.hotelId;
-            return (
-              <div key={hotel.hotelId} className={`flex flex-col md:flex-row bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border-2 transition-all ${isSelected ? 'border-blue-600 shadow-xl' : 'border-slate-100 dark:border-gray-800 shadow-sm'}`}>
-                <img src={hotel.image} className="w-full md:w-72 h-56 md:h-auto object-cover" alt={hotel.name} />
-                <div className="p-8 flex-1 flex flex-col justify-between">
-                  <div className="flex justify-between items-start">
-                    <h3 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white">{hotel.name}</h3>
-                    <span className="flex items-center bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 font-bold px-3 py-1 rounded-xl text-sm"><Star size={16} className="mr-1 fill-current" /> {hotel.rating}</span>
+        {/* EXPERIENCES */}
+        <div className="bg-white dark:bg-gray-900 p-10 rounded-[3rem] border dark:border-gray-800 shadow-sm">
+           <h3 className="text-2xl font-black dark:text-white mb-8 flex items-center gap-3"><MapIcon className="text-blue-600"/> Local Experiences</h3>
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {dest.sightseeing?.map(act => {
+                const isSelected = activeTrip.selectedActivities?.some(a => a.activityId === act.activityId);
+                return (
+                  <div key={act.activityId} className={`p-6 rounded-3xl border-2 transition-all flex flex-col justify-between ${isSelected ? 'border-blue-600 bg-blue-50/10' : 'border-slate-50 dark:border-gray-800'}`}>
+                     <div><h4 className="font-bold dark:text-white mb-1">{act.title}</h4><p className="text-xs text-slate-400 font-bold mb-4">{act.duration} • {act.type}</p></div>
+                     <div className="flex justify-between items-center pt-4 border-t dark:border-gray-800"><span className="font-black text-lg dark:text-white">${act.price}</span><button onClick={() => toggleActivity(act)} className={`p-2 rounded-xl ${isSelected ? 'bg-blue-600 text-white' : 'bg-slate-100 dark:bg-gray-800 text-slate-400'}`}>{isSelected ? <Check size={18}/> : <ChevronRight size={18}/>}</button></div>
                   </div>
-                  <div className="flex justify-between items-end mt-6">
-                    <div>
-                      <p className="text-4xl font-black text-slate-900 dark:text-white">${hotel.pricePerNight}</p>
-                      <span className="text-xs font-bold text-slate-400 dark:text-gray-500 uppercase tracking-widest">per night</span>
-                    </div>
-                    <button onClick={() => selectHotel(hotel)} className={`px-8 py-4 rounded-2xl font-black transition-all ${isSelected ? 'bg-blue-600 text-white shadow-lg' : 'bg-slate-100 dark:bg-gray-800 dark:text-white hover:bg-slate-200'}`}>{isSelected ? 'SELECTED' : 'SELECT ROOM'}</button>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-          {/* ... Activities and Flights maps go here ... */}
+                );
+              })}
+           </div>
         </div>
       </div>
 
       {/* STICKY BOTTOM BAR */}
-      <div className="fixed bottom-0 left-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-t border-slate-200 dark:border-gray-800 p-6 z-50 transition-colors">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <div className="hidden sm:flex items-center gap-6">
-            <div>
-              <p className="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Trip Status</p>
-              <div className="flex gap-2">
-                <span className={`min-w-[110px] text-center px-3 py-1 rounded-lg text-[10px] font-black transition-colors ${activeTrip.selectedFlight ? 'bg-blue-100 text-blue-700' : 'bg-slate-100 dark:bg-gray-800 text-slate-400'}`}>FLIGHT {activeTrip.selectedFlight ? '✓' : '—'}</span>
-                <span className={`min-w-[110px] text-center px-3 py-1 rounded-lg text-[10px] font-black transition-colors ${activeTrip.selectedHotel ? 'bg-green-100 text-green-700' : 'bg-slate-100 dark:bg-gray-800 text-slate-400'}`}>HOTEL {activeTrip.selectedHotel ? '✓' : '—'}</span>
-                <span className={`min-w-[110px] text-center px-3 py-1 rounded-lg text-[10px] font-black transition-colors ${activeTrip.selectedActivities?.length > 0 ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300' : 'bg-slate-100 dark:bg-gray-800 text-slate-400'}`}>ACTIVITIES {activeTrip.selectedActivities?.length > 0 ? `(${activeTrip.selectedActivities.length})` : '—'}</span>
-              </div>
-            </div>
+      <div className="fixed bottom-0 left-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-t dark:border-gray-800 p-6 z-50">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex gap-4">
+            <div className={`flex flex-col items-center px-4 py-2 rounded-2xl ${activeTrip.outboundFlight ? 'bg-green-100 text-green-700' : 'bg-slate-100 dark:bg-gray-800 text-slate-400'}`}><p className="text-[9px] font-black uppercase tracking-tighter">Transport</p><Check size={14} className={activeTrip.outboundFlight ? 'opacity-100' : 'opacity-20'} /></div>
+            <div className={`flex flex-col items-center px-4 py-2 rounded-2xl ${activeTrip.selectedHotel ? 'bg-green-100 text-green-700 border border-green-200' : 'bg-slate-100 dark:bg-gray-800 text-slate-400'}`}><p className="text-[9px] font-black uppercase tracking-tighter">Stay</p><Check size={14} className={activeTrip.selectedHotel ? 'opacity-100' : 'opacity-20'} /></div>
           </div>
-          
-          <div className="flex items-center gap-8">
-            <div className="text-right">
-              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mb-1">TOTAL ESTIMATED ({nights} NIGHTS)</p>
-              <div className="flex items-baseline gap-1 justify-end">
-                <p className="text-4xl font-black dark:text-white leading-none">${tripTotal}</p>
-                <span className="text-[10px] font-bold text-blue-600 dark:text-blue-400 uppercase">+ additional costs</span>
-              </div>
-            </div>
-            <button 
-              onClick={() => {
-                if (!activeTrip.dates?.start || !activeTrip.dates?.end) {
-                  // TRIGGER CUSTOM UI
-                  setShowDateError(true);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                  // Auto-dismiss after 4 seconds
-                  setTimeout(() => setShowDateError(false), 4000);
-                } else { 
-                  navigate('/checkout'); 
-                }
-              }} 
-              className={`px-10 py-5 rounded-2xl font-black text-xl flex items-center gap-3 transition-all ${tripTotal > 0 ? 'bg-blue-600 text-white shadow-2xl shadow-blue-500/30 hover:bg-blue-500 active:scale-95' : 'bg-slate-200 dark:bg-gray-800 text-slate-400 dark:text-gray-600 cursor-not-allowed'}`}
-              disabled={tripTotal === 0}
-            >
-              REVIEW TRIP <ChevronRight size={24} />
-            </button>
+          <div className="flex items-center gap-10">
+            <div className="text-right"><p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none mb-1">Total Estimated ({nights} Nights)</p><div className="flex items-baseline gap-1 justify-end"><p className="text-4xl font-black dark:text-white leading-none">${tripTotal}</p><span className="text-[10px] font-bold text-blue-600 uppercase">incl. tax</span></div></div>
+            <button onClick={() => { if (!activeTrip.dates?.start) { setShowDateError(true); window.scrollTo({ top: 0, behavior: 'smooth' }); } else if (!hasSelections) { alert("Select at least one item to proceed."); } else { navigate('/checkout'); } }} className={`px-12 py-5 rounded-3xl font-black text-xl flex items-center gap-3 transition-all ${tripTotal > 0 ? 'bg-blue-600 text-white shadow-2xl' : 'bg-slate-200 text-slate-400'}`}>REVIEW ITINERARY <ChevronRight size={24} /></button>
           </div>
         </div>
       </div>

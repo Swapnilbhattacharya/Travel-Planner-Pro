@@ -10,27 +10,70 @@ export const PlanProvider = ({ children }) => {
     if (saved) setActiveTrip(saved);
   }, []);
 
+  const updateAndSaveTrip = (updatedTrip) => {
+    setActiveTrip(updatedTrip);
+    localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
+  };
+
   const startPlanning = (destination, selectedDates) => {
     const newTrip = {
       id: destination.id,
       baseData: destination,
-      dates: selectedDates || { start: null, end: null }, 
+      dates: selectedDates || { start: null, end: null },
       selectedHotel: null,
+      selectedRoom: null,
+      outboundFlight: null,
+      returnFlight: null,
+      flightClass: 'Economy',
       selectedActivities: [],
-      selectedFlight: null,
       totalBudget: 0
     };
-    
-    setActiveTrip(newTrip);
-    localStorage.setItem('activeTrip', JSON.stringify(newTrip));
+    updateAndSaveTrip(newTrip);
   };
 
-  // NEW: Update dates from the Dashboard
   const setTripDates = (dates) => {
     if (!activeTrip) return;
-    const updatedTrip = { ...activeTrip, dates };
-    setActiveTrip(updatedTrip);
-    localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
+    updateAndSaveTrip({ ...activeTrip, dates });
+  };
+
+  // UNIFIED FIX: Prevents the race condition between hotel and room selection
+  const confirmHotelSelection = (hotel, room) => {
+    if (!activeTrip) return;
+    updateAndSaveTrip({ 
+      ...activeTrip, 
+      selectedHotel: hotel, 
+      selectedRoom: room 
+    });
+  };
+
+  const clearHotelSelection = () => {
+    if (!activeTrip) return;
+    updateAndSaveTrip({ ...activeTrip, selectedHotel: null, selectedRoom: null });
+  };
+
+  const selectFlightSelection = (outbound, inbound, seatClass) => {
+    if (!activeTrip) return;
+    updateAndSaveTrip({
+      ...activeTrip,
+      outboundFlight: outbound,
+      returnFlight: inbound,
+      flightClass: seatClass
+    });
+  };
+
+  const clearFlightSelection = () => {
+    if (!activeTrip) return;
+    updateAndSaveTrip({ ...activeTrip, outboundFlight: null, returnFlight: null });
+  };
+
+  const toggleActivity = (activity) => {
+    if (!activeTrip) return;
+    const current = activeTrip.selectedActivities || [];
+    const exists = current.find(a => a.activityId === activity.activityId);
+    let newActivities = exists 
+      ? current.filter(a => a.activityId !== activity.activityId)
+      : [...current, activity];
+    updateAndSaveTrip({ ...activeTrip, selectedActivities: newActivities });
   };
 
   const clearTrip = () => {
@@ -38,37 +81,12 @@ export const PlanProvider = ({ children }) => {
     localStorage.removeItem('activeTrip');
   };
 
-  const selectHotel = (hotel) => {
-    if (!activeTrip) return;
-    const updatedTrip = { ...activeTrip, selectedHotel: hotel };
-    setActiveTrip(updatedTrip);
-    localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
-  };
-
-  const selectFlight = (flight) => {
-    if (!activeTrip) return;
-    const updatedTrip = { ...activeTrip, selectedFlight: flight };
-    setActiveTrip(updatedTrip);
-    localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
-  };
-
-  const toggleActivity = (activity) => {
-    if (!activeTrip) return;
-    const currentActivities = activeTrip.selectedActivities || [];
-    const exists = currentActivities.find(a => a.activityId === activity.activityId);
-    let newActivities = exists 
-      ? currentActivities.filter(a => a.activityId !== activity.activityId)
-      : [...currentActivities, activity];
-
-    const updatedTrip = { ...activeTrip, selectedActivities: newActivities };
-    setActiveTrip(updatedTrip);
-    localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
-  };
-
   return (
     <PlanContext.Provider value={{ 
-      activeTrip, setActiveTrip, startPlanning, clearTrip, 
-      selectHotel, selectFlight, toggleActivity, setTripDates 
+      activeTrip, startPlanning, clearTrip, 
+      confirmHotelSelection, clearHotelSelection, 
+      selectFlightSelection, clearFlightSelection, 
+      toggleActivity, setTripDates 
     }}>
       {children}
     </PlanContext.Provider>

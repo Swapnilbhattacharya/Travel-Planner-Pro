@@ -5,9 +5,13 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import TripDashboard from './pages/TripDashboard'; 
 import Checkout from './pages/Checkout'; 
-import Payment from './pages/Payment'; // <--- CRITICAL: Payment Page Import
+import Payment from './pages/Payment'; 
 import About from './pages/About';     
 import Support from './pages/Support'; 
+
+// NEW: Advanced Selection Pages
+import HotelBooking from './pages/HotelBooking'; 
+import FlightBooking from './pages/FlightBooking';
 
 // --- COMPONENT & CONTEXT IMPORTS ---
 import ThemeToggle from './components/ThemeToggle';
@@ -18,7 +22,7 @@ function App() {
   return (
     <PlanProvider>
       <Router>
-        {/* MAIN WRAPPER: Handles global background and dark mode transitions */}
+        {/* MAIN WRAPPER: Manages global background and dark mode transitions */}
         <div className="flex flex-col min-h-screen bg-[#F8FAFC] dark:bg-gray-950 transition-colors duration-500">
           
           {/* GLOBAL NAVIGATION: Sticky glassmorphism header */}
@@ -58,18 +62,22 @@ function App() {
             </div>
           </nav>
 
-          {/* DYNAMIC PAGE CONTENT: All app routes are defined here */}
+          {/* DYNAMIC PAGE CONTENT */}
           <main className="flex-1">
             <Routes>
-              {/* Core Discovery Flow */}
+              {/* 1. Exploration & Discovery */}
               <Route path="/" element={<Home />} />
               <Route path="/trip/:id" element={<TripDashboard />} />
               
-              {/* Booking & Transaction Flow */}
+              {/* 2. Advanced Selection Funnel (The New Pages) */}
+              <Route path="/book-hotel" element={<HotelBooking />} />
+              <Route path="/book-flight" element={<FlightBooking />} />
+
+              {/* 3. Booking & Transaction Flow */}
               <Route path="/checkout" element={<Checkout />} />
-              <Route path="/payment" element={<Payment />} /> {/* <--- FIXED: Payment Route Registered */}
+              <Route path="/payment" element={<Payment />} /> 
               
-              {/* Information Pages */}
+              {/* 4. Information Pages */}
               <Route path="/about" element={<About />} />
               <Route path="/support" element={<Support />} />
             </Routes>

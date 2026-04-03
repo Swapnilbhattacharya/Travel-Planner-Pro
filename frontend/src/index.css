@@ -4,20 +4,68 @@
 
 @layer base {
   body {
-    @apply bg-slate-50 text-slate-900 antialiased;
+    /* Updated to respect dark mode transitions globally */
+    @apply bg-slate-50 text-slate-900 dark:bg-gray-950 dark:text-white antialiased transition-colors duration-500;
   }
 }
 
+/* --- GLASSMORPHISM --- */
 .glass {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.dark .glass {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- SCROLL BEHAVIOR --- */
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  @apply transition-colors duration-500;
+/* --- UTILITIES: SCROLLBAR HIDE --- */
+/* Use this on the Tab container to remove that white bar on the right */
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* --- ANIMATIONS: CUSTOM TOAST & INDICATORS --- */
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Standard slide-in-from-top for Tailwind animate-in compatibility */
+.slide-in-from-top-4 {
+  --tw-enter-translate-y: -1rem;
+}
+
+/* --- CUSTOM SCROLLBAR FOR DRAWER (Optional) --- */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 dark:bg-gray-800 rounded-full;
 }
