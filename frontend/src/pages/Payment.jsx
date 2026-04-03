@@ -14,59 +14,50 @@ const Payment = () => {
   const [method, setMethod] = useState('card');
   const [isProcessing, setIsProcessing] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [confirmedTripName, setConfirmedTripName] = useState('');
 
-  // Safety Redirect
-  if (!activeTrip) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50 dark:bg-gray-950 p-6">
-        <div className="bg-white dark:bg-gray-900 p-10 rounded-[2.5rem] shadow-xl text-center max-w-md border dark:border-gray-800">
-          <h2 className="text-2xl font-black text-slate-800 dark:text-white mb-4">Session Expired</h2>
-          <p className="text-slate-500 dark:text-gray-400 mb-8 font-medium">Please restart your booking process from the home page.</p>
-          <Link to="/" className="inline-block bg-blue-600 text-white px-8 py-4 rounded-2xl font-black shadow-lg shadow-blue-500/20">Go Home</Link>
-        </div>
-      </div>
-    );
-  }
-
-  const tripTotal = (activeTrip.selectedHotel?.pricePerNight || 0) + 
-                    (activeTrip.selectedFlight?.price || 0) + 
-                    (activeTrip.selectedActivities?.reduce((sum, a) => sum + a.price, 0) || 0);
+  // Calculate Totals safely
+  const hotelTotal = activeTrip?.selectedHotel?.pricePerNight || 0;
+  const flightTotal = activeTrip?.selectedFlight?.price || 0;
+  const activitiesTotal = activeTrip?.selectedActivities?.reduce((sum, a) => sum + a.price, 0) || 0;
+  const tripTotal = hotelTotal + flightTotal + activitiesTotal;
 
   const handlePayment = () => {
+    // Capture the name before we clear the trip so the success screen still shows it
+    setConfirmedTripName(activeTrip?.baseData?.name || 'your destination');
     setIsProcessing(true);
-    // Simulate payment processing delay
+    
+    // Simulate bank verification delay
     setTimeout(() => {
       setIsProcessing(false);
       setIsSuccess(true);
-      // Clean up the trip data after showing success
-      setTimeout(() => {
-        clearTrip();
-      }, 500);
+      
+      // Clean up the global state/localStorage since booking is done
+      clearTrip();
     }, 3000);
   };
 
-  // --- CONFIRMED BOOKING ANIMATION STATE ---
+  // --- 1. SUCCESS STATE (Priority #1) ---
+  // We check this first so that even if activeTrip is null, the success screen stays visible
   if (isSuccess) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-950 p-6 overflow-hidden">
-        <div className="max-w-md w-full text-center">
-          {/* Animated Checkmark Container */}
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-950 p-6 overflow-hidden transition-colors duration-500">
+        <div className="max-w-md w-full text-center animate-in fade-in zoom-in duration-700">
           <div className="relative mb-8">
             <div className="w-32 h-32 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto animate-bounce shadow-2xl">
-              <CheckCircle size={80} className="text-green-500 animate-in zoom-in spin-in duration-700" />
+              <CheckCircle size={80} className="text-green-500" />
             </div>
-            {/* Confetti-like design elements */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-40 border-2 border-green-500/20 rounded-full animate-ping" />
           </div>
 
-          <h1 className="text-4xl font-black text-slate-900 dark:text-white mb-4 animate-in slide-in-from-bottom duration-500">
+          <h1 className="text-4xl font-black text-slate-900 dark:text-white mb-4">
             Booking Confirmed!
           </h1>
-          <p className="text-slate-500 dark:text-gray-400 text-lg mb-10 font-medium animate-in fade-in delay-300 duration-500">
-            Pack your bags, buddy! Your itinerary for <span className="text-blue-600 font-bold">{activeTrip.baseData.name}</span> is officially locked in.
+          <p className="text-slate-500 dark:text-gray-400 text-lg mb-10 font-medium">
+            Pack your bags, buddy! Your itinerary for <span className="text-blue-600 font-bold">{confirmedTripName}</span> is officially locked in.
           </p>
 
-          <div className="bg-slate-50 dark:bg-gray-900 p-8 rounded-3xl border dark:border-gray-800 text-left space-y-4 mb-10 shadow-sm animate-in zoom-in delay-500 duration-500">
+          <div className="bg-slate-50 dark:bg-gray-900 p-8 rounded-3xl border dark:border-gray-800 text-left space-y-4 mb-10 shadow-sm">
              <div className="flex justify-between items-center">
                 <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Booking ID</span>
                 <span className="font-mono font-bold dark:text-white">#TRV-{Math.floor(Math.random()*900000)}</span>
@@ -76,7 +67,7 @@ const Payment = () => {
                    <Plane size={24} />
                 </div>
                 <div>
-                   <p className="font-bold dark:text-white">{activeTrip.baseData.name}</p>
+                   <p className="font-bold dark:text-white">{confirmedTripName}</p>
                    <p className="text-xs text-slate-400 font-medium">Confirmation sent to your email.</p>
                 </div>
              </div>
@@ -84,7 +75,7 @@ const Payment = () => {
 
           <button 
             onClick={() => navigate('/')}
-            className="w-full bg-slate-900 dark:bg-blue-600 text-white py-5 rounded-2xl font-black text-lg hover:shadow-xl transition-all active:scale-95"
+            className="w-full bg-slate-900 dark:bg-blue-600 text-white py-5 rounded-2xl font-black text-lg hover:shadow-xl transition-all active:scale-95 shadow-blue-500/20"
           >
             BACK TO HOME
           </button>
@@ -93,15 +84,27 @@ const Payment = () => {
     );
   }
 
-  // --- STANDARD PAYMENT INTERFACE ---
+  // --- 2. ERROR/EXPIRY STATE (Priority #2) ---
+  if (!activeTrip) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50 dark:bg-gray-950 p-6 transition-colors duration-500">
+        <div className="bg-white dark:bg-gray-900 p-10 rounded-[2.5rem] shadow-xl text-center max-w-md border dark:border-gray-800">
+          <h2 className="text-2xl font-black text-slate-800 dark:text-white mb-4">Session Expired</h2>
+          <p className="text-slate-500 dark:text-gray-400 mb-8 font-medium">Your trip data was not found. Please restart your booking process from the home page.</p>
+          <Link to="/" className="inline-block bg-blue-600 text-white px-8 py-4 rounded-2xl font-black shadow-lg shadow-blue-500/20">Go Home</Link>
+        </div>
+      </div>
+    );
+  }
+
+  // --- 3. STANDARD PAYMENT INTERFACE ---
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-gray-950 py-12 px-6 transition-colors duration-500">
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
         
-        {/* LEFT: PAYMENT FORM */}
         <div className="lg:col-span-2 space-y-8">
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl font-black text-slate-900 dark:text-white flex items-center gap-3">
+            <h1 className="text-3xl font-black text-slate-900 dark:text-white flex items-center gap-3 tracking-tighter">
               <Lock className="text-green-500" size={28} /> Payment Details
             </h1>
             <div className="flex items-center gap-2 text-slate-400 dark:text-gray-500 text-xs font-bold uppercase tracking-widest">
@@ -110,19 +113,18 @@ const Payment = () => {
           </div>
 
           <div className="bg-white dark:bg-gray-900 rounded-[2.5rem] border border-slate-200 dark:border-gray-800 overflow-hidden shadow-sm">
-            {/* TABS */}
             <div className="flex bg-slate-50/50 dark:bg-gray-800/50 border-b border-slate-100 dark:border-gray-800">
               <button 
                 onClick={() => setMethod('card')}
                 className={`flex-1 py-6 font-bold flex items-center justify-center gap-3 transition-all ${method === 'card' ? 'text-blue-600 bg-white dark:bg-gray-900 border-t-4 border-blue-600' : 'text-slate-400 hover:text-slate-600'}`}
               >
-                <CreditCard size={20} /> Credit / Debit Card
+                <CreditCard size={20} /> Credit Card
               </button>
               <button 
                 onClick={() => setMethod('upi')}
                 className={`flex-1 py-6 font-bold flex items-center justify-center gap-3 transition-all ${method === 'upi' ? 'text-blue-600 bg-white dark:bg-gray-900 border-t-4 border-blue-600' : 'text-slate-400 hover:text-slate-600'}`}
               >
-                <Smartphone size={20} /> UPI / GPay / PhonePe
+                <Smartphone size={20} /> UPI / GPay
               </button>
             </div>
 
@@ -146,7 +148,7 @@ const Payment = () => {
                 </div>
               ) : (
                 <div className="text-center py-10 space-y-6">
-                  <p className="text-slate-500 dark:text-gray-400 font-medium">Enter your VPA / UPI ID to receive a payment request on your phone</p>
+                  <p className="text-slate-500 dark:text-gray-400 font-medium">Enter your UPI ID to receive a request on your phone</p>
                   <input className="max-w-sm w-full p-6 bg-slate-50 dark:bg-gray-800 border dark:border-gray-700 rounded-2xl text-center outline-none focus:ring-2 focus:ring-blue-500 dark:text-white font-black text-xl" placeholder="yourname@upi" />
                 </div>
               )}
@@ -154,11 +156,10 @@ const Payment = () => {
           </div>
         </div>
 
-        {/* RIGHT: ORDER SUMMARY */}
         <div className="space-y-6">
-          <div className="bg-slate-900 text-white rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden transition-all hover:scale-[1.02]">
+          <div className="bg-slate-900 text-white rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden transition-all hover:scale-[1.01]">
             <div className="relative z-10">
-              <h2 className="text-xl font-bold mb-8 opacity-60 uppercase tracking-widest text-sm">Final Amount</h2>
+              <h2 className="text-xl font-bold mb-8 opacity-60 uppercase tracking-widest text-xs">Total Amount Due</h2>
               <div className="flex items-baseline gap-1 mb-8">
                 <span className="text-3xl font-light opacity-50">$</span>
                 <span className="text-6xl font-black tracking-tighter">{tripTotal}</span>
@@ -171,7 +172,7 @@ const Payment = () => {
                 </div>
                 <div className="flex justify-between items-center text-sm">
                   <span className="opacity-50 font-bold uppercase tracking-widest text-[10px]">Processing Fee</span>
-                  <span className="font-bold text-green-400">FREE</span>
+                  <span className="font-bold text-green-400 tracking-wider">SECURE & FREE</span>
                 </div>
               </div>
 
@@ -187,18 +188,12 @@ const Payment = () => {
                 )}
               </button>
             </div>
-
-            {/* Decorative background element */}
             <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl" />
           </div>
-          
-          <div className="p-6 border-2 border-dashed border-slate-200 dark:border-gray-800 rounded-3xl">
-             <p className="text-xs text-slate-400 dark:text-gray-500 font-bold text-center italic">
-               * By clicking authorize, you agree to our Terms of Service and Refund Policy.
-             </p>
-          </div>
+          <p className="text-[10px] text-slate-400 dark:text-gray-600 font-bold text-center leading-relaxed">
+            * Authorized payment will be processed immediately. Cancellation policies apply as per destination terms.
+          </p>
         </div>
-
       </div>
     </div>
   );
