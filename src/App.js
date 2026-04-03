@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { PlanProvider } from './context/PlanContext';
 import Home from './pages/Home';
-import ItinerarySidebar from './components/ItinerarySidebar';
+import ItinerarySidebar from './components/Itinerary/ItinerarySidebar';
 // Note: We will create the Navbar next, or Chitresh can build it.
 
 function App() {
