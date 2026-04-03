@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { PlanContext } from '../context/PlanContext';
+import { PlanContext } from '../../context/PlanContext';
 
 const ItinerarySidebar = () => {
   const { plan } = useContext(PlanContext); // This pulls data from your Brain!
