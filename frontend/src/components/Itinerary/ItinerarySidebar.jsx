@@ -13,7 +13,11 @@ const ItinerarySidebar = () => {
         <div className="space-y-4">
           {plan.map(item => (
             <div key={item.id} className="flex items-center space-x-4 border-b pb-4">
-              <img src={item.image} className="w-16 h-16 rounded-lg object-cover" />
+             <img 
+  src={item.image} 
+  className="w-12 h-12 rounded-lg object-cover" 
+  alt={item.name} // This fixes the warning!
+/>
               <div>
                 <h4 className="font-bold text-sm">{item.name}</h4>
                 <p className="text-xs text-gray-500">{item.location}</p>

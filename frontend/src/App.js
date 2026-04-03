@@ -1,29 +1,24 @@
 import React from 'react';
-import './App.css';
-import { PlanProvider } from './context/PlanContext';
 import Home from './pages/Home';
 import ItinerarySidebar from './components/Itinerary/ItinerarySidebar';
-// Note: We will create the Navbar next, or Chitresh can build it.
+import { PlanProvider } from './context/PlanContext';
 
 function App() {
   return (
     <PlanProvider>
-      <div className="relative min-h-screen bg-gray-50 flex">
-        
-        {/* Main Content Area (Chitresh's Work) */}
-        <main className="flex-1 mr-80"> 
-          <header className="p-6 bg-white border-b sticky top-0 z-10">
-            <h1 className="text-2xl font-black tracking-tight text-blue-600">TRAVEL.PRO</h1>
-          </header>
-          
+      <div className="flex min-h-screen bg-[#F8FAFC]">
+        {/* Navigation / Main Content */}
+        <main className="flex-1 lg:pr-[350px]"> 
+          <nav className="h-20 flex items-center px-10 border-b bg-white/50 backdrop-blur-md sticky top-0 z-20">
+            <h1 className="text-xl font-black tracking-tighter text-blue-600">TRAVEL.PRO</h1>
+          </nav>
           <Home />
         </main>
 
-        {/* The Trip Plan Sidebar (Your Integration) */}
-        <aside>
+        {/* Sidebar - Desktop Only */}
+        <aside className="hidden lg:block w-[350px] fixed right-0 h-screen">
           <ItinerarySidebar />
         </aside>
-
       </div>
     </PlanProvider>
   );
