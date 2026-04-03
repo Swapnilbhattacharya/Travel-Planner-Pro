@@ -4,10 +4,15 @@ export const PlanContext = createContext();
 
 export const PlanProvider = ({ children }) => {
   const [activeTrip, setActiveTrip] = useState(null);
+  const [user, setUser] = useState(null); // NEW: User state
 
+  // 1. Initial Sync: Pull trip AND user from localStorage
   useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem('activeTrip'));
-    if (saved) setActiveTrip(saved);
+    const savedTrip = JSON.parse(localStorage.getItem('activeTrip'));
+    if (savedTrip) setActiveTrip(savedTrip);
+
+    const savedUser = JSON.parse(localStorage.getItem('travel_user'));
+    if (savedUser) setUser(savedUser);
   }, []);
 
   const updateAndSaveTrip = (updatedTrip) => {
@@ -15,6 +20,19 @@ export const PlanProvider = ({ children }) => {
     localStorage.setItem('activeTrip', JSON.stringify(updatedTrip));
   };
 
+  // --- AUTH LOGIC ---
+  const login = (userData) => {
+    setUser(userData);
+    localStorage.setItem('travel_user', JSON.stringify(userData));
+  };
+
+  const logout = () => {
+    setUser(null);
+    localStorage.removeItem('travel_user');
+    localStorage.removeItem('activeTrip'); // Clear trip on logout for security
+  };
+
+  // --- TRIP LOGIC ---
   const startPlanning = (destination, selectedDates) => {
     const newTrip = {
       id: destination.id,
@@ -36,14 +54,9 @@ export const PlanProvider = ({ children }) => {
     updateAndSaveTrip({ ...activeTrip, dates });
   };
 
-  // UNIFIED FIX: Prevents the race condition between hotel and room selection
   const confirmHotelSelection = (hotel, room) => {
     if (!activeTrip) return;
-    updateAndSaveTrip({ 
-      ...activeTrip, 
-      selectedHotel: hotel, 
-      selectedRoom: room 
-    });
+    updateAndSaveTrip({ ...activeTrip, selectedHotel: hotel, selectedRoom: room });
   };
 
   const clearHotelSelection = () => {
@@ -53,12 +66,7 @@ export const PlanProvider = ({ children }) => {
 
   const selectFlightSelection = (outbound, inbound, seatClass) => {
     if (!activeTrip) return;
-    updateAndSaveTrip({
-      ...activeTrip,
-      outboundFlight: outbound,
-      returnFlight: inbound,
-      flightClass: seatClass
-    });
+    updateAndSaveTrip({ ...activeTrip, outboundFlight: outbound, returnFlight: inbound, flightClass: seatClass });
   };
 
   const clearFlightSelection = () => {
@@ -83,6 +91,7 @@ export const PlanProvider = ({ children }) => {
 
   return (
     <PlanContext.Provider value={{ 
+      user, login, logout, // NEW: Auth exports
       activeTrip, startPlanning, clearTrip, 
       confirmHotelSelection, clearHotelSelection, 
       selectFlightSelection, clearFlightSelection, 
